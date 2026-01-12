@@ -20,3 +20,10 @@ function alesfranqueses_child_styles() {
 }
 
 add_action('wp_enqueue_scripts', 'alesfranqueses_child_styles');
+
+wp_enqueue_style(
+    'child-main',
+    get_stylesheet_directory_uri() . '/css/main.css',
+    array(),
+    '1.0'
+  );
