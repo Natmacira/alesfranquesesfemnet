@@ -29,3 +29,16 @@ function alesfranqueses_child_styles() {
 }
 
 add_action('wp_enqueue_scripts', 'alesfranqueses_child_styles');
+
+/* TITLE */
+
+add_filter('the_title', function($title) {
+    if (is_singular() && in_the_loop()) {
+        $title = preg_replace(
+            '/\{(.*?)\}/',
+            '<span class="title-highlight">$1</span>',
+            $title
+        );
+    }
+    return $title;
+});
