@@ -1,0 +1,15 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.wp-block-navigation li.main-btns {
+    @include m.main-button;
+}
+
+.main-btns {
+    @include m.main-button;
+}
+
+.main-btns a {
+    border: none;
+    padding: 0;
+}

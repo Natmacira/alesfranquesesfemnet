@@ -1,3 +1,34 @@
+.wp-block-navigation li.main-btns {
+  background: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  color: #fff;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  padding: 12px 24px;
+  max-width: 183px;
+  text-align: center;
+  height: 48px;
+  text-transform: uppercase;
+}
 
+.main-btns {
+  background: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  color: #fff;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  padding: 12px 24px;
+  max-width: 183px;
+  text-align: center;
+  height: 48px;
+  text-transform: uppercase;
+}
+
+.main-btns a {
+  border: none;
+  padding: 0;
+}
 
 /*# sourceMappingURL=buttons.css.map */

@@ -7,12 +7,10 @@
 @use "abstracts/breakpoints";
 
 /* 2. Base */
-@use "base/reset";
 @use "base/fonts";
 @use "base/typography";
 
 /* 3. Layout */
-@use "layout/grid";
 @use "layout/header";
 @use "layout/footer";
 
@@ -23,3 +21,4 @@
 
 /* 5. Pages */
 @use "pages/home";
+

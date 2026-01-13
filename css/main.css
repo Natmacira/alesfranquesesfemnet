@@ -1,17 +1,100 @@
-/* Error: Can't find stylesheet to import.
- *    ,
- * 10 | @use "base/reset";
- *    | ^^^^^^^^^^^^^^^^^
- *    '
- *   scss/main.scss 10:1  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a    \2577 \a 10 \2502  @use \"base/reset\";\a    \2502  ^^^^^^^^^^^^^^^^^\a    \2575 \a   scss/main.scss 10:1  root stylesheet";
+/* Auto compilar */
+/* sass --watch scss:css */
+/* 1. Abstracts */
+/* 2. Base */
+/* INTER */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+/* ANTON */
+@font-face {
+  font-family: "Anton";
+  src: url("../fonts/Anton-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1a1a1a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* 3. Layout */
+.custom-logo {
+  width: 248px;
+  height: auto;
+  display: block;
+}
+
+/* 4. Components */
+.wp-block-navigation li.main-btns {
+  background: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  color: #fff;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  padding: 12px 24px;
+  max-width: 183px;
+  text-align: center;
+  height: 48px;
+  text-transform: uppercase;
+}
+
+.main-btns {
+  background: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  color: #fff;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  padding: 12px 24px;
+  max-width: 183px;
+  text-align: center;
+  height: 48px;
+  text-transform: uppercase;
+}
+
+.main-btns a {
+  border: none;
+  padding: 0;
+}
+
+/* 5. Pages */
+
+/*# sourceMappingURL=main.css.map */

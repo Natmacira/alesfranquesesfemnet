@@ -1,0 +1,15 @@
+@use "variables" as v;
+
+@mixin main-button {
+  background: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  color: #fff;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: v.$font-main;
+  padding: 12px 24px;
+  max-width: 183px;
+  text-align: center;
+  height: 48px;
+  text-transform: uppercase;
+}
