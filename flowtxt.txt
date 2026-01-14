@@ -1,0 +1,99 @@
+INICIO
+  |
+  v
+PÁGINA PRINCIPAL
+  |
+  |-- Módulo 1: Hero / Presentación
+  |      └─ Botón → "Conoce el sistema"
+  |
+  |-- Módulo 2: Video campaña
+  |
+  |-- Módulo 3: Calendario de contenedores (Fase 2)
+  |
+  |-- Módulo 4: Guía de separación (preview)
+  |      ├─ Orgánica → Página "Cada residuo..."
+  |      ├─ Vidrio → Página "Cada residuo..."
+  |      ├─ Papel → Página "Cada residuo..."
+  |      ├─ Envases → Página "Cada residuo..."
+  |      └─ Resto → Página "Cada residuo..."
+  |
+  |-- Módulo 5: Pas a pas (preview)
+  |      └─ Botón → Página "Pas a pas"
+  |
+  |-- Módulo 6: Últimas noticias
+  |      └─ Cada noticia → Página de noticia individual
+  |
+  |-- Módulo 7: Agenda
+         └─ Cada evento → (posible ficha / detalle)
+
+----------------------------------------------------
+
+PÁGINA: CONOCE EL SISTEMA
+  |
+  |-- Módulo 1: Introducción
+  |
+  |-- Módulo 2: Tipos de contenedores
+  |      ├─ Con tarjeta/app: Orgánica, Envases, Resto
+  |      └─ Abiertos: Vidrio, Papel/Cartón
+  |
+  |-- Módulo 3: Cómo abrirlos
+  |      ├─ Con tarjeta Fem Net
+  |      └─ Con app ReciclaVO
+  |
+  |-- Módulo 4: Contacto / dudas
+
+----------------------------------------------------
+
+PÁGINA: PAS A PAS
+  |
+  |-- Módulo 1: Introducción
+  |
+  |-- Módulo 2: Recibir carta
+  |
+  |-- Módulo 3: Recoger materiales
+  |      └─ Oficinas + horarios
+  |
+  |-- Módulo 4: Cierre de contenedores
+
+----------------------------------------------------
+
+PÁGINA: CADA RESIDU AL SEU EQUIP
+  |
+  |-- Orgánica
+  |-- Envases
+  |-- Papel y cartón
+  |-- Vidrio
+  |-- Resto
+  |
+  |-- Poda y voluminosos
+  |
+  |-- Deixalleria
+  |
+  |-- Deixalleria móvil
+
+----------------------------------------------------
+
+PÁGINA: CALCULA LA TEVA BONIFICACIÓ (Fase 2)
+  |
+  |-- Formulario paso a paso:
+  |      1. Tipo de vivienda
+  |      2. Uso contenedor resto
+  |      3. Uso envases
+  |      4. Uso orgánica
+  |      5. Deixalleria
+  |      6. Resultado
+
+----------------------------------------------------
+
+PÁGINA: PREGUNTES FREQÜENTS
+  |
+  |-- Lista desplegable de preguntas y respuestas
+
+----------------------------------------------------
+
+PÁGINA: CONTACTE
+  |
+  |-- WhatsApp (QR + botón)
+  |-- Email
+  |-- Teléfono
+  |-- Horarios

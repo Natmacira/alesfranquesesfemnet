@@ -1,14 +1,37 @@
 /* HOME AND MAIN PAGES TEMPLATE STYLES */
+.wp-block-group.alignfull.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.wp-block-group.has-background-background-color.has-background.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.wp-block-post-title {
+  display: none;
+}
+
 h1 span.title-highlight {
   color: red;
 }
 
-h1 {
+h1.wp-block-heading {
   text-transform: uppercase;
   font-family: "Anton", sans-serif;
   font-size: 82px;
   text-align: left;
   position: absolute;
+  top: -160px;
+  width: 700px;
+  letter-spacing: 0;
+  font-weight: 400;
+  line-height: 1;
 }
 
 .home-section-descobreix {
@@ -19,7 +42,7 @@ h1 {
   gap: 12px;
   width: 100%;
   margin: 0 auto;
-  max-width: 1100px;
+  max-width: 1145px;
   padding-bottom: 0 !important;
 }
 
@@ -29,6 +52,7 @@ h1 {
 
 .inside-container-descobreix {
   padding-bottom: 45px;
+  position: relative;
 }
 
 .inside-container-descobreix div {
@@ -39,7 +63,7 @@ h1 {
   font-size: 24px;
   font-weight: bold;
   text-align: left;
-  font-family: "Inter", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .home-section-video {
@@ -54,6 +78,17 @@ h2 {
   background-image: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
   color: white;
   padding: 59px 39px;
+}
+
+.inside-container-descobreix .main-btns {
+  font-size: 20px;
+  padding: 0px 28px;
+  background-image: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  color: white;
+}
+.inside-container-descobreix .main-btns:hover {
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  color: black;
 }
 
 /*# sourceMappingURL=home.css.map */

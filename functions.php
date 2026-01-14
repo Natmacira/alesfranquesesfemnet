@@ -24,7 +24,7 @@ function alesfranqueses_child_styles() {
         'alesfranqueses-main',
         get_stylesheet_directory_uri() . '/css/main.css',
         array('alesfranqueses-child-style'),
-        filemtime( get_stylesheet_directory() . '/css/main.css' )
+        '1.1'
     );
 }
 
@@ -32,13 +32,19 @@ add_action('wp_enqueue_scripts', 'alesfranqueses_child_styles');
 
 /* TITLE */
 
-add_filter('the_title', function($title) {
-    if (is_singular() && in_the_loop()) {
-        $title = preg_replace(
+add_filter('render_block', function($block_content, $block) {
+
+    if (
+        isset($block['blockName']) &&
+        $block['blockName'] === 'core/heading'
+    ) {
+        $block_content = preg_replace(
             '/\{(.*?)\}/',
             '<span class="title-highlight">$1</span>',
-            $title
+            $block_content
         );
     }
-    return $title;
-});
+
+    return $block_content;
+}, 10, 2);
+
