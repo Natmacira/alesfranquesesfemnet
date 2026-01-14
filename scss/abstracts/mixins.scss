@@ -1,9 +1,10 @@
 @use "variables" as v;
 
 @mixin main-button {
-  background: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
-  color: #fff;
-  border-radius: 12px;
+  background: white;
+  color: black;
+  border: 2px solid transparent;
+  border-radius: 40px;
   font-weight: 700;
   font-size: 18px;
   font-family: v.$font-main;
@@ -12,4 +13,31 @@
   text-align: center;
   height: 48px;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  /* Gradient border */
+  background-image: 
+    linear-gradient(white, white),
+    linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  &:hover {
+    background-image: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+    color: white;
+  } 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+@mixin section-title {
+  font-family: v.$font-heading;
+  font-size: 45px;
+  text-transform: uppercase;
+  text-align: center;
+  background-image: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  color: white;
+  padding: 59px 39px;
 }
