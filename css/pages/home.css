@@ -1,94 +1,44 @@
 /* HOME AND MAIN PAGES TEMPLATE STYLES */
-.wp-block-group.alignfull.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-.wp-block-group.has-background-background-color.has-background.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-.wp-block-post-title {
-  display: none;
-}
-
-h1 span.title-highlight {
-  color: red;
-}
-
-h1.wp-block-heading {
-  text-transform: uppercase;
-  font-family: "Anton", sans-serif;
-  font-size: 82px;
-  text-align: left;
-  position: absolute;
-  top: -160px;
-  width: 700px;
-  letter-spacing: 0;
-  font-weight: 400;
-  line-height: 1;
-}
-
-.home-section-descobreix {
-  display: flex;
-  padding: 0 30px;
-  flex-direction: row;
-  align-items: flex-end;
-  gap: 12px;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1145px;
-  padding-bottom: 0 !important;
-}
-
-.home-section-descobreix > * {
-  margin: 0 !important;
-}
-
-.inside-container-descobreix {
-  padding-bottom: 45px;
-  position: relative;
-}
-
-.inside-container-descobreix div {
-  margin: 0 !important;
-}
-
-.item-1-descobreix {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: left;
-  font-family: "Roboto", sans-serif;
-}
-
+/* HOME SECTION VIDEO */
 .home-section-video {
   padding-top: 0 !important;
-}
-
-h2 {
-  font-family: "Anton", sans-serif;
-  font-size: 45px;
-  text-transform: uppercase;
-  text-align: center;
-  background-image: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
-  color: white;
-  padding: 59px 39px;
 }
 
 .inside-container-descobreix .main-btns {
   font-size: 20px;
   padding: 0px 28px;
-  background-image: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  background-image: linear-gradient(90deg, #EA0000 0%, #FF9300 100%);
   color: white;
 }
 .inside-container-descobreix .main-btns:hover {
-  background-image: linear-gradient(white, white), linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #EA0000 0%, #FF9300 100%);
   color: black;
+}
+
+/* HOME SECTION RESIDU */
+.home-section-residu h2 {
+  background-image: none;
+  text-transform: uppercase;
+  font-family: "Anton", sans-serif;
+  font-size: 85px;
+  text-align: center;
+  letter-spacing: 0;
+  font-weight: 400;
+  line-height: 1;
+  color: #EA0000;
+}
+.home-section-residu .residu-paragraph {
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 1;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+}
+
+/* FASE DOS */
+.home-section-residu-fasedos {
+  display: none;
 }
 
 /*# sourceMappingURL=home.css.map */

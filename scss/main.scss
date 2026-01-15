@@ -3,7 +3,7 @@
 
 /* 1. Abstracts */
 @use "abstracts/variables";
-@use "abstracts/mixins"; 
+@use "abstracts/mixins";
 @use "abstracts/breakpoints";
 
 /* 2. Base */
@@ -17,8 +17,7 @@
 /* 4. Components */
 @use "components/buttons";
 @use "components/cards";
-@use "components/forms";
+@use "components/general";
 
 /* 5. Pages */
 @use "pages/home";
-

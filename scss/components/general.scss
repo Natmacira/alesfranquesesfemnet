@@ -1,0 +1,76 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+h2 {
+    @include m.section-title;
+}
+
+.wp-block-post-title {
+    display: none;
+}
+
+.wp-block-group.alignfull.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.wp-block-group.has-background-background-color.has-background.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* HERO SECTION  */
+
+
+h1.wp-block-heading {
+    text-transform: uppercase;
+    font-family: v.$font-heading;
+    font-size: 82px;
+    text-align: left;
+    position: absolute;
+    top: -160px;
+    width: 700px;
+    letter-spacing: 0;
+    font-weight: 400;
+    line-height: 1;
+
+    span.title-highlight {
+        color: v.$primary;
+    }
+}
+
+.home-section-descobreix {
+    display: flex;
+    padding: v.$section-padding;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 12px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1145px;
+    padding-bottom: 0 !important;
+}
+
+.home-section-descobreix>* {
+    margin: 0 !important;
+}
+
+.inside-container-descobreix {
+    padding-bottom: 45px;
+    position: relative;
+
+    div {
+        margin: 0 !important;
+    }
+
+    .item-1-descobreix {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: left;
+        font-family: v.$font-main;
+    }
+}
