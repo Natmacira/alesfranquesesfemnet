@@ -17,20 +17,24 @@
   transition: all 0.3s ease;
 
   /* Gradient border */
-  background-image: 
+  background-image:
     linear-gradient(white, white),
     linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
   background-origin: border-box;
   background-clip: padding-box, border-box;
+
   &:hover {
     background-image: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
     color: white;
-  } 
+  }
+
   a {
     text-decoration: none;
     color: inherit;
   }
 }
+
+
 
 @mixin section-title {
   font-family: v.$font-heading;
@@ -40,4 +44,16 @@
   background-image: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
   color: white;
   padding: 59px 39px;
+  margin-bottom: 120px !important;
+}
+
+@mixin heading-h3 {
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1;
+  font-weight: bold;
+  font-family: v.$font-heading;
+  text-transform: uppercase;
+  padding-bottom: 65px;
 }

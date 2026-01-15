@@ -13,3 +13,24 @@
     border: none;
     padding: 0;
 }
+
+.main-btns.body-btns {
+    font-size: 20px;
+    padding: 0px 28px;
+    background-image: v.$gradient;
+    color: white;
+    width: 244px;
+
+    &:hover {
+        background-image:
+            linear-gradient(white, white),
+            v.$gradient;
+        color: black;
+    }
+
+    a {
+        &:hover {
+            background-color: white !important;
+        }
+    }
+}

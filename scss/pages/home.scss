@@ -10,22 +10,6 @@
     padding-top: 0 !important;
 }
 
-.inside-container-descobreix {
-    .main-btns {
-        font-size: 20px;
-        padding: 0px 28px;
-        background-image: v.$gradient;
-        color: white;
-
-        &:hover {
-            background-image:
-                linear-gradient(white, white),
-                v.$gradient;
-            color: black;
-        }
-    }
-}
-
 /* HOME SECTION RESIDU */
 
 .home-section-residu {
@@ -39,20 +23,95 @@
         font-weight: 400;
         line-height: 1;
         color: v.$primary;
+        padding-top: 120px !important;
+        margin-bottom: 0 !important;
+        padding-bottom: 31px;
     }
 
-    .residu-paragraph {
-        font-size: 45px;
-        text-align: center;
+    .residu-h3 {
+        @include m.heading-h3;
         letter-spacing: 0;
-        line-height: 1;
-        font-weight: bold;
-        font-family: v.$font-main;
+        padding-bottom: 65px;
     }
 }
+
+.bin {
+    border-radius: 5px;
+    border: solid 2px;
+    border-color: rgba(250, 250, 250, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+    figcaption {
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        font-size: 24px !important;
+        font-family: v.$font-heading;
+        font-weight: bold;
+        color: rgba(250, 250, 250, 1);
+        padding: 5px !important;
+        text-shadow: none !important;
+    }
+
+    &.brown {
+        figcaption {
+            background: v.$gradient-brown !important;
+        }
+    }
+
+    &.green {
+        figcaption {
+            background: v.$gradient-green !important;
+        }
+
+        img {
+            object-position: top;
+        }
+    }
+
+    &.blue {
+        figcaption {
+            background: v.$gradient-blue !important;
+        }
+    }
+
+    &.yellow {
+        figcaption {
+            background: v.$gradient-yellow !important;
+        }
+    }
+
+    &.gray {
+        figcaption {
+            background: v.$gradient-gray !important;
+        }
+    }
+}
+
 
 /* FASE DOS */
 
 .home-section-residu-fasedos {
     display: none;
+}
+
+/* HOME SECTION PAS A PAS */
+
+.home-section-pasapas {
+    padding: 96px 0 92px;
+
+    .residu-h3 {
+        @include m.heading-h3;
+        color: v.$primary;
+        padding-bottom: 20px;
+    }
+
+    p {
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 0;
+        font-family: v.$font-main;
+        text-align: center;
+        line-height: 32px;
+        padding-bottom: 20px;
+    }
 }

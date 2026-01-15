@@ -74,3 +74,22 @@ h1.wp-block-heading {
         font-family: v.$font-main;
     }
 }
+
+/* BINS */
+
+.bin-container {
+
+    figure.wp-block-gallery {
+        justify-content: center;
+
+        .bin {
+            max-width: 190px !important;
+            height: 155px;
+            background-color: rgba(250, 250, 250, 1);
+
+            img {
+                object-fit: none !important;
+            }
+        }
+    }
+}

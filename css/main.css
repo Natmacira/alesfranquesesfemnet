@@ -106,6 +106,21 @@ p {
   padding: 0;
 }
 
+.main-btns.body-btns {
+  font-size: 20px;
+  padding: 0px 28px;
+  background-image: linear-gradient(90deg, #EA0000 0%, #FF9300 100%);
+  color: white;
+  width: 244px;
+}
+.main-btns.body-btns:hover {
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #EA0000 0%, #FF9300 100%);
+  color: black;
+}
+.main-btns.body-btns a:hover {
+  background-color: white !important;
+}
+
 h2 {
   font-family: "Anton", sans-serif;
   font-size: 45px;
@@ -114,6 +129,7 @@ h2 {
   background-image: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
   color: white;
   padding: 59px 39px;
+  margin-bottom: 120px !important;
 }
 
 .wp-block-post-title {
@@ -181,22 +197,24 @@ h1.wp-block-heading span.title-highlight {
   font-family: "Roboto", sans-serif;
 }
 
+/* BINS */
+.bin-container figure.wp-block-gallery {
+  justify-content: center;
+}
+.bin-container figure.wp-block-gallery .bin {
+  max-width: 190px !important;
+  height: 155px;
+  background-color: rgb(250, 250, 250);
+}
+.bin-container figure.wp-block-gallery .bin img {
+  object-fit: none !important;
+}
+
 /* 5. Pages */
 /* HOME AND MAIN PAGES TEMPLATE STYLES */
 /* HOME SECTION VIDEO */
 .home-section-video {
   padding-top: 0 !important;
-}
-
-.inside-container-descobreix .main-btns {
-  font-size: 20px;
-  padding: 0px 28px;
-  background-image: linear-gradient(90deg, #EA0000 0%, #FF9300 100%);
-  color: white;
-}
-.inside-container-descobreix .main-btns:hover {
-  background-image: linear-gradient(white, white), linear-gradient(90deg, #EA0000 0%, #FF9300 100%);
-  color: black;
 }
 
 /* HOME SECTION RESIDU */
@@ -210,19 +228,87 @@ h1.wp-block-heading span.title-highlight {
   font-weight: 400;
   line-height: 1;
   color: #EA0000;
+  padding-top: 120px !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 31px;
 }
-.home-section-residu .residu-paragraph {
+.home-section-residu .residu-h3 {
   font-size: 45px;
   text-align: center;
-  letter-spacing: 0;
+  letter-spacing: 2px;
   line-height: 1;
   font-weight: bold;
-  font-family: "Roboto", sans-serif;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 65px;
+  letter-spacing: 0;
+  padding-bottom: 65px;
+}
+
+.bin {
+  border-radius: 5px;
+  border: solid 2px;
+  border-color: rgb(250, 250, 250);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.bin figcaption {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 24px !important;
+  font-family: "Anton", sans-serif;
+  font-weight: bold;
+  color: rgb(250, 250, 250);
+  padding: 5px !important;
+  text-shadow: none !important;
+}
+.bin.brown figcaption {
+  background: linear-gradient(90deg, #3F1C07 0%, #895747 100%) !important;
+}
+.bin.green figcaption {
+  background: linear-gradient(90deg, #1A8C2E 0%, #42EF25 100%) !important;
+}
+.bin.green img {
+  object-position: top;
+}
+.bin.blue figcaption {
+  background: linear-gradient(90deg, #1D29EB 0%, #3893F9 100%) !important;
+}
+.bin.yellow figcaption {
+  background: linear-gradient(90deg, #D42C00 0%, #E6C613 100%) !important;
+}
+.bin.gray figcaption {
+  background: linear-gradient(90deg, #5C6568 0%, #708383 100%) !important;
 }
 
 /* FASE DOS */
 .home-section-residu-fasedos {
   display: none;
+}
+
+/* HOME SECTION PAS A PAS */
+.home-section-pasapas {
+  padding: 96px 0 92px;
+}
+.home-section-pasapas .residu-h3 {
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1;
+  font-weight: bold;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 65px;
+  color: #EA0000;
+  padding-bottom: 20px;
+}
+.home-section-pasapas p {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  line-height: 32px;
+  padding-bottom: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

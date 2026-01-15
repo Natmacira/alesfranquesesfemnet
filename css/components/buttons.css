@@ -61,4 +61,19 @@
   padding: 0;
 }
 
+.main-btns.body-btns {
+  font-size: 20px;
+  padding: 0px 28px;
+  background-image: linear-gradient(90deg, #EA0000 0%, #FF9300 100%);
+  color: white;
+  width: 244px;
+}
+.main-btns.body-btns:hover {
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #EA0000 0%, #FF9300 100%);
+  color: black;
+}
+.main-btns.body-btns a:hover {
+  background-color: white !important;
+}
+
 /*# sourceMappingURL=buttons.css.map */
