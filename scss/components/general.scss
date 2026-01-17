@@ -51,7 +51,7 @@ h1.wp-block-heading {
     gap: 12px;
     width: 100%;
     margin: 0 auto;
-    max-width: 1165px;
+    max-width: 1200px;
     padding-bottom: 0 !important;
 }
 
@@ -89,6 +89,12 @@ h1.wp-block-heading {
 
             img {
                 object-fit: none !important;
+            }
+
+            &.brown {
+                img {
+                    object-fit: contain !important;
+                }
             }
         }
     }

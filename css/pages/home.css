@@ -51,6 +51,9 @@
 .bin.brown figcaption {
   background: linear-gradient(90deg, #3F1C07 0%, #895747 100%) !important;
 }
+.bin.brown img {
+  object-fit: contain !important;
+}
 .bin.green figcaption {
   background: linear-gradient(90deg, #1A8C2E 0%, #42EF25 100%) !important;
 }

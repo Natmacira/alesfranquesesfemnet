@@ -18,7 +18,7 @@ footer {
         font-size: 24px;
         font-family: v.$font-main;
         font-weight: 400;
-        max-width: 1165px;
+        max-width: 1200px;
         display: block;
         margin: 0 auto;
     }
@@ -28,7 +28,7 @@ footer {
         margin: 0 auto;
 
         &.titles {
-            max-width: 1165px;
+            max-width: 1200px;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             align-items: center;
@@ -71,7 +71,7 @@ footer {
         }
 
         &.info {
-            max-width: 1165px;
+            max-width: 1200px;
             display: grid;
             grid-template-columns: 0.3fr 0.5fr 1fr 1fr 1fr;
             align-items: center;
@@ -93,7 +93,7 @@ footer {
         }
 
         &.logos {
-            max-width: 1165px;
+            max-width: 1200px;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 0px;
@@ -111,7 +111,7 @@ footer {
 
 footer .wp-block-template-part {
     width: 100%;
-    max-width: 1165px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
     text-align: left;

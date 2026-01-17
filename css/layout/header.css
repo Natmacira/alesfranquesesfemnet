@@ -10,9 +10,23 @@
 }
 
 .header-custom {
-  max-width: 1165px;
+  min-width: 130px;
   margin: 0 auto;
   padding-inline: 0;
+  justify-content: center;
+  background: linear-gradient(90deg, #EA0000 0%, #FF9300 100%);
+}
+.header-custom img {
+  width: 150px;
+  padding: 20px 0;
+}
+
+.bottom-header {
+  max-width: 1165px !important;
+  min-width: 130px;
+  margin: 0 auto;
+  padding-inline: 0;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=header.css.map */

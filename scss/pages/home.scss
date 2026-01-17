@@ -56,6 +56,10 @@
         figcaption {
             background: v.$gradient-brown !important;
         }
+
+        img {
+            object-fit: contain !important;
+        }
     }
 
     &.green {
