@@ -24,8 +24,7 @@ function alesfranqueses_child_styles() {
         'alesfranqueses-main',
         get_stylesheet_directory_uri() . '/css/main.css',
         array('alesfranqueses-child-style'),
-        '1.0.9'
-    );
+        filemtime( get_stylesheet_directory() . '/css/main.css' )    );
 }
 
 add_action('wp_enqueue_scripts', 'alesfranqueses_child_styles');

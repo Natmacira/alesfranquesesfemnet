@@ -3,3 +3,14 @@
     height: auto;
     display: block;
 }
+
+.wp-block-navigation__responsive-container-content .wp-block-navigation li.main-btns {
+    max-width: 145px;
+    text-transform: none;
+}
+
+.header-custom {
+    max-width: 1165px;
+    margin: 0 auto;
+    padding-inline: 0;
+}
