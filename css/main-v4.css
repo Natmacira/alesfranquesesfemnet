@@ -1,0 +1,724 @@
+/* Auto compilar */
+/* sass --watch scss:css */
+/* 1. Abstracts */
+/* 2. Base */
+/* ROBOTO */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+/* ANTON */
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1a1a1a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* 3. Layout */
+.custom-logo {
+  width: 248px;
+  height: auto;
+  display: block;
+}
+
+.wp-block-navigation__responsive-container-content .wp-block-navigation li.main-btns {
+  width: 145px;
+  text-transform: none;
+  justify-content: center;
+}
+
+.header-custom {
+  min-width: 130px;
+  margin: 0 auto;
+  padding-inline: 0;
+  justify-content: center;
+  background: linear-gradient(90deg, #EA0000 0%, #FF9300 100%);
+}
+
+.header-custom img {
+  width: 150px;
+  padding: 20px 0;
+}
+
+.bottom-header {
+  max-width: 1165px !important;
+  min-width: 130px;
+  margin: 0 auto;
+  padding-inline: 0;
+  justify-content: space-around;
+}
+
+/* FOOTER STYLES */
+footer {
+  background-color: rgb(250, 250, 250);
+  padding-bottom: 20px;
+}
+
+footer h3 {
+  color: #EA0000;
+  padding: 50px 0 30px;
+  font-size: 32px;
+  margin-bottom: 0;
+}
+
+footer p {
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  max-width: 1200px;
+  display: block;
+  margin: 0 auto;
+}
+
+footer .footer-grid {
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer .footer-grid.titles {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  padding: 20px 0 20px;
+}
+
+footer .footer-grid.titles p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer .footer-grid.titles p::before {
+  content: "";
+  width: 35px;
+  height: 35px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 10px;
+}
+
+footer .footer-grid.titles p.wsp-title::before {
+  background-image: url("../img/wsp.png");
+}
+
+footer .footer-grid.titles p.escriu-title::before {
+  background-image: url("../img/mail.png");
+}
+
+footer .footer-grid.titles p.truca-title::before {
+  background-image: url("../img/phone.png");
+}
+
+footer .footer-grid.titles p.horari-title::before {
+  background-image: url("../img/clock.png");
+}
+
+footer .footer-grid.info {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 0.3fr 0.5fr 1fr 1fr 1fr;
+  align-items: center;
+}
+
+footer .footer-grid.info p {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  max-width: 150px;
+}
+
+footer .footer-grid.info p.main-btns.body-btns {
+  font-size: 16px;
+  max-width: 140px;
+  text-transform: none;
+  height: auto;
+  padding: 9px 17px;
+}
+
+footer .footer-grid.logos {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px;
+  align-items: center;
+}
+
+footer .footer-grid.logos img {
+  max-width: 150px;
+}
+
+footer .wp-block-template-part {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: left;
+}
+
+@media (max-width: 900px) {
+
+  .footer-grid.titles,
+  .footer-grid.info,
+  .footer-grid.logos {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .footer-grid.titles,
+  .footer-grid.info,
+  .footer-grid.logos {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .footer-grid.titles,
+  .footer-grid.info,
+  .footer-grid.logos {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+}
+
+/* 4. Components */
+.wp-block-navigation li.main-btns {
+  background: white;
+  color: black;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  padding: 12px 24px;
+  max-width: 183px;
+  text-align: center;
+  height: 48px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* Gradient border */
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.wp-block-navigation li.main-btns:hover {
+  background-image: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  color: white;
+}
+
+.wp-block-navigation li.main-btns a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-btns {
+  background: white;
+  color: black;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  padding: 12px 24px;
+  max-width: 183px;
+  text-align: center;
+  height: 48px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* Gradient border */
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.main-btns:hover {
+  background-image: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  color: white;
+}
+
+.main-btns a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main-btns a {
+  border: none;
+  padding: 0;
+}
+
+.main-btns a:focus-visible,
+.main-btns a:focus {
+  outline: 2px solid transparent;
+  box-shadow: none;
+}
+
+.main-btns.body-btns {
+  font-size: 20px;
+  padding: 0px 28px;
+  background-image: linear-gradient(90deg, #EA0000 0%, #FF9300 100%);
+  color: white;
+  width: 244px;
+}
+
+.main-btns.body-btns:hover {
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #EA0000 0%, #FF9300 100%);
+  color: black;
+}
+
+.main-btns.body-btns a:hover {
+  background-color: white !important;
+}
+
+.main-btns.body-btns a:focus-visible {
+  outline: none !important;
+}
+
+/* POST CARDS */
+.ultimes-not-home .post-not-card {
+  width: 313px;
+  height: 450px;
+  padding: 10px !important;
+}
+
+.ultimes-not-home .post-not-card .wp-block-post-excerpt__excerpt {
+  margin-bottom: 0;
+  margin-top: 0;
+  height: 120px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  padding-bottom: 20px;
+}
+
+.wp-block-post-excerpt__more-link {
+  background: white;
+  color: black;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  padding: 12px 24px;
+  max-width: 183px;
+  text-align: center;
+  height: 48px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* Gradient border */
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+.wp-block-post-excerpt__more-link:hover {
+  background-image: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  color: white;
+}
+
+.wp-block-post-excerpt__more-link a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.wp-block-post-excerpt__more-link {
+  font-size: 20px;
+  padding: 3px 5px;
+  background-image: linear-gradient(90deg, #EA0000 0%, #FF9300 100%);
+  color: white;
+  width: 244px;
+  height: auto;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.wp-block-post-excerpt__more-link:hover {
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #EA0000 0%, #FF9300 100%);
+  color: black;
+  text-decoration: none;
+}
+
+.wp-block-post-date {
+  display: none;
+}
+
+h2.wp-block-heading {
+  margin-bottom: 55px !important;
+}
+
+/* AGENDA CARD */
+.agenda-card {
+  width: 313px;
+  height: 450px;
+  padding: 10px !important;
+}
+
+h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 45px;
+  text-transform: uppercase;
+  text-align: center;
+  background-image: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  color: white;
+  padding: 59px 39px;
+  margin-bottom: 120px !important;
+}
+
+.wp-block-post-title {
+  display: none;
+}
+
+.wp-block-group.alignfull.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.wp-block-group.has-background-background-color.has-background.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* HERO SECTION  */
+h1.wp-block-heading {
+  text-transform: uppercase;
+  font-family: "Anton", sans-serif;
+  font-size: 82px;
+  text-align: left;
+  position: absolute;
+  top: -160px;
+  width: 700px;
+  letter-spacing: 0;
+  font-weight: 400;
+  line-height: 1;
+}
+
+h1.wp-block-heading span.title-highlight {
+  color: #EA0000;
+}
+
+.home-section-descobreix {
+  display: flex;
+  padding: 0 30px;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 12px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding-bottom: 0 !important;
+}
+
+.home-section-descobreix.recollida {
+  justify-content: center;
+}
+
+.home-section-descobreix>* {
+  margin: 0 !important;
+}
+
+.inside-container-descobreix {
+  padding-bottom: 45px;
+  position: relative;
+}
+
+.inside-container-descobreix div {
+  margin: 0 !important;
+}
+
+.inside-container-descobreix .item-1-descobreix {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  font-family: "Roboto", sans-serif;
+}
+
+/* BINS */
+.bin-container figure.wp-block-gallery {
+  justify-content: center;
+}
+
+.bin-container figure.wp-block-gallery .bin {
+  max-width: 190px !important;
+  height: 155px;
+  background-color: rgb(250, 250, 250);
+}
+
+.bin-container figure.wp-block-gallery .bin img {
+  object-fit: none !important;
+}
+
+.bin-container figure.wp-block-gallery .bin.brown img {
+  object-fit: contain !important;
+}
+
+/* cliclkeable images */
+.clickable-img:focus-within,
+.clickable-img a:focus,
+.clickable-img a:focus-visible {
+  outline: 2px solid transparent !important;
+  box-shadow: none !important;
+}
+
+.wp-block-site-logo a:focus,
+.wp-block-site-logo a:focus-visible {
+  outline: 2px solid transparent !important;
+  box-shadow: none !important;
+}
+
+/* 5. Pages */
+/* HOME AND MAIN PAGES TEMPLATE STYLES */
+/* HOME SECTION VIDEO */
+.home-section-video {
+  padding-top: 0 !important;
+}
+
+/* HOME SECTION RESIDU */
+.home-section-residu h2 {
+  background-image: none;
+  text-transform: uppercase;
+  font-family: "Anton", sans-serif;
+  font-size: 85px;
+  text-align: center;
+  letter-spacing: 0;
+  font-weight: 400;
+  line-height: 1;
+  color: #EA0000;
+  padding-top: 120px !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 31px;
+}
+
+.home-section-residu .residu-h3 {
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1;
+  font-weight: bold;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 65px;
+  letter-spacing: 0;
+  padding-bottom: 65px;
+}
+
+.bin {
+  border-radius: 5px;
+  border: solid 2px;
+  border-color: rgb(250, 250, 250);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.bin figcaption {
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  font-size: 24px !important;
+  font-family: "Anton", sans-serif;
+  font-weight: bold;
+  color: rgb(250, 250, 250);
+  padding: 5px !important;
+  text-shadow: none !important;
+}
+
+.bin.brown figcaption {
+  background: linear-gradient(90deg, #3F1C07 0%, #895747 100%) !important;
+}
+
+.bin.brown img {
+  object-fit: contain !important;
+}
+
+.bin.green figcaption {
+  background: linear-gradient(90deg, #1A8C2E 0%, #42EF25 100%) !important;
+}
+
+.bin.green img {
+  object-position: top;
+}
+
+.bin.blue figcaption {
+  background: linear-gradient(90deg, #1D29EB 0%, #3893F9 100%) !important;
+}
+
+.bin.yellow figcaption {
+  background: linear-gradient(90deg, #D42C00 0%, #E6C613 100%) !important;
+}
+
+.bin.gray figcaption {
+  background: linear-gradient(90deg, #5C6568 0%, #708383 100%) !important;
+}
+
+/* FASE DOS */
+.home-section-residu-fasedos {
+  display: none;
+}
+
+/* HOME SECTION PAS A PAS */
+.home-section-pasapas {
+  padding: 96px 0 92px;
+}
+
+.home-section-pasapas .residu-h3 {
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1;
+  font-weight: bold;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 65px;
+  color: #EA0000;
+  padding-bottom: 20px;
+}
+
+.home-section-pasapas p {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 0;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  line-height: 32px;
+  padding-bottom: 20px;
+}
+
+/* HOME SECTION VIDEO */
+.home-section-video {
+  padding: 96px 0 92px;
+}
+
+.home-section-video .residu-h3 {
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1;
+  font-weight: bold;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 65px;
+  color: #EA0000;
+}
+
+/* HOME SECTION NEWS */
+.ultimes-not-home {
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  display: block !important;
+  margin: auto !important;
+}
+
+/* HOME SECTION AGENDA */
+.home-section-agenda h3.residu-h3 {
+  width: 100%;
+  max-width: 1200px;
+  font-family: "Anton", sans-serif;
+  padding: 20px 0 0;
+  display: block;
+  margin: auto;
+}
+
+.home-section-agenda .agenda-home-grid {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 20px 0 0;
+}
+
+.home-section-agenda .agenda-home-grid h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  height: 80px;
+  margin-bottom: 0;
+}
+
+.home-section-agenda .agenda-home-grid ul {
+  list-style: none;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+/* Specific styles adjustmentes for each page */
+/* PAGE RECOLLIDA */
+body.page-coneix-el-sistema-de-recollida h2.recollida-h2 {
+  font-size: 55px;
+  padding-top: 15px !important;
+}
+
+body.page-coneix-el-sistema-de-recollida h3.residu-h3.recollida-h3 {
+  text-align: center;
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  max-width: 1200px;
+  text-transform: none;
+  padding-bottom: 20px;
+}
+
+body.page-coneix-el-sistema-de-recollida .wp-block-gallery {
+  padding-bottom: 56px;
+}
+
+body.page-coneix-el-sistema-de-recollida .wp-block-gallery .bin.yellow img {
+  object-fit: contain !important;
+}
+
+body.page-coneix-el-sistema-de-recollida .special-h2-targeta {
+  background-image: none;
+  color: #EA0000;
+  font-size: 55px;
+  font-family: "Anton", sans-serif;
+  padding: 40px 20px;
+}
+
+body.page-cada-residu-al-seu-equip .alseu-equip {
+  padding-inline: 0;
+}
+
+/*# sourceMappingURL=main.css.map */
