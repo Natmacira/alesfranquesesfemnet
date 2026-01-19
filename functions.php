@@ -99,3 +99,18 @@ add_action('init', function () {
 
     $post_type_object->template_lock = 'insert';
 });
+
+/* BODY CLASSES */
+
+add_filter('body_class', function ($classes) {
+
+    if (is_singular()) {
+        global $post;
+
+        if ($post) {
+            $classes[] = 'page-' . sanitize_html_class($post->post_name);
+        }
+    }
+
+    return $classes;
+});

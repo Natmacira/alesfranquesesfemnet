@@ -1,0 +1,34 @@
+/* Specific styles adjustmentes for each page */
+/* PAGE RECOLLIDA */
+body.page-coneix-el-sistema-de-recollida h2.recollida-h2 {
+  font-size: 55px;
+  padding-top: 15px !important;
+}
+body.page-coneix-el-sistema-de-recollida h3.residu-h3.recollida-h3 {
+  text-align: center;
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  max-width: 1200px;
+  text-transform: none;
+  padding-bottom: 20px;
+}
+body.page-coneix-el-sistema-de-recollida .wp-block-gallery {
+  padding-bottom: 56px;
+}
+body.page-coneix-el-sistema-de-recollida .wp-block-gallery .bin.yellow img {
+  object-fit: contain !important;
+}
+body.page-coneix-el-sistema-de-recollida .special-h2-targeta {
+  background-image: none;
+  color: #EA0000;
+  font-size: 55px;
+  font-family: "Anton", sans-serif;
+  padding: 40px 20px;
+}
+
+body.page-cada-residu-al-seu-equip .alseu-equip {
+  padding-inline: 0;
+}
+
+/*# sourceMappingURL=pages.css.map */

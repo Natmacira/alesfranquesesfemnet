@@ -53,6 +53,10 @@ h1.wp-block-heading {
     margin: 0 auto;
     max-width: 1200px;
     padding-bottom: 0 !important;
+
+    &.recollida {
+        justify-content: center;
+    }
 }
 
 .home-section-descobreix>* {

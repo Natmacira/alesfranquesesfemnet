@@ -117,20 +117,46 @@
   color: #EA0000;
 }
 
+/* HOME SECTION NEWS */
 .ultimes-not-home {
   max-width: 1200px;
   margin: 0 auto;
   align-items: center;
   width: 100%;
   margin: 0 auto;
+  display: block !important;
+  margin: auto !important;
 }
 
-.agenda-home-grid {
+/* HOME SECTION AGENDA */
+.home-section-agenda h3.residu-h3 {
+  width: 100%;
+  max-width: 1200px;
+  font-family: "Anton", sans-serif;
+  padding: 20px 0 0;
+  display: block;
+  margin: auto;
+}
+.home-section-agenda .agenda-home-grid {
   max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  padding: 20px 0 20px;
+  padding: 20px 0 0;
+}
+.home-section-agenda .agenda-home-grid h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  height: 80px;
+  margin-bottom: 0;
+}
+.home-section-agenda .agenda-home-grid ul {
+  list-style: none;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
 }
 
 /*# sourceMappingURL=home.css.map */

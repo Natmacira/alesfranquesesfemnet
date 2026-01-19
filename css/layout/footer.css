@@ -3,14 +3,12 @@ footer {
   background-color: rgb(250, 250, 250);
   padding-bottom: 20px;
 }
-
 footer h3 {
   color: #EA0000;
   padding: 50px 0 30px;
   font-size: 32px;
   margin-bottom: 0;
 }
-
 footer p {
   font-size: 24px;
   font-family: "Roboto", sans-serif;
@@ -19,12 +17,10 @@ footer p {
   display: block;
   margin: 0 auto;
 }
-
 footer .footer-grid {
   width: 100%;
   margin: 0 auto;
 }
-
 footer .footer-grid.titles {
   max-width: 1200px;
   display: grid;
@@ -32,13 +28,11 @@ footer .footer-grid.titles {
   align-items: center;
   padding: 20px 0 20px;
 }
-
 footer .footer-grid.titles p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: bold;
 }
-
 footer .footer-grid.titles p::before {
   content: "";
   width: 35px;
@@ -51,36 +45,29 @@ footer .footer-grid.titles p::before {
   vertical-align: bottom;
   margin-right: 10px;
 }
-
 footer .footer-grid.titles p.wsp-title::before {
   background-image: url("../img/wsp.png");
 }
-
 footer .footer-grid.titles p.escriu-title::before {
   background-image: url("../img/mail.png");
 }
-
 footer .footer-grid.titles p.truca-title::before {
   background-image: url("../img/phone.png");
 }
-
 footer .footer-grid.titles p.horari-title::before {
   background-image: url("../img/clock.png");
 }
-
 footer .footer-grid.info {
   max-width: 1200px;
   display: grid;
   grid-template-columns: 0.3fr 0.5fr 1fr 1fr 1fr;
   align-items: center;
 }
-
 footer .footer-grid.info p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   max-width: 150px;
 }
-
 footer .footer-grid.info p.main-btns.body-btns {
   font-size: 16px;
   max-width: 140px;
@@ -88,7 +75,6 @@ footer .footer-grid.info p.main-btns.body-btns {
   height: auto;
   padding: 9px 17px;
 }
-
 footer .footer-grid.logos {
   max-width: 1200px;
   display: grid;
@@ -96,7 +82,6 @@ footer .footer-grid.logos {
   gap: 0px;
   align-items: center;
 }
-
 footer .footer-grid.logos img {
   max-width: 150px;
 }
@@ -110,16 +95,13 @@ footer .wp-block-template-part {
 }
 
 @media (max-width: 900px) {
-
   .footer-grid.titles,
   .footer-grid.info,
   .footer-grid.logos {
     grid-template-columns: 1fr 1fr;
   }
 }
-
 @media (max-width: 480px) {
-
   .footer-grid.titles,
   .footer-grid.info,
   .footer-grid.logos {
@@ -127,9 +109,7 @@ footer .wp-block-template-part {
     text-align: left;
   }
 }
-
 @media (max-width: 480px) {
-
   .footer-grid.titles,
   .footer-grid.info,
   .footer-grid.logos {

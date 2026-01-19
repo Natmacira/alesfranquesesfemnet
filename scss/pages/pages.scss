@@ -1,0 +1,47 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+/* Specific styles adjustmentes for each page */
+
+/* PAGE RECOLLIDA */
+
+body.page-coneix-el-sistema-de-recollida {
+    h2.recollida-h2 {
+        font-size: 55px;
+        padding-top: 15px !important;
+    }
+
+    h3.residu-h3.recollida-h3 {
+        text-align: center;
+        font-size: 32px;
+        font-family: v.$font-main;
+        width: 100%;
+        max-width: 1200px;
+        text-transform: none;
+        padding-bottom: 20px;
+    }
+
+    .wp-block-gallery {
+        padding-bottom: 56px;
+
+        .bin.yellow {
+            img {
+                object-fit: contain !important;
+            }
+        }
+    }
+
+    .special-h2-targeta {
+        background-image: none;
+        color: v.$primary;
+        font-size: 55px;
+        font-family: v.$font-heading;
+        padding: 40px 20px;
+    }
+}
+
+body.page-cada-residu-al-seu-equip {
+    .alseu-equip {
+        padding-inline: 0;
+    }
+}

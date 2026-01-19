@@ -55,6 +55,9 @@ h1.wp-block-heading span.title-highlight {
   max-width: 1200px;
   padding-bottom: 0 !important;
 }
+.home-section-descobreix.recollida {
+  justify-content: center;
+}
 
 .home-section-descobreix > * {
   margin: 0 !important;

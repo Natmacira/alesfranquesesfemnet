@@ -406,6 +406,9 @@ h1.wp-block-heading span.title-highlight {
   max-width: 1200px;
   padding-bottom: 0 !important;
 }
+.home-section-descobreix.recollida {
+  justify-content: center;
+}
 
 .home-section-descobreix > * {
   margin: 0 !important;
@@ -575,20 +578,79 @@ h1.wp-block-heading span.title-highlight {
   color: #EA0000;
 }
 
+/* HOME SECTION NEWS */
 .ultimes-not-home {
   max-width: 1200px;
   margin: 0 auto;
   align-items: center;
   width: 100%;
   margin: 0 auto;
+  display: block !important;
+  margin: auto !important;
 }
 
-.agenda-home-grid {
+/* HOME SECTION AGENDA */
+.home-section-agenda h3.residu-h3 {
+  width: 100%;
+  max-width: 1200px;
+  font-family: "Anton", sans-serif;
+  padding: 20px 0 0;
+  display: block;
+  margin: auto;
+}
+.home-section-agenda .agenda-home-grid {
   max-width: 1200px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  padding: 20px 0 20px;
+  padding: 20px 0 0;
+}
+.home-section-agenda .agenda-home-grid h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  height: 80px;
+  margin-bottom: 0;
+}
+.home-section-agenda .agenda-home-grid ul {
+  list-style: none;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+
+/* Specific styles adjustmentes for each page */
+/* PAGE RECOLLIDA */
+body.page-coneix-el-sistema-de-recollida h2.recollida-h2 {
+  font-size: 55px;
+  padding-top: 15px !important;
+}
+body.page-coneix-el-sistema-de-recollida h3.residu-h3.recollida-h3 {
+  text-align: center;
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
+  max-width: 1200px;
+  text-transform: none;
+  padding-bottom: 20px;
+}
+body.page-coneix-el-sistema-de-recollida .wp-block-gallery {
+  padding-bottom: 56px;
+}
+body.page-coneix-el-sistema-de-recollida .wp-block-gallery .bin.yellow img {
+  object-fit: contain !important;
+}
+body.page-coneix-el-sistema-de-recollida .special-h2-targeta {
+  background-image: none;
+  color: #EA0000;
+  font-size: 55px;
+  font-family: "Anton", sans-serif;
+  padding: 40px 20px;
+}
+
+body.page-cada-residu-al-seu-equip .alseu-equip {
+  padding-inline: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

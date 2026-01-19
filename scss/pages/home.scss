@@ -132,19 +132,53 @@
 
 }
 
+/* HOME SECTION NEWS */
+
 .ultimes-not-home {
     max-width: 1200px;
     margin: 0 auto;
     align-items: center;
     width: 100%;
     margin: 0 auto;
+    display: block !important;
+    margin: auto !important;
 }
 
-.agenda-home-grid {
-    max-width: 1200px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    padding: 20px 0 20px;
+/* HOME SECTION AGENDA */
 
+.home-section-agenda {
+    h3.residu-h3 {
+        width: 100%;
+        max-width: 1200px;
+        font-family: v.$font-heading;
+        padding: 20px 0 0;
+        display: block;
+        margin: auto;
+    }
+
+
+    .agenda-home-grid {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        padding: 20px 0 0;
+
+        h3 {
+            font-family: v.$font-main;
+            font-size: 25px;
+            height: 80px;
+            margin-bottom: 0;
+        }
+
+        ul {
+            list-style: none;
+            font-size: 20px;
+            font-family: v.$font-main;
+            font-weight: 300;
+            padding: 0;
+            margin: 0;
+        }
+
+    }
 }
