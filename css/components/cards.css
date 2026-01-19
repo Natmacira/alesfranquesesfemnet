@@ -7,7 +7,7 @@
 .ultimes-not-home .post-not-card .wp-block-post-excerpt__excerpt {
   margin-bottom: 0;
   margin-top: 0;
-  height: 120px;
+  height: 80px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 4;
