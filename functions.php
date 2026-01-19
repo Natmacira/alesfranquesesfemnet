@@ -47,3 +47,55 @@ add_filter('render_block', function($block_content, $block) {
     return $block_content;
 }, 10, 2);
 
+
+/* AGENDA */ 
+
+add_shortcode('query_agenda', function () {
+    $q = new WP_Query([
+        'post_type' => 'agenda',
+        'posts_per_page' => 10,
+        'post_status' => 'publish',
+    ]);
+
+    if (!$q->have_posts()) return '<p>No hay items de agenda.</p>';
+
+    ob_start();
+
+    echo '<div class="agenda-home-grid">';
+
+    while ($q->have_posts()) {
+        $q->the_post();
+        ?>
+        <article class="agenda-card">
+            <?php if (has_post_thumbnail()) the_post_thumbnail('medium'); ?>
+            <p><?php the_content(); ?></p>
+        </article>
+        <?php
+    }
+
+    echo '</div>';
+
+    wp_reset_postdata();
+
+    return ob_get_clean();
+});
+
+
+add_action('init', function () {
+    $post_type_object = get_post_type_object('agenda');
+
+    $post_type_object->template = [
+        ['core/image', [
+            'align' => 'wide'
+        ]],
+        ['core/heading', [
+            'level' => 3,
+            'placeholder' => 'Títol de l’activitat'
+        ]],
+        ['core/list', [
+            'placeholder' => "📍 Ubicació\n🕒 Data i hora"
+        ]]
+    ];
+
+    $post_type_object->template_lock = 'insert';
+});

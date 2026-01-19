@@ -6,7 +6,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /* ANTON */
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -14,12 +13,7 @@ body {
   color: #1a1a1a;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   line-height: 1.2;
@@ -49,8 +43,9 @@ p {
 }
 
 .wp-block-navigation__responsive-container-content .wp-block-navigation li.main-btns {
-  max-width: 145px;
+  width: 145px;
   text-transform: none;
+  justify-content: center;
 }
 
 .header-custom {
@@ -60,7 +55,6 @@ p {
   justify-content: center;
   background: linear-gradient(90deg, #EA0000 0%, #FF9300 100%);
 }
-
 .header-custom img {
   width: 150px;
   padding: 20px 0;
@@ -71,7 +65,7 @@ p {
   min-width: 130px;
   margin: 0 auto;
   padding-inline: 0;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 /* FOOTER STYLES */
@@ -79,14 +73,12 @@ footer {
   background-color: rgb(250, 250, 250);
   padding-bottom: 20px;
 }
-
 footer h3 {
   color: #EA0000;
   padding: 50px 0 30px;
   font-size: 32px;
   margin-bottom: 0;
 }
-
 footer p {
   font-size: 24px;
   font-family: "Roboto", sans-serif;
@@ -95,12 +87,10 @@ footer p {
   display: block;
   margin: 0 auto;
 }
-
 footer .footer-grid {
   width: 100%;
   margin: 0 auto;
 }
-
 footer .footer-grid.titles {
   max-width: 1200px;
   display: grid;
@@ -108,13 +98,11 @@ footer .footer-grid.titles {
   align-items: center;
   padding: 20px 0 20px;
 }
-
 footer .footer-grid.titles p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: bold;
 }
-
 footer .footer-grid.titles p::before {
   content: "";
   width: 35px;
@@ -127,36 +115,29 @@ footer .footer-grid.titles p::before {
   vertical-align: bottom;
   margin-right: 10px;
 }
-
 footer .footer-grid.titles p.wsp-title::before {
   background-image: url("../img/wsp.png");
 }
-
 footer .footer-grid.titles p.escriu-title::before {
   background-image: url("../img/mail.png");
 }
-
 footer .footer-grid.titles p.truca-title::before {
   background-image: url("../img/phone.png");
 }
-
 footer .footer-grid.titles p.horari-title::before {
   background-image: url("../img/clock.png");
 }
-
 footer .footer-grid.info {
   max-width: 1200px;
   display: grid;
   grid-template-columns: 0.3fr 0.5fr 1fr 1fr 1fr;
   align-items: center;
 }
-
 footer .footer-grid.info p {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   max-width: 150px;
 }
-
 footer .footer-grid.info p.main-btns.body-btns {
   font-size: 16px;
   max-width: 140px;
@@ -164,7 +145,6 @@ footer .footer-grid.info p.main-btns.body-btns {
   height: auto;
   padding: 9px 17px;
 }
-
 footer .footer-grid.logos {
   max-width: 1200px;
   display: grid;
@@ -172,7 +152,6 @@ footer .footer-grid.logos {
   gap: 0px;
   align-items: center;
 }
-
 footer .footer-grid.logos img {
   max-width: 150px;
 }
@@ -186,16 +165,13 @@ footer .wp-block-template-part {
 }
 
 @media (max-width: 900px) {
-
   .footer-grid.titles,
   .footer-grid.info,
   .footer-grid.logos {
     grid-template-columns: 1fr 1fr;
   }
 }
-
 @media (max-width: 480px) {
-
   .footer-grid.titles,
   .footer-grid.info,
   .footer-grid.logos {
@@ -203,9 +179,7 @@ footer .wp-block-template-part {
     text-align: left;
   }
 }
-
 @media (max-width: 480px) {
-
   .footer-grid.titles,
   .footer-grid.info,
   .footer-grid.logos {
@@ -213,7 +187,6 @@ footer .wp-block-template-part {
     text-align: left;
   }
 }
-
 /* 4. Components */
 .wp-block-navigation li.main-btns {
   background: white;
@@ -235,12 +208,10 @@ footer .wp-block-template-part {
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
-
 .wp-block-navigation li.main-btns:hover {
   background-image: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
   color: white;
 }
-
 .wp-block-navigation li.main-btns a {
   text-decoration: none;
   color: inherit;
@@ -266,12 +237,10 @@ footer .wp-block-template-part {
   background-origin: border-box;
   background-clip: padding-box, border-box;
 }
-
 .main-btns:hover {
   background-image: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
   color: white;
 }
-
 .main-btns a {
   text-decoration: none;
   color: inherit;
@@ -281,6 +250,10 @@ footer .wp-block-template-part {
   border: none;
   padding: 0;
 }
+.main-btns a:focus-visible, .main-btns a:focus {
+  outline: 2px solid transparent;
+  box-shadow: none;
+}
 
 .main-btns.body-btns {
   font-size: 20px;
@@ -289,14 +262,91 @@ footer .wp-block-template-part {
   color: white;
   width: 244px;
 }
-
 .main-btns.body-btns:hover {
   background-image: linear-gradient(white, white), linear-gradient(90deg, #EA0000 0%, #FF9300 100%);
   color: black;
 }
-
 .main-btns.body-btns a:hover {
   background-color: white !important;
+}
+.main-btns.body-btns a:focus-visible {
+  outline: none !important;
+}
+
+/* POST CARDS */
+.ultimes-not-home .post-not-card {
+  width: 313px;
+  height: 450px;
+  padding: 10px !important;
+}
+.ultimes-not-home .post-not-card .wp-block-post-excerpt__excerpt {
+  margin-bottom: 0;
+  margin-top: 0;
+  height: 120px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  padding-bottom: 20px;
+}
+
+.wp-block-post-excerpt__more-link {
+  background: white;
+  color: black;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  padding: 12px 24px;
+  max-width: 183px;
+  text-align: center;
+  height: 48px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* Gradient border */
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+.wp-block-post-excerpt__more-link:hover {
+  background-image: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  color: white;
+}
+.wp-block-post-excerpt__more-link a {
+  text-decoration: none;
+  color: inherit;
+}
+.wp-block-post-excerpt__more-link {
+  font-size: 20px;
+  padding: 3px 5px;
+  background-image: linear-gradient(90deg, #EA0000 0%, #FF9300 100%);
+  color: white;
+  width: 244px;
+  height: auto;
+  text-decoration: none;
+  font-size: 16px;
+}
+.wp-block-post-excerpt__more-link:hover {
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #EA0000 0%, #FF9300 100%);
+  color: black;
+  text-decoration: none;
+}
+
+.wp-block-post-date {
+  display: none;
+}
+
+h2.wp-block-heading {
+  margin-bottom: 55px !important;
+}
+
+/* AGENDA CARD */
+.agenda-card {
+  width: 313px;
+  height: 450px;
+  padding: 10px !important;
 }
 
 h2 {
@@ -341,7 +391,6 @@ h1.wp-block-heading {
   font-weight: 400;
   line-height: 1;
 }
-
 h1.wp-block-heading span.title-highlight {
   color: #EA0000;
 }
@@ -358,7 +407,7 @@ h1.wp-block-heading span.title-highlight {
   padding-bottom: 0 !important;
 }
 
-.home-section-descobreix>* {
+.home-section-descobreix > * {
   margin: 0 !important;
 }
 
@@ -366,11 +415,9 @@ h1.wp-block-heading span.title-highlight {
   padding-bottom: 45px;
   position: relative;
 }
-
 .inside-container-descobreix div {
   margin: 0 !important;
 }
-
 .inside-container-descobreix .item-1-descobreix {
   font-size: 24px;
   font-weight: bold;
@@ -382,19 +429,30 @@ h1.wp-block-heading span.title-highlight {
 .bin-container figure.wp-block-gallery {
   justify-content: center;
 }
-
 .bin-container figure.wp-block-gallery .bin {
   max-width: 190px !important;
   height: 155px;
   background-color: rgb(250, 250, 250);
 }
-
 .bin-container figure.wp-block-gallery .bin img {
   object-fit: none !important;
 }
-
 .bin-container figure.wp-block-gallery .bin.brown img {
   object-fit: contain !important;
+}
+
+/* cliclkeable images */
+.clickable-img:focus-within,
+.clickable-img a:focus,
+.clickable-img a:focus-visible {
+  outline: 2px solid transparent !important;
+  box-shadow: none !important;
+}
+
+.wp-block-site-logo a:focus,
+.wp-block-site-logo a:focus-visible {
+  outline: 2px solid transparent !important;
+  box-shadow: none !important;
 }
 
 /* 5. Pages */
@@ -419,7 +477,6 @@ h1.wp-block-heading span.title-highlight {
   margin-bottom: 0 !important;
   padding-bottom: 31px;
 }
-
 .home-section-residu .residu-h3 {
   font-size: 45px;
   text-align: center;
@@ -439,7 +496,6 @@ h1.wp-block-heading span.title-highlight {
   border-color: rgb(250, 250, 250);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
-
 .bin figcaption {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -450,31 +506,24 @@ h1.wp-block-heading span.title-highlight {
   padding: 5px !important;
   text-shadow: none !important;
 }
-
 .bin.brown figcaption {
   background: linear-gradient(90deg, #3F1C07 0%, #895747 100%) !important;
 }
-
 .bin.brown img {
   object-fit: contain !important;
 }
-
 .bin.green figcaption {
   background: linear-gradient(90deg, #1A8C2E 0%, #42EF25 100%) !important;
 }
-
 .bin.green img {
   object-position: top;
 }
-
 .bin.blue figcaption {
   background: linear-gradient(90deg, #1D29EB 0%, #3893F9 100%) !important;
 }
-
 .bin.yellow figcaption {
   background: linear-gradient(90deg, #D42C00 0%, #E6C613 100%) !important;
 }
-
 .bin.gray figcaption {
   background: linear-gradient(90deg, #5C6568 0%, #708383 100%) !important;
 }
@@ -488,7 +537,6 @@ h1.wp-block-heading span.title-highlight {
 .home-section-pasapas {
   padding: 96px 0 92px;
 }
-
 .home-section-pasapas .residu-h3 {
   font-size: 45px;
   text-align: center;
@@ -501,7 +549,6 @@ h1.wp-block-heading span.title-highlight {
   color: #EA0000;
   padding-bottom: 20px;
 }
-
 .home-section-pasapas p {
   font-size: 32px;
   font-weight: bold;
@@ -510,6 +557,38 @@ h1.wp-block-heading span.title-highlight {
   text-align: center;
   line-height: 32px;
   padding-bottom: 20px;
+}
+
+/* HOME SECTION VIDEO */
+.home-section-video {
+  padding: 96px 0 92px;
+}
+.home-section-video .residu-h3 {
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1;
+  font-weight: bold;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 65px;
+  color: #EA0000;
+}
+
+.ultimes-not-home {
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.agenda-home-grid {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 20px 0 20px;
 }
 
 /*# sourceMappingURL=main.css.map */

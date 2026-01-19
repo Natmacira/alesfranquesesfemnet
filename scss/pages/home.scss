@@ -119,3 +119,32 @@
         padding-bottom: 20px;
     }
 }
+
+/* HOME SECTION VIDEO */
+
+.home-section-video {
+    padding: 96px 0 92px;
+
+    .residu-h3 {
+        @include m.heading-h3;
+        color: v.$primary;
+    }
+
+}
+
+.ultimes-not-home {
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.agenda-home-grid {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 20px 0 20px;
+
+}

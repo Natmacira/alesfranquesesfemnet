@@ -1,3 +1,77 @@
+/* POST CARDS */
+.ultimes-not-home .post-not-card {
+  width: 313px;
+  height: 450px;
+  padding: 10px !important;
+}
+.ultimes-not-home .post-not-card .wp-block-post-excerpt__excerpt {
+  margin-bottom: 0;
+  margin-top: 0;
+  height: 120px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  padding-bottom: 20px;
+}
 
+.wp-block-post-excerpt__more-link {
+  background: white;
+  color: black;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  padding: 12px 24px;
+  max-width: 183px;
+  text-align: center;
+  height: 48px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* Gradient border */
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+.wp-block-post-excerpt__more-link:hover {
+  background-image: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  color: white;
+}
+.wp-block-post-excerpt__more-link a {
+  text-decoration: none;
+  color: inherit;
+}
+.wp-block-post-excerpt__more-link {
+  font-size: 20px;
+  padding: 3px 5px;
+  background-image: linear-gradient(90deg, #EA0000 0%, #FF9300 100%);
+  color: white;
+  width: 244px;
+  height: auto;
+  text-decoration: none;
+  font-size: 16px;
+}
+.wp-block-post-excerpt__more-link:hover {
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #EA0000 0%, #FF9300 100%);
+  color: black;
+  text-decoration: none;
+}
+
+.wp-block-post-date {
+  display: none;
+}
+
+h2.wp-block-heading {
+  margin-bottom: 55px !important;
+}
+
+/* AGENDA CARD */
+.agenda-card {
+  width: 313px;
+  height: 450px;
+  padding: 10px !important;
+}
 
 /*# sourceMappingURL=cards.css.map */

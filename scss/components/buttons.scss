@@ -12,6 +12,12 @@
 .main-btns a {
     border: none;
     padding: 0;
+
+    &:focus-visible,
+    &:focus {
+        outline: 2px solid transparent;
+        box-shadow: none;
+    }
 }
 
 .main-btns.body-btns {
@@ -31,6 +37,10 @@
     a {
         &:hover {
             background-color: white !important;
+        }
+
+        &:focus-visible {
+            outline: none !important;
         }
     }
 }

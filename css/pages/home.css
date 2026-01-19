@@ -101,4 +101,36 @@
   padding-bottom: 20px;
 }
 
+/* HOME SECTION VIDEO */
+.home-section-video {
+  padding: 96px 0 92px;
+}
+.home-section-video .residu-h3 {
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1;
+  font-weight: bold;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 65px;
+  color: #EA0000;
+}
+
+.ultimes-not-home {
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.agenda-home-grid {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 20px 0 20px;
+}
+
 /*# sourceMappingURL=home.css.map */

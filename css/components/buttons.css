@@ -60,6 +60,10 @@
   border: none;
   padding: 0;
 }
+.main-btns a:focus-visible, .main-btns a:focus {
+  outline: 2px solid transparent;
+  box-shadow: none;
+}
 
 .main-btns.body-btns {
   font-size: 20px;
@@ -74,6 +78,9 @@
 }
 .main-btns.body-btns a:hover {
   background-color: white !important;
+}
+.main-btns.body-btns a:focus-visible {
+  outline: none !important;
 }
 
 /*# sourceMappingURL=buttons.css.map */

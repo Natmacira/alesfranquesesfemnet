@@ -8,8 +8,9 @@
 }
 
 .wp-block-navigation__responsive-container-content .wp-block-navigation li.main-btns {
-    max-width: 145px;
+    width: 145px;
     text-transform: none;
+    justify-content: center;
 }
 
 .header-custom {
@@ -30,5 +31,5 @@
     min-width: 130px;
     margin: 0 auto;
     padding-inline: 0;
-    justify-content: center;
+    justify-content: space-around;
 }

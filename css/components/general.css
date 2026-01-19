@@ -40,7 +40,6 @@ h1.wp-block-heading {
   font-weight: 400;
   line-height: 1;
 }
-
 h1.wp-block-heading span.title-highlight {
   color: #EA0000;
 }
@@ -57,7 +56,7 @@ h1.wp-block-heading span.title-highlight {
   padding-bottom: 0 !important;
 }
 
-.home-section-descobreix>* {
+.home-section-descobreix > * {
   margin: 0 !important;
 }
 
@@ -65,11 +64,9 @@ h1.wp-block-heading span.title-highlight {
   padding-bottom: 45px;
   position: relative;
 }
-
 .inside-container-descobreix div {
   margin: 0 !important;
 }
-
 .inside-container-descobreix .item-1-descobreix {
   font-size: 24px;
   font-weight: bold;
@@ -81,19 +78,30 @@ h1.wp-block-heading span.title-highlight {
 .bin-container figure.wp-block-gallery {
   justify-content: center;
 }
-
 .bin-container figure.wp-block-gallery .bin {
   max-width: 190px !important;
   height: 155px;
   background-color: rgb(250, 250, 250);
 }
-
 .bin-container figure.wp-block-gallery .bin img {
   object-fit: none !important;
 }
-
 .bin-container figure.wp-block-gallery .bin.brown img {
   object-fit: contain !important;
+}
+
+/* cliclkeable images */
+.clickable-img:focus-within,
+.clickable-img a:focus,
+.clickable-img a:focus-visible {
+  outline: 2px solid transparent !important;
+  box-shadow: none !important;
+}
+
+.wp-block-site-logo a:focus,
+.wp-block-site-logo a:focus-visible {
+  outline: 2px solid transparent !important;
+  box-shadow: none !important;
 }
 
 /*# sourceMappingURL=general.css.map */
