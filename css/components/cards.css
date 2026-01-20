@@ -46,7 +46,7 @@
 .wp-block-post-excerpt__more-link {
   font-size: 20px;
   padding: 3px 5px;
-  background-image: linear-gradient(90deg, #EA0000 0%, #FF9300 100%);
+  background-image: linear-gradient(90deg, #d51116 0%, #f6a307 100%);
   color: white;
   width: 244px;
   height: auto;
@@ -54,7 +54,7 @@
   font-size: 16px;
 }
 .wp-block-post-excerpt__more-link:hover {
-  background-image: linear-gradient(white, white), linear-gradient(90deg, #EA0000 0%, #FF9300 100%);
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #d51116 0%, #f6a307 100%);
   color: black;
   text-decoration: none;
 }

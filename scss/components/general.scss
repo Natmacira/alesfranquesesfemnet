@@ -3,6 +3,19 @@
 
 h2 {
     @include m.section-title;
+
+    @media (max-width: 768px) {
+        font-size: 30px;
+    }
+
+    @media (max-width: 568px) {
+        font-size: 21px;
+        letter-spacing: 0.5px;
+    }
+
+    @media (max-width: 420px) {
+        font-size: 18px;
+    }
 }
 
 .wp-block-post-title {
@@ -23,6 +36,11 @@ h2 {
     padding-bottom: 0 !important;
 }
 
+// .wp-block-group.is-layout-constrained {
+//     padding-inline: 1;
+// }
+
+
 /* HERO SECTION  */
 
 
@@ -41,6 +59,22 @@ h1.wp-block-heading {
     span.title-highlight {
         color: v.$primary;
     }
+
+    @media (max-width: 768px) {
+        position: relative;
+        font-size: 65px;
+        width: auto;
+        top: 0;
+        text-align: center;
+        width: 400px;
+        margin: auto;
+    }
+
+    @media (max-width: 530px) {
+        font-size: 39px;
+        width: 235px;
+    }
+
 }
 
 .home-section-descobreix {
@@ -57,18 +91,36 @@ h1.wp-block-heading {
     &.recollida {
         justify-content: center;
     }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 .home-section-descobreix>* {
     margin: 0 !important;
+
+    @media (max-width: 768px) {
+        margin: auto !important;
+    }
 }
 
 .inside-container-descobreix {
     padding-bottom: 45px;
     position: relative;
 
+    @media (max-width: 768px) {
+        padding-bottom: 0;
+    }
+
     div {
         margin: 0 !important;
+
+        @media (max-width: 768px) {
+            margin: auto !important;
+        }
     }
 
     .item-1-descobreix {
@@ -76,6 +128,17 @@ h1.wp-block-heading {
         font-weight: bold;
         text-align: left;
         font-family: v.$font-main;
+
+        @media (max-width: 768px) {
+            text-align: center;
+            font-size: 24px;
+            line-height: 1;
+            padding-bottom: 20px;
+        }
+
+        @media (max-width: 568px) {
+            font-size: 19px;
+        }
     }
 }
 
@@ -86,6 +149,16 @@ h1.wp-block-heading {
     figure.wp-block-gallery {
         justify-content: center;
 
+        @media (max-width: 1200px) {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        @media (max-width: 520px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
         .bin {
             max-width: 190px !important;
             height: 155px;
@@ -93,6 +166,7 @@ h1.wp-block-heading {
 
             img {
                 object-fit: none !important;
+                padding-bottom: 40px;
             }
 
             &.brown {

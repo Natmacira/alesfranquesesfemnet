@@ -19,6 +19,22 @@
   margin-bottom: 0 !important;
   padding-bottom: 31px;
 }
+@media (max-width: 1200px) {
+  .home-section-residu h2 {
+    font-size: 75px;
+  }
+}
+@media (max-width: 768px) {
+  .home-section-residu h2 {
+    font-size: 55px;
+    padding-top: 50px !important;
+  }
+}
+@media (max-width: 568px) {
+  .home-section-residu h2 {
+    font-size: 45px;
+  }
+}
 .home-section-residu .residu-h3 {
   font-size: 45px;
   text-align: center;
@@ -28,6 +44,20 @@
   font-family: "Anton", sans-serif;
   text-transform: uppercase;
   padding-bottom: 65px;
+}
+@media (max-width: 768px) {
+  .home-section-residu .residu-h3 {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 35px;
+  }
+}
+@media (max-width: 568px) {
+  .home-section-residu .residu-h3 {
+    font-size: 28px;
+  }
+}
+.home-section-residu .residu-h3 {
   letter-spacing: 0;
   padding-bottom: 65px;
 }
@@ -49,25 +79,25 @@
   text-shadow: none !important;
 }
 .bin.brown figcaption {
-  background: linear-gradient(90deg, #3F1C07 0%, #895747 100%) !important;
+  background: linear-gradient(90deg, #9f6c51 0%, #5d3313 100%) !important;
 }
 .bin.brown img {
   object-fit: contain !important;
 }
 .bin.green figcaption {
-  background: linear-gradient(90deg, #1A8C2E 0%, #42EF25 100%) !important;
+  background: linear-gradient(90deg, #42a650 0%, #0f704d 100%) !important;
 }
 .bin.green img {
   object-position: top;
 }
 .bin.blue figcaption {
-  background: linear-gradient(90deg, #1D29EB 0%, #3893F9 100%) !important;
+  background: linear-gradient(90deg, #317fc2 0%, #253c8a 100%) !important;
 }
 .bin.yellow figcaption {
-  background: linear-gradient(90deg, #D42C00 0%, #E6C613 100%) !important;
+  background: linear-gradient(90deg, #eec912 0%, #d27212 100%) !important;
 }
 .bin.gray figcaption {
-  background: linear-gradient(90deg, #5C6568 0%, #708383 100%) !important;
+  background: linear-gradient(90deg, #5c6569 0%, #888989 100%) !important;
 }
 
 /* FASE DOS */
@@ -88,6 +118,20 @@
   font-family: "Anton", sans-serif;
   text-transform: uppercase;
   padding-bottom: 65px;
+}
+@media (max-width: 768px) {
+  .home-section-pasapas .residu-h3 {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 35px;
+  }
+}
+@media (max-width: 568px) {
+  .home-section-pasapas .residu-h3 {
+    font-size: 28px;
+  }
+}
+.home-section-pasapas .residu-h3 {
   color: #EA0000;
   padding-bottom: 20px;
 }
@@ -114,6 +158,20 @@
   font-family: "Anton", sans-serif;
   text-transform: uppercase;
   padding-bottom: 65px;
+}
+@media (max-width: 768px) {
+  .home-section-video .residu-h3 {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 35px;
+  }
+}
+@media (max-width: 568px) {
+  .home-section-video .residu-h3 {
+    font-size: 28px;
+  }
+}
+.home-section-video .residu-h3 {
   color: #EA0000;
 }
 

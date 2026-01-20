@@ -8,6 +8,22 @@ h2 {
   padding: 59px 39px;
   margin-bottom: 120px !important;
 }
+@media (max-width: 768px) {
+  h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 568px) {
+  h2 {
+    font-size: 21px;
+    letter-spacing: 0.5px;
+  }
+}
+@media (max-width: 420px) {
+  h2 {
+    font-size: 18px;
+  }
+}
 
 .wp-block-post-title {
   display: none;
@@ -43,6 +59,23 @@ h1.wp-block-heading {
 h1.wp-block-heading span.title-highlight {
   color: #EA0000;
 }
+@media (max-width: 768px) {
+  h1.wp-block-heading {
+    position: relative;
+    font-size: 65px;
+    width: auto;
+    top: 0;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+  }
+}
+@media (max-width: 530px) {
+  h1.wp-block-heading {
+    font-size: 39px;
+    width: 235px;
+  }
+}
 
 .home-section-descobreix {
   display: flex;
@@ -58,17 +91,39 @@ h1.wp-block-heading span.title-highlight {
 .home-section-descobreix.recollida {
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .home-section-descobreix {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 
 .home-section-descobreix > * {
   margin: 0 !important;
+}
+@media (max-width: 768px) {
+  .home-section-descobreix > * {
+    margin: auto !important;
+  }
 }
 
 .inside-container-descobreix {
   padding-bottom: 45px;
   position: relative;
 }
+@media (max-width: 768px) {
+  .inside-container-descobreix {
+    padding-bottom: 0;
+  }
+}
 .inside-container-descobreix div {
   margin: 0 !important;
+}
+@media (max-width: 768px) {
+  .inside-container-descobreix div {
+    margin: auto !important;
+  }
 }
 .inside-container-descobreix .item-1-descobreix {
   font-size: 24px;
@@ -76,10 +131,35 @@ h1.wp-block-heading span.title-highlight {
   text-align: left;
   font-family: "Roboto", sans-serif;
 }
+@media (max-width: 768px) {
+  .inside-container-descobreix .item-1-descobreix {
+    text-align: center;
+    font-size: 24px;
+    line-height: 1;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 568px) {
+  .inside-container-descobreix .item-1-descobreix {
+    font-size: 19px;
+  }
+}
 
 /* BINS */
 .bin-container figure.wp-block-gallery {
   justify-content: center;
+}
+@media (max-width: 1200px) {
+  .bin-container figure.wp-block-gallery {
+    max-width: 700px;
+    margin: auto;
+  }
+}
+@media (max-width: 520px) {
+  .bin-container figure.wp-block-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .bin-container figure.wp-block-gallery .bin {
   max-width: 190px !important;
@@ -88,6 +168,7 @@ h1.wp-block-heading span.title-highlight {
 }
 .bin-container figure.wp-block-gallery .bin img {
   object-fit: none !important;
+  padding-bottom: 40px;
 }
 .bin-container figure.wp-block-gallery .bin.brown img {
   object-fit: contain !important;

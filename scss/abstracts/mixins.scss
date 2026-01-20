@@ -56,4 +56,14 @@
   font-family: v.$font-heading;
   text-transform: uppercase;
   padding-bottom: 65px;
+
+  @media (max-width: 768px) {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 35px;
+  }
+
+  @media (max-width: 568px) {
+    font-size: 28px;
+  }
 }

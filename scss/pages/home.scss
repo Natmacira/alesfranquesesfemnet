@@ -26,12 +26,26 @@
         padding-top: 120px !important;
         margin-bottom: 0 !important;
         padding-bottom: 31px;
+
+        @media (max-width: 1200px) {
+            font-size: 75px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 55px;
+            padding-top: 50px !important;
+        }
+
+        @media (max-width: 568px) {
+            font-size: 45px;
+        }
     }
 
     .residu-h3 {
         @include m.heading-h3;
         letter-spacing: 0;
         padding-bottom: 65px;
+
     }
 }
 
