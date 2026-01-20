@@ -820,5 +820,25 @@ body.page-cada-residu-al-seu-equip .section-horaris p {
   font-size: 20px;
   font-weight: bold;
 }
+body.page-cada-residu-al-seu-equip .section-tes-dubtes h3 {
+  font-size: 55px;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  line-height: 82px;
+  letter-spacing: 0;
+  color: #EA0000;
+}
+body.page-cada-residu-al-seu-equip .section-tes-dubtes p {
+  font-size: 32px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  line-height: 35px;
+  letter-spacing: 0;
+  margin-bottom: 20px;
+  max-width: 1200px;
+}
+body.page-cada-residu-al-seu-equip .section-tes-dubtes .wp-block-buttons {
+  margin-bottom: 100px;
+}
 
 /*# sourceMappingURL=main.css.map */

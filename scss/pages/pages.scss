@@ -243,4 +243,31 @@ body.page-cada-residu-al-seu-equip {
             font-weight: bold;
         }
     }
+
+    .section-tes-dubtes {
+
+        h3 {
+            font-size: 55px;
+            font-family: v.$font-heading;
+            text-align: center;
+            line-height: 82px;
+            letter-spacing: 0;
+            color: v.$primary;
+        }
+
+        p {
+            font-size: 32px;
+            font-family: v.$font-main;
+            text-align: center;
+            line-height: 35px;
+            letter-spacing: 0;
+            margin-bottom: 20px;
+            max-width: 1200px;
+        }
+
+        .wp-block-buttons {
+            margin-bottom: 100px;
+
+        }
+    }
 }
