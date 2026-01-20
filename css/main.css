@@ -694,27 +694,31 @@ body.page-coneix-el-sistema-de-recollida .iframe-ul li::marker {
   font-family: "Anton", sans-serif;
 }
 
+/* PAGE CADA RESIDU AL SEU EQUIP */
 body.page-cada-residu-al-seu-equip .alseu-equip {
   padding-inline: 0;
 }
 body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained {
   padding-inline: 0;
 }
-body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained figure {
+body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery {
   max-width: 1200px;
+  justify-content: center;
+  margin-bottom: 100px !important;
 }
-body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained figure .residu-gallery-card {
+body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card {
   width: 167px !important;
   height: 219px;
   position: relative;
+  flex: 0 0 auto;
 }
-body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained figure .residu-gallery-card img {
+body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card img {
   border-radius: 10px;
 }
-body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained figure .residu-gallery-card figcaption {
+body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card figcaption {
   display: none;
 }
-body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained figure .residu-gallery-card:hover figcaption {
+body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption {
   display: block;
   position: absolute;
   left: 0;
@@ -728,7 +732,7 @@ body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-cons
   font-size: 25px;
   background: none;
 }
-body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained figure .residu-gallery-card:hover img {
+body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover img {
   opacity: 0.9;
   filter: brightness(0.5);
 }
@@ -747,6 +751,74 @@ body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-cons
   line-height: 35px;
   letter-spacing: 0;
   margin-bottom: 20px;
+  max-width: 900px;
+}
+body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio {
+  margin-top: 30px;
+}
+body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles {
+  color: #EA0000;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles p::before {
+  content: "";
+  width: 35px;
+  height: 35px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 10px;
+  background-image: url("../img/loc.png");
+}
+body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles p.trucans::before {
+  background-image: url("../img/phone.png");
+}
+body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio div {
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  margin-top: 10px;
+}
+body.page-cada-residu-al-seu-equip .section-horaris {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+body.page-cada-residu-al-seu-equip .section-horaris h5 {
+  color: #EA0000;
+  font-size: 20px;
+  font-weight: bold;
+}
+body.page-cada-residu-al-seu-equip .section-horaris h5::before {
+  content: "";
+  width: 35px;
+  height: 35px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 10px;
+  background-image: url("../img/clock.png");
+  vertical-align: middle;
+}
+body.page-cada-residu-al-seu-equip .section-horaris p {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */
