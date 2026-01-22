@@ -133,6 +133,7 @@ h1.wp-block-heading {
         font-weight: bold;
         text-align: left;
         font-family: v.$font-main;
+        line-height: normal;
 
         @media (max-width: 1200px) {
             text-align: center;
@@ -183,7 +184,7 @@ h1.wp-block-heading {
     }
 }
 
-/* cliclkeable images */
+/* cliclkeable elements */
 
 .clickable-img:focus-within,
 .clickable-img a:focus,
@@ -194,6 +195,13 @@ h1.wp-block-heading {
 
 .wp-block-site-logo a:focus,
 .wp-block-site-logo a:focus-visible {
+    outline: 2px solid transparent !important;
+    box-shadow: none !important;
+}
+
+summary:focus-within,
+summary:focus,
+summary:focus-visible {
     outline: 2px solid transparent !important;
     box-shadow: none !important;
 }

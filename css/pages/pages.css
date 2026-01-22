@@ -133,6 +133,35 @@ body.page-pas-a-pas h3.residu-h3.recollida-h3 {
   }
 }
 
+/* PAGE PAS A PAS  */
+body.page-pas-a-pas .home-section-descobreix img {
+  max-width: 500px;
+}
+body.page-pas-a-pas .first-pasapas {
+  display: flex;
+  align-items: center;
+}
+body.page-pas-a-pas .first-pasapas p {
+  font-size: 40px;
+  color: #EA0000;
+  font-family: "Anton", sans-serif;
+  padding-bottom: 20px;
+}
+body.page-pas-a-pas .first-pasapas p:first-child {
+  background: #EA0000;
+  color: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+  padding-bottom: 0px;
+}
+
 /* PAGE CADA RESIDU AL SEU EQUIP */
 body.page-cada-residu-al-seu-equip .alseu-equip,
 body.page-pas-a-pas .alseu-equip {
@@ -324,6 +353,66 @@ body.page-pas-a-pas .section-tes-dubtes p {
 body.page-cada-residu-al-seu-equip .section-tes-dubtes .wp-block-buttons,
 body.page-pas-a-pas .section-tes-dubtes .wp-block-buttons {
   margin-bottom: 100px;
+}
+
+/* PAGE PREG FREQUENTES  */
+body.page-preguntes-frequents h1.wp-block-heading {
+  line-height: 95px;
+}
+@media (max-width: 768px) {
+  body.page-preguntes-frequents h1.wp-block-heading {
+    line-height: 75px;
+  }
+}
+@media (max-width: 568px) {
+  body.page-preguntes-frequents h1.wp-block-heading {
+    line-height: 55px;
+  }
+}
+body.page-preguntes-frequents .detail-container {
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+body.page-preguntes-frequents .detail-container summary {
+  color: #EA0000;
+  font-size: 45px;
+  font-family: "Anton", sans-serif;
+  text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  body.page-preguntes-frequents .detail-container summary {
+    font-size: 28px;
+  }
+}
+@media (max-width: 568px) {
+  body.page-preguntes-frequents .detail-container summary {
+    font-size: 24px;
+  }
+}
+body.page-preguntes-frequents .detail-container p {
+  font-size: 32px;
+}
+@media (max-width: 768px) {
+  body.page-preguntes-frequents .detail-container p {
+    font-size: 24px;
+    line-height: normal;
+  }
+}
+@media (max-width: 568px) {
+  body.page-preguntes-frequents .detail-container p {
+    font-size: 22px;
+  }
+}
+
+/* TEMPLATE NOTICIAS  */
+body.blog h2 {
+  background-image: none;
+  color: #EA0000;
+  font-size: 55px;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+  padding: 0;
 }
 
 /*# sourceMappingURL=pages.css.map */

@@ -136,6 +136,7 @@ h1.wp-block-heading span.title-highlight {
   font-weight: bold;
   text-align: left;
   font-family: "Roboto", sans-serif;
+  line-height: normal;
 }
 @media (max-width: 1200px) {
   .inside-container-descobreix .item-1-descobreix {
@@ -180,7 +181,7 @@ h1.wp-block-heading span.title-highlight {
   object-fit: contain !important;
 }
 
-/* cliclkeable images */
+/* cliclkeable elements */
 .clickable-img:focus-within,
 .clickable-img a:focus,
 .clickable-img a:focus-visible {
@@ -190,6 +191,13 @@ h1.wp-block-heading span.title-highlight {
 
 .wp-block-site-logo a:focus,
 .wp-block-site-logo a:focus-visible {
+  outline: 2px solid transparent !important;
+  box-shadow: none !important;
+}
+
+summary:focus-within,
+summary:focus,
+summary:focus-visible {
   outline: 2px solid transparent !important;
   box-shadow: none !important;
 }

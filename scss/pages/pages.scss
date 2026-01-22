@@ -142,6 +142,47 @@ body.page-pas-a-pas {
     }
 }
 
+/* PAGE PAS A PAS  */
+
+body.page-pas-a-pas {
+    .home-section-descobreix {
+        img {
+            max-width: 500px;
+        }
+    }
+
+    .first-pasapas {
+        display: flex;
+        align-items: center;
+
+        p {
+            font-size: 40px;
+            color: v.$primary;
+            font-family: v.$font-heading;
+            padding-bottom: 20px;
+        }
+    }
+
+    .first-pasapas p:first-child {
+        background: v.$primary;
+        color: white;
+
+        width: 48px;
+        height: 48px;
+
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 1;
+        padding-bottom: 0px;
+
+    }
+
+}
 
 
 /* PAGE CADA RESIDU AL SEU EQUIP */
@@ -346,5 +387,72 @@ body.page-pas-a-pas {
             margin-bottom: 100px;
 
         }
+    }
+}
+
+/* PAGE PREG FREQUENTES  */
+
+body.page-preguntes-frequents {
+    h1.wp-block-heading {
+        line-height: 95px;
+
+        @media (max-width: 768px) {
+            line-height: 75px;
+        }
+
+        @media (max-width: 568px) {
+            line-height: 55px;
+        }
+    }
+
+    .detail-container {
+        max-width: 1200px;
+        margin: auto;
+        margin-bottom: 100px;
+
+        summary {
+            color: v.$primary;
+            font-size: 45px;
+            font-family: v.$font-heading;
+            text-transform: uppercase;
+
+
+            @media (max-width: 768px) {
+                font-size: 28px;
+
+            }
+
+            @media (max-width: 568px) {
+                font-size: 24px;
+            }
+        }
+
+        p {
+            font-size: 32px;
+
+            @media (max-width: 768px) {
+                font-size: 24px;
+                line-height: normal;
+            }
+
+            @media (max-width: 568px) {
+                font-size: 22px;
+            }
+
+        }
+    }
+
+}
+
+/* TEMPLATE NOTICIAS  */
+
+body.blog {
+    h2 {
+        background-image: none;
+        color: v.$primary;
+        font-size: 55px;
+        font-family: v.$font-heading;
+        text-align: center;
+        padding: 0;
     }
 }
