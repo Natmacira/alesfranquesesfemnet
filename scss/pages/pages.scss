@@ -5,7 +5,8 @@
 
 /* PAGE RECOLLIDA */
 
-body.page-coneix-el-sistema-de-recollida {
+body.page-coneix-el-sistema-de-recollida,
+body.page-pas-a-pas {
     h2.recollida-h2 {
         font-size: 55px;
         padding-top: 15px !important;
@@ -37,6 +38,9 @@ body.page-coneix-el-sistema-de-recollida {
         font-size: 55px;
         font-family: v.$font-heading;
         padding: 40px 0 0;
+
+        /* para la versión video borrar la línea de abajo  */
+        margin-bottom: 0 !important;
     }
 
     .ul-iframe,
@@ -46,8 +50,13 @@ body.page-coneix-el-sistema-de-recollida {
         align-items: center;
         max-width: 1200px;
         margin: auto;
-        padding-bottom: 100px;
-        padding-top: 100px;
+        /* para versión con video en vez de foto  */
+        // padding-bottom: 100px;
+        // padding-top: 100px;
+
+        .wp-block-image img {
+            max-width: 300px;
+        }
 
         div.wp-block-group {
             margin-right: 0 !important;
@@ -89,7 +98,8 @@ body.page-coneix-el-sistema-de-recollida {
 
 /* PAGE CADA RESIDU AL SEU EQUIP */
 
-body.page-cada-residu-al-seu-equip {
+body.page-cada-residu-al-seu-equip,
+body.page-pas-a-pas {
     .alseu-equip {
         padding-inline: 0;
     }
