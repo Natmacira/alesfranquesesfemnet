@@ -1,8 +1,18 @@
 /* POST CARDS */
 .ultimes-not-home .post-not-card {
   width: 313px;
-  height: 450px;
   padding: 10px !important;
+}
+.ultimes-not-home .post-not-card .wp-block-post-title {
+  display: block !important;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-transform: none;
+  text-align: left;
+  background-image: none;
+  color: black;
+  padding: 0;
+  margin-bottom: 10px !important;
 }
 .ultimes-not-home .post-not-card .wp-block-post-excerpt__excerpt {
   margin-bottom: 0;
@@ -70,8 +80,17 @@ h2.wp-block-heading {
 /* AGENDA CARD */
 .agenda-card {
   width: 313px;
-  height: 450px;
+  height: 250px;
   padding: 10px !important;
+}
+
+/* BORRAR CUANDO LAS TARJETAS LLEVEN IMG */
+.home-section-agenda .agenda-home-grid h3 {
+  height: auto !important;
+}
+
+.home-section-agenda .agenda-home-grid {
+  grid-template-columns: repeat(4, 1fr) !important;
 }
 
 /*# sourceMappingURL=cards.css.map */

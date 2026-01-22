@@ -1,0 +1,34 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+/* Specific styles adjustmentes for single post page */
+
+body.single.single-post {
+    .wp-block-post-title {
+        display: block !important;
+    }
+
+    .wp-block-group {
+
+        p {
+            font-size: 20px;
+        }
+
+        h1 {
+            color: v.$primary;
+        }
+
+        h2 {
+            color: black;
+            font-size: 22px;
+            background-image: none;
+            font-weight: 300;
+            text-align: left;
+            margin-bottom: 0 !important;
+            font-family: v.$font-main;
+            text-transform: none;
+        }
+
+    }
+
+}

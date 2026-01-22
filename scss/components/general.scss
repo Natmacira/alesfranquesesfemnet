@@ -60,18 +60,23 @@ h1.wp-block-heading {
         color: v.$primary;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
         position: relative;
-        font-size: 65px;
+        font-size: 75px;
         width: auto;
         top: 0;
         text-align: center;
-        width: 400px;
+        width: 900px;
         margin: auto;
     }
 
+    @media (max-width: 768px) {
+        font-size: 65px;
+        width: 400px;
+    }
+
     @media (max-width: 530px) {
-        font-size: 39px;
+        font-size: 45px;
         width: 235px;
     }
 
@@ -92,7 +97,7 @@ h1.wp-block-heading {
         justify-content: center;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
         flex-direction: column;
         padding-left: 20px;
         padding-right: 20px;
@@ -102,7 +107,7 @@ h1.wp-block-heading {
 .home-section-descobreix>* {
     margin: 0 !important;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
         margin: auto !important;
     }
 }
@@ -111,14 +116,14 @@ h1.wp-block-heading {
     padding-bottom: 45px;
     position: relative;
 
-    @media (max-width: 768px) {
+    @media (max-width: 1200px) {
         padding-bottom: 0;
     }
 
     div {
         margin: 0 !important;
 
-        @media (max-width: 768px) {
+        @media (max-width: 1200px) {
             margin: auto !important;
         }
     }
@@ -129,7 +134,7 @@ h1.wp-block-heading {
         text-align: left;
         font-family: v.$font-main;
 
-        @media (max-width: 768px) {
+        @media (max-width: 1200px) {
             text-align: center;
             font-size: 24px;
             line-height: 1;

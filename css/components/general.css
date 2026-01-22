@@ -59,20 +59,26 @@ h1.wp-block-heading {
 h1.wp-block-heading span.title-highlight {
   color: #EA0000;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   h1.wp-block-heading {
     position: relative;
-    font-size: 65px;
+    font-size: 75px;
     width: auto;
     top: 0;
     text-align: center;
-    width: 400px;
+    width: 900px;
     margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  h1.wp-block-heading {
+    font-size: 65px;
+    width: 400px;
   }
 }
 @media (max-width: 530px) {
   h1.wp-block-heading {
-    font-size: 39px;
+    font-size: 45px;
     width: 235px;
   }
 }
@@ -91,7 +97,7 @@ h1.wp-block-heading span.title-highlight {
 .home-section-descobreix.recollida {
   justify-content: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .home-section-descobreix {
     flex-direction: column;
     padding-left: 20px;
@@ -102,7 +108,7 @@ h1.wp-block-heading span.title-highlight {
 .home-section-descobreix > * {
   margin: 0 !important;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .home-section-descobreix > * {
     margin: auto !important;
   }
@@ -112,7 +118,7 @@ h1.wp-block-heading span.title-highlight {
   padding-bottom: 45px;
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .inside-container-descobreix {
     padding-bottom: 0;
   }
@@ -120,7 +126,7 @@ h1.wp-block-heading span.title-highlight {
 .inside-container-descobreix div {
   margin: 0 !important;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .inside-container-descobreix div {
     margin: auto !important;
   }
@@ -131,7 +137,7 @@ h1.wp-block-heading span.title-highlight {
   text-align: left;
   font-family: "Roboto", sans-serif;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .inside-container-descobreix .item-1-descobreix {
     text-align: center;
     font-size: 24px;

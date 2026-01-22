@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Auto compilar */
 /* sass --watch scss:css */
 /* 1. Abstracts */
@@ -41,11 +42,21 @@ p {
   height: auto;
   display: block;
 }
+@media (max-width: 599px) {
+  .custom-logo {
+    width: 150px;
+  }
+}
 
 .wp-block-navigation__responsive-container-content .wp-block-navigation li.main-btns {
   width: 145px;
   text-transform: none;
   justify-content: center;
+}
+@media (max-width: 768px) {
+  .wp-block-navigation__responsive-container-content .wp-block-navigation li.main-btns {
+    width: 130px;
+  }
 }
 
 .header-custom {
@@ -67,7 +78,45 @@ p {
   padding-inline: 0;
   justify-content: space-around;
 }
+@media (max-width: 1200px) {
+  .bottom-header {
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 900px !important;
+  }
+}
+@media (max-width: 599px) {
+  .bottom-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 
+@media (max-width: 1200px) {
+  .ul.wp-block-navigation__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    max-width: 550px;
+  }
+}
+@media (max-width: 768px) {
+  .wp-block-navigation li.main-btns {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 599px) {
+  .wp-block-navigation li.main-btns {
+    font-size: 20px !important;
+    text-align: right !important;
+    max-width: 250px;
+  }
+}
+/* HAMBURGUESA DESDE 1200px */
+/* Mostrar botón */
+/* Ocultar menú horizontal */
+/* DESKTOP REAL */
 /* FOOTER STYLES */
 footer {
   background-color: rgb(250, 250, 250);
@@ -79,6 +128,11 @@ footer h3 {
   font-size: 32px;
   margin-bottom: 0;
 }
+@media (max-width: 568px) {
+  footer h3 {
+    font-size: 24px;
+  }
+}
 footer p {
   font-size: 24px;
   font-family: "Roboto", sans-serif;
@@ -87,23 +141,99 @@ footer p {
   display: block;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  footer p {
+    padding-right: 40px;
+    padding-left: 40px;
+    text-align: center;
+    line-height: 1;
+  }
+}
+@media (max-width: 568px) {
+  footer p {
+    font-size: 20px;
+  }
+}
 footer .footer-grid {
   width: 100%;
   margin: 0 auto;
 }
+footer .footer-grid .add-wsp {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-grid .add-wsp img {
+  max-width: 150px;
+}
+footer .footer-grid .email,
+footer .footer-grid .phone,
+footer .footer-grid .schedule {
+  padding-top: 35px;
+}
+@media (max-width: 767px) {
+  footer .footer-grid .email,
+  footer .footer-grid .phone,
+  footer .footer-grid .schedule {
+    padding-top: 0;
+  }
+}
+footer .footer-grid .main-btns {
+  height: auto;
+}
+@media (max-width: 767px) {
+  footer .footer-grid .main-btns {
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 767px) {
+  footer .footer-grid .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer .footer-grid .wsp-title {
+    order: 1;
+  }
+  footer .footer-grid .add-wsp {
+    order: 2;
+  }
+  footer .footer-grid .escriu-title {
+    order: 3;
+  }
+  footer .footer-grid .email {
+    order: 4;
+  }
+  footer .footer-grid .truca-title {
+    order: 5;
+  }
+  footer .footer-grid .phone {
+    order: 6;
+  }
+  footer .footer-grid .horari-title {
+    order: 7;
+  }
+  footer .footer-grid .schedule {
+    order: 8;
+  }
+}
 footer .footer-grid.titles {
   max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: start;
   padding: 20px 0 20px;
+}
+@media (max-width: 767px) {
+  footer .footer-grid.titles {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 footer .footer-grid.titles p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: bold;
 }
-footer .footer-grid.titles p::before {
+footer .footer-grid.titles p.wsp-title::before, footer .footer-grid.titles p.escriu-title::before, footer .footer-grid.titles p.truca-title::before, footer .footer-grid.titles p.horari-title::before {
   content: "";
   width: 35px;
   height: 35px;
@@ -115,16 +245,16 @@ footer .footer-grid.titles p::before {
   vertical-align: bottom;
   margin-right: 10px;
 }
-footer .footer-grid.titles p.wsp-title::before {
+footer .footer-grid.titles p.wsp-title.wsp-title::before, footer .footer-grid.titles p.escriu-title.wsp-title::before, footer .footer-grid.titles p.truca-title.wsp-title::before, footer .footer-grid.titles p.horari-title.wsp-title::before {
   background-image: url("../img/wsp.png");
 }
-footer .footer-grid.titles p.escriu-title::before {
+footer .footer-grid.titles p.wsp-title.escriu-title::before, footer .footer-grid.titles p.escriu-title.escriu-title::before, footer .footer-grid.titles p.truca-title.escriu-title::before, footer .footer-grid.titles p.horari-title.escriu-title::before {
   background-image: url("../img/mail.png");
 }
-footer .footer-grid.titles p.truca-title::before {
+footer .footer-grid.titles p.wsp-title.truca-title::before, footer .footer-grid.titles p.escriu-title.truca-title::before, footer .footer-grid.titles p.truca-title.truca-title::before, footer .footer-grid.titles p.horari-title.truca-title::before {
   background-image: url("../img/phone.png");
 }
-footer .footer-grid.titles p.horari-title::before {
+footer .footer-grid.titles p.wsp-title.horari-title::before, footer .footer-grid.titles p.escriu-title.horari-title::before, footer .footer-grid.titles p.truca-title.horari-title::before, footer .footer-grid.titles p.horari-title.horari-title::before {
   background-image: url("../img/clock.png");
 }
 footer .footer-grid.info {
@@ -148,12 +278,20 @@ footer .footer-grid.info p.main-btns.body-btns {
 footer .footer-grid.logos {
   max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 0px;
   align-items: center;
 }
 footer .footer-grid.logos img {
   max-width: 150px;
+}
+@media (max-width: 767px) {
+  footer .footer-grid.logos {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: revert;
+    padding: 0 50px 0;
+  }
 }
 
 footer .wp-block-template-part {
@@ -276,8 +414,18 @@ footer .wp-block-template-part {
 /* POST CARDS */
 .ultimes-not-home .post-not-card {
   width: 313px;
-  height: 450px;
   padding: 10px !important;
+}
+.ultimes-not-home .post-not-card .wp-block-post-title {
+  display: block !important;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-transform: none;
+  text-align: left;
+  background-image: none;
+  color: black;
+  padding: 0;
+  margin-bottom: 10px !important;
 }
 .ultimes-not-home .post-not-card .wp-block-post-excerpt__excerpt {
   margin-bottom: 0;
@@ -345,8 +493,17 @@ h2.wp-block-heading {
 /* AGENDA CARD */
 .agenda-card {
   width: 313px;
-  height: 450px;
+  height: 250px;
   padding: 10px !important;
+}
+
+/* BORRAR CUANDO LAS TARJETAS LLEVEN IMG */
+.home-section-agenda .agenda-home-grid h3 {
+  height: auto !important;
+}
+
+.home-section-agenda .agenda-home-grid {
+  grid-template-columns: repeat(4, 1fr) !important;
 }
 
 h2 {
@@ -410,20 +567,26 @@ h1.wp-block-heading {
 h1.wp-block-heading span.title-highlight {
   color: #EA0000;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   h1.wp-block-heading {
     position: relative;
-    font-size: 65px;
+    font-size: 75px;
     width: auto;
     top: 0;
     text-align: center;
-    width: 400px;
+    width: 900px;
     margin: auto;
+  }
+}
+@media (max-width: 768px) {
+  h1.wp-block-heading {
+    font-size: 65px;
+    width: 400px;
   }
 }
 @media (max-width: 530px) {
   h1.wp-block-heading {
-    font-size: 39px;
+    font-size: 45px;
     width: 235px;
   }
 }
@@ -442,7 +605,7 @@ h1.wp-block-heading span.title-highlight {
 .home-section-descobreix.recollida {
   justify-content: center;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .home-section-descobreix {
     flex-direction: column;
     padding-left: 20px;
@@ -453,7 +616,7 @@ h1.wp-block-heading span.title-highlight {
 .home-section-descobreix > * {
   margin: 0 !important;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .home-section-descobreix > * {
     margin: auto !important;
   }
@@ -463,7 +626,7 @@ h1.wp-block-heading span.title-highlight {
   padding-bottom: 45px;
   position: relative;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .inside-container-descobreix {
     padding-bottom: 0;
   }
@@ -471,7 +634,7 @@ h1.wp-block-heading span.title-highlight {
 .inside-container-descobreix div {
   margin: 0 !important;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .inside-container-descobreix div {
     margin: auto !important;
   }
@@ -482,7 +645,7 @@ h1.wp-block-heading span.title-highlight {
   text-align: left;
   font-family: "Roboto", sans-serif;
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .inside-container-descobreix .item-1-descobreix {
     text-align: center;
     font-size: 24px;
@@ -685,6 +848,19 @@ h1.wp-block-heading span.title-highlight {
   text-align: center;
   line-height: 32px;
   padding-bottom: 20px;
+  max-width: 500px;
+}
+@media (max-width: 767px) {
+  .home-section-pasapas p {
+    font-size: 24px;
+    padding: 0 20px 0;
+  }
+}
+@media (max-width: 567px) {
+  .home-section-pasapas p {
+    font-size: 18px;
+    padding: 0 20px 0;
+  }
 }
 
 /* HOME SECTION VIDEO */
@@ -729,6 +905,15 @@ h1.wp-block-heading span.title-highlight {
 }
 
 /* HOME SECTION AGENDA */
+.arrow {
+  display: none;
+}
+@media (max-width: 767px) {
+  .arrow {
+    display: block;
+  }
+}
+
 .home-section-agenda h3.residu-h3 {
   width: 100%;
   max-width: 1200px;
@@ -758,7 +943,46 @@ h1.wp-block-heading span.title-highlight {
   padding: 0;
   margin: 0;
 }
+@media (max-width: 767px) {
+  .home-section-agenda .agenda-home-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding-bottom: 10px;
+  }
+  .home-section-agenda .agenda-card {
+    min-width: 85%;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+  }
+  .home-section-agenda .agenda-home-grid {
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE */
+  }
+  .home-section-agenda .agenda-home-grid::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+  }
+}
 
+@supports selector(::scroll-button(*)) {
+  .abcs::scroll-button(left),
+  .abcs::scroll-button(right) {
+    background-color: #EA0000;
+    border: none;
+  }
+  .abcs::scroll-button(left):hover,
+  .abcs::scroll-button(right):hover {
+    background-color: #f6a307;
+  }
+  .abcs::scroll-button(left) {
+    left: -50px;
+    right: 50px;
+  }
+}
 /* Specific styles adjustmentes for each page */
 /* PAGE RECOLLIDA */
 body.page-coneix-el-sistema-de-recollida h2.recollida-h2 {
@@ -978,6 +1202,27 @@ body.page-cada-residu-al-seu-equip .section-tes-dubtes p {
 }
 body.page-cada-residu-al-seu-equip .section-tes-dubtes .wp-block-buttons {
   margin-bottom: 100px;
+}
+
+/* Specific styles adjustmentes for single post page */
+body.single.single-post .wp-block-post-title {
+  display: block !important;
+}
+body.single.single-post .wp-block-group p {
+  font-size: 20px;
+}
+body.single.single-post .wp-block-group h1 {
+  color: #EA0000;
+}
+body.single.single-post .wp-block-group h2 {
+  color: black;
+  font-size: 22px;
+  background-image: none;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 0 !important;
+  font-family: "Roboto", sans-serif;
+  text-transform: none;
 }
 
 /*# sourceMappingURL=main.css.map */

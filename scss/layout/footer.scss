@@ -12,6 +12,10 @@ footer {
         padding: 50px 0 30px;
         font-size: 32px;
         margin-bottom: 0;
+
+        @media (max-width: 568px) {
+            font-size: 24px;
+        }
     }
 
     p {
@@ -21,52 +25,146 @@ footer {
         max-width: 1200px;
         display: block;
         margin: 0 auto;
+
+        @media (max-width: 768px) {
+            padding-right: 40px;
+            padding-left: 40px;
+            text-align: center;
+            line-height: 1;
+        }
+
+        @media (max-width: 568px) {
+            font-size: 20px;
+        }
     }
 
     .footer-grid {
         width: 100%;
         margin: 0 auto;
 
+        .add-wsp {
+            display: flex;
+            flex-direction: column;
+
+            img {
+                max-width: 150px;
+            }
+
+            @media (max-width: 767px) {}
+        }
+
+        .email,
+        .phone,
+        .schedule {
+            padding-top: 35px;
+
+            @media (max-width: 767px) {
+                padding-top: 0;
+            }
+        }
+
+        .main-btns {
+            height: auto;
+
+            @media (max-width: 767px) {
+                padding: 10px 10px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .footer-grid {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+
+            .wsp-title {
+                order: 1;
+            }
+
+            .add-wsp {
+                order: 2;
+            }
+
+            .escriu-title {
+                order: 3;
+            }
+
+            .email {
+                order: 4;
+
+            }
+
+            .truca-title {
+                order: 5;
+            }
+
+            .phone {
+                order: 6;
+            }
+
+            .horari-title {
+                order: 7;
+            }
+
+            .schedule {
+                order: 8;
+            }
+        }
+
         &.titles {
             max-width: 1200px;
             display: grid;
-            grid-template-columns: repeat(5, 1fr);
-            align-items: center;
+            grid-template-columns: repeat(4, 1fr);
+            align-items: start;
             padding: 20px 0 20px;
+
+            @media (max-width: 767px) {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
 
             p {
                 font-family: v.$font-main;
                 font-size: 20px;
                 font-weight: bold;
 
-                &::before {
-                    content: "";
-                    width: 35px;
-                    height: 35px;
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    flex-shrink: 0;
-                    display: inline-block;
-                    vertical-align: bottom;
-                    margin-right: 10px;
+                &.wsp-title,
+                &.escriu-title,
+                &.truca-title,
+                &.horari-title {
+                    &::before {
+                        content: "";
+                        width: 35px;
+                        height: 35px;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        flex-shrink: 0;
+                        display: inline-block;
+                        vertical-align: bottom;
+                        margin-right: 10px;
+                    }
+
+                    &.wsp-title::before {
+                        background-image: url("../img/wsp.png");
+                    }
+
+                    &.escriu-title::before {
+                        background-image: url("../img/mail.png");
+                    }
+
+                    &.truca-title::before {
+                        background-image: url("../img/phone.png");
+                    }
+
+                    &.horari-title::before {
+                        background-image: url("../img/clock.png");
+                    }
                 }
 
-                &.wsp-title::before {
-                    background-image: url("../img/wsp.png");
-                }
 
-                &.escriu-title::before {
-                    background-image: url("../img/mail.png");
-                }
 
-                &.truca-title::before {
-                    background-image: url("../img/phone.png");
-                }
-
-                &.horari-title::before {
-                    background-image: url("../img/clock.png");
-                }
             }
         }
 
@@ -95,12 +193,20 @@ footer {
         &.logos {
             max-width: 1200px;
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(5, 1fr);
             gap: 0px;
             align-items: center;
 
             img {
                 max-width: 150px;
+            }
+
+            @media (max-width: 767px) {
+                grid-template-columns: repeat(2, 1fr);
+                align-items: center;
+                justify-content: revert;
+                padding: 0 50px 0;
+
             }
         }
     }

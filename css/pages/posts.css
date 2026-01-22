@@ -1,0 +1,22 @@
+/* Specific styles adjustmentes for single post page */
+body.single.single-post .wp-block-post-title {
+  display: block !important;
+}
+body.single.single-post .wp-block-group p {
+  font-size: 20px;
+}
+body.single.single-post .wp-block-group h1 {
+  color: #EA0000;
+}
+body.single.single-post .wp-block-group h2 {
+  color: black;
+  font-size: 22px;
+  background-image: none;
+  font-weight: 300;
+  text-align: left;
+  margin-bottom: 0 !important;
+  font-family: "Roboto", sans-serif;
+  text-transform: none;
+}
+
+/*# sourceMappingURL=posts.css.map */

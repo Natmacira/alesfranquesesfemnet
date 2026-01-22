@@ -1,13 +1,24 @@
+@charset "UTF-8";
 .custom-logo {
   width: 248px;
   height: auto;
   display: block;
+}
+@media (max-width: 599px) {
+  .custom-logo {
+    width: 150px;
+  }
 }
 
 .wp-block-navigation__responsive-container-content .wp-block-navigation li.main-btns {
   width: 145px;
   text-transform: none;
   justify-content: center;
+}
+@media (max-width: 768px) {
+  .wp-block-navigation__responsive-container-content .wp-block-navigation li.main-btns {
+    width: 130px;
+  }
 }
 
 .header-custom {
@@ -29,5 +40,44 @@
   padding-inline: 0;
   justify-content: space-around;
 }
+@media (max-width: 1200px) {
+  .bottom-header {
+    padding-left: 50px;
+    padding-right: 50px;
+    max-width: 900px !important;
+  }
+}
+@media (max-width: 599px) {
+  .bottom-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .ul.wp-block-navigation__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+    max-width: 550px;
+  }
+}
+@media (max-width: 768px) {
+  .wp-block-navigation li.main-btns {
+    font-size: 14px !important;
+  }
+}
+@media (max-width: 599px) {
+  .wp-block-navigation li.main-btns {
+    font-size: 20px !important;
+    text-align: right !important;
+    max-width: 250px;
+  }
+}
+/* HAMBURGUESA DESDE 1200px */
+/* Mostrar botón */
+/* Ocultar menú horizontal */
+/* DESKTOP REAL */
 
 /*# sourceMappingURL=header.css.map */

@@ -131,6 +131,19 @@
         text-align: center;
         line-height: 32px;
         padding-bottom: 20px;
+        max-width: 500px;
+
+        @media (max-width: 767px) {
+            font-size: 24px;
+            padding: 0 20px 0;
+
+        }
+
+        @media (max-width: 567px) {
+            font-size: 18px;
+            padding: 0 20px 0;
+
+        }
     }
 }
 
@@ -160,6 +173,14 @@
 
 /* HOME SECTION AGENDA */
 
+.arrow {
+    display: none;
+
+    @media (max-width: 767px) {
+        display: block;
+    }
+}
+
 .home-section-agenda {
     h3.residu-h3 {
         width: 100%;
@@ -168,6 +189,7 @@
         padding: 20px 0 0;
         display: block;
         margin: auto;
+
     }
 
 
@@ -195,4 +217,55 @@
         }
 
     }
+
+    @media (max-width: 767px) {
+        .agenda-home-grid {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            gap: 16px;
+            padding-bottom: 10px;
+        }
+
+        .agenda-card {
+            min-width: 85%;
+            scroll-snap-align: start;
+            flex-shrink: 0;
+        }
+
+        .agenda-home-grid {
+            scrollbar-width: none;
+            /* Firefox */
+            -ms-overflow-style: none;
+            /* IE */
+        }
+
+        .agenda-home-grid::-webkit-scrollbar {
+            display: none;
+            /* Chrome, Safari */
+        }
+
+
+    }
+}
+
+@supports selector(::scroll-button(*)) {
+
+    .abcs::scroll-button(left),
+    .abcs::scroll-button(right) {
+        background-color: v.$primary;
+        border: none;
+
+        &:hover {
+            background-color: #f6a307;
+        }
+
+    }
+
+    .abcs::scroll-button(left) {
+        left: -50px;
+        right: 50px;
+    }
+
+
 }

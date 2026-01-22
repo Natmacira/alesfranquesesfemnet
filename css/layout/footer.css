@@ -9,6 +9,11 @@ footer h3 {
   font-size: 32px;
   margin-bottom: 0;
 }
+@media (max-width: 568px) {
+  footer h3 {
+    font-size: 24px;
+  }
+}
 footer p {
   font-size: 24px;
   font-family: "Roboto", sans-serif;
@@ -17,23 +22,99 @@ footer p {
   display: block;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  footer p {
+    padding-right: 40px;
+    padding-left: 40px;
+    text-align: center;
+    line-height: 1;
+  }
+}
+@media (max-width: 568px) {
+  footer p {
+    font-size: 20px;
+  }
+}
 footer .footer-grid {
   width: 100%;
   margin: 0 auto;
 }
+footer .footer-grid .add-wsp {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-grid .add-wsp img {
+  max-width: 150px;
+}
+footer .footer-grid .email,
+footer .footer-grid .phone,
+footer .footer-grid .schedule {
+  padding-top: 35px;
+}
+@media (max-width: 767px) {
+  footer .footer-grid .email,
+  footer .footer-grid .phone,
+  footer .footer-grid .schedule {
+    padding-top: 0;
+  }
+}
+footer .footer-grid .main-btns {
+  height: auto;
+}
+@media (max-width: 767px) {
+  footer .footer-grid .main-btns {
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 767px) {
+  footer .footer-grid .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer .footer-grid .wsp-title {
+    order: 1;
+  }
+  footer .footer-grid .add-wsp {
+    order: 2;
+  }
+  footer .footer-grid .escriu-title {
+    order: 3;
+  }
+  footer .footer-grid .email {
+    order: 4;
+  }
+  footer .footer-grid .truca-title {
+    order: 5;
+  }
+  footer .footer-grid .phone {
+    order: 6;
+  }
+  footer .footer-grid .horari-title {
+    order: 7;
+  }
+  footer .footer-grid .schedule {
+    order: 8;
+  }
+}
 footer .footer-grid.titles {
   max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: start;
   padding: 20px 0 20px;
+}
+@media (max-width: 767px) {
+  footer .footer-grid.titles {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 footer .footer-grid.titles p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: bold;
 }
-footer .footer-grid.titles p::before {
+footer .footer-grid.titles p.wsp-title::before, footer .footer-grid.titles p.escriu-title::before, footer .footer-grid.titles p.truca-title::before, footer .footer-grid.titles p.horari-title::before {
   content: "";
   width: 35px;
   height: 35px;
@@ -45,16 +126,16 @@ footer .footer-grid.titles p::before {
   vertical-align: bottom;
   margin-right: 10px;
 }
-footer .footer-grid.titles p.wsp-title::before {
+footer .footer-grid.titles p.wsp-title.wsp-title::before, footer .footer-grid.titles p.escriu-title.wsp-title::before, footer .footer-grid.titles p.truca-title.wsp-title::before, footer .footer-grid.titles p.horari-title.wsp-title::before {
   background-image: url("../img/wsp.png");
 }
-footer .footer-grid.titles p.escriu-title::before {
+footer .footer-grid.titles p.wsp-title.escriu-title::before, footer .footer-grid.titles p.escriu-title.escriu-title::before, footer .footer-grid.titles p.truca-title.escriu-title::before, footer .footer-grid.titles p.horari-title.escriu-title::before {
   background-image: url("../img/mail.png");
 }
-footer .footer-grid.titles p.truca-title::before {
+footer .footer-grid.titles p.wsp-title.truca-title::before, footer .footer-grid.titles p.escriu-title.truca-title::before, footer .footer-grid.titles p.truca-title.truca-title::before, footer .footer-grid.titles p.horari-title.truca-title::before {
   background-image: url("../img/phone.png");
 }
-footer .footer-grid.titles p.horari-title::before {
+footer .footer-grid.titles p.wsp-title.horari-title::before, footer .footer-grid.titles p.escriu-title.horari-title::before, footer .footer-grid.titles p.truca-title.horari-title::before, footer .footer-grid.titles p.horari-title.horari-title::before {
   background-image: url("../img/clock.png");
 }
 footer .footer-grid.info {
@@ -78,12 +159,20 @@ footer .footer-grid.info p.main-btns.body-btns {
 footer .footer-grid.logos {
   max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 0px;
   align-items: center;
 }
 footer .footer-grid.logos img {
   max-width: 150px;
+}
+@media (max-width: 767px) {
+  footer .footer-grid.logos {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: revert;
+    padding: 0 50px 0;
+  }
 }
 
 footer .wp-block-template-part {
