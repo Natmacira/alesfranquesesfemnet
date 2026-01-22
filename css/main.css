@@ -990,6 +990,12 @@ body.page-pas-a-pas h2.recollida-h2 {
   font-size: 55px;
   padding-top: 15px !important;
 }
+@media (max-width: 568px) {
+  body.page-coneix-el-sistema-de-recollida h2.recollida-h2,
+  body.page-pas-a-pas h2.recollida-h2 {
+    font-size: 45px;
+  }
+}
 body.page-coneix-el-sistema-de-recollida h3.residu-h3.recollida-h3,
 body.page-pas-a-pas h3.residu-h3.recollida-h3 {
   text-align: center;
@@ -1000,16 +1006,29 @@ body.page-pas-a-pas h3.residu-h3.recollida-h3 {
   text-transform: none;
   padding-bottom: 20px;
 }
-body.page-coneix-el-sistema-de-recollida .wp-block-gallery,
-body.page-pas-a-pas .wp-block-gallery {
+@media (max-width: 768px) {
+  body.page-coneix-el-sistema-de-recollida h3.residu-h3.recollida-h3,
+  body.page-pas-a-pas h3.residu-h3.recollida-h3 {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 1200px) {
+  body.page-coneix-el-sistema-de-recollida .separator-recollida,
+  body.page-pas-a-pas .separator-recollida {
+    display: none;
+  }
+}
+
+.wp-block-gallery {
   padding-bottom: 56px;
 }
-body.page-coneix-el-sistema-de-recollida .wp-block-gallery .bin.yellow img,
-body.page-pas-a-pas .wp-block-gallery .bin.yellow img {
+.wp-block-gallery .bin.yellow img {
   object-fit: contain !important;
 }
-body.page-coneix-el-sistema-de-recollida .special-h2-targeta,
-body.page-pas-a-pas .special-h2-targeta {
+
+.special-h2-targeta {
   background-image: none;
   color: #EA0000;
   font-size: 55px;
@@ -1018,10 +1037,9 @@ body.page-pas-a-pas .special-h2-targeta {
   /* para la versión video borrar la línea de abajo  */
   margin-bottom: 0 !important;
 }
-body.page-coneix-el-sistema-de-recollida .ul-iframe,
-body.page-coneix-el-sistema-de-recollida .iframe-ul,
-body.page-pas-a-pas .ul-iframe,
-body.page-pas-a-pas .iframe-ul {
+
+.ul-iframe,
+.iframe-ul {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -1029,32 +1047,36 @@ body.page-pas-a-pas .iframe-ul {
   margin: auto;
   /* para versión con video en vez de foto  */
 }
-body.page-coneix-el-sistema-de-recollida .ul-iframe .wp-block-image img,
-body.page-coneix-el-sistema-de-recollida .iframe-ul .wp-block-image img,
-body.page-pas-a-pas .ul-iframe .wp-block-image img,
-body.page-pas-a-pas .iframe-ul .wp-block-image img {
+@media (max-width: 768px) {
+  .ul-iframe,
+  .iframe-ul {
+    flex-direction: column;
+  }
+}
+.ul-iframe .wp-block-image img,
+.iframe-ul .wp-block-image img {
   max-width: 300px;
 }
-body.page-coneix-el-sistema-de-recollida .ul-iframe div.wp-block-group,
-body.page-coneix-el-sistema-de-recollida .iframe-ul div.wp-block-group,
-body.page-pas-a-pas .ul-iframe div.wp-block-group,
-body.page-pas-a-pas .iframe-ul div.wp-block-group {
+@media (max-width: 768px) {
+  .ul-iframe .wp-block-image img,
+  .iframe-ul .wp-block-image img {
+    max-width: 200px;
+  }
+}
+.ul-iframe div.wp-block-group,
+.iframe-ul div.wp-block-group {
   margin-right: 0 !important;
   margin-left: 0 !important;
 }
-body.page-coneix-el-sistema-de-recollida .ul-iframe figure.wp-block-embed.is-type-video.is-provider-youtube.wp-block-embed-youtube,
-body.page-coneix-el-sistema-de-recollida .iframe-ul figure.wp-block-embed.is-type-video.is-provider-youtube.wp-block-embed-youtube,
-body.page-pas-a-pas .ul-iframe figure.wp-block-embed.is-type-video.is-provider-youtube.wp-block-embed-youtube,
-body.page-pas-a-pas .iframe-ul figure.wp-block-embed.is-type-video.is-provider-youtube.wp-block-embed-youtube {
+.ul-iframe figure.wp-block-embed.is-type-video.is-provider-youtube.wp-block-embed-youtube,
+.iframe-ul figure.wp-block-embed.is-type-video.is-provider-youtube.wp-block-embed-youtube {
   width: 25%;
   height: auto;
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
-body.page-coneix-el-sistema-de-recollida .ul-iframe h4,
-body.page-coneix-el-sistema-de-recollida .iframe-ul h4,
-body.page-pas-a-pas .ul-iframe h4,
-body.page-pas-a-pas .iframe-ul h4 {
+.ul-iframe h4,
+.iframe-ul h4 {
   font-family: "Anton", sans-serif;
   font-size: 32px;
   color: #EA0000;
@@ -1062,23 +1084,37 @@ body.page-pas-a-pas .iframe-ul h4 {
   letter-spacing: 0;
   margin-bottom: 25px;
 }
-body.page-coneix-el-sistema-de-recollida .ul-iframe li,
-body.page-coneix-el-sistema-de-recollida .iframe-ul li,
-body.page-pas-a-pas .ul-iframe li,
-body.page-pas-a-pas .iframe-ul li {
+.ul-iframe li,
+.iframe-ul li {
   font-size: 25px;
   font-family: "Roboto", sans-serif;
   line-height: 27px;
   letter-spacing: 0;
   margin-bottom: 50px;
 }
-body.page-coneix-el-sistema-de-recollida .ul-iframe li::marker,
-body.page-coneix-el-sistema-de-recollida .iframe-ul li::marker,
-body.page-pas-a-pas .ul-iframe li::marker,
-body.page-pas-a-pas .iframe-ul li::marker {
+@media (max-width: 768px) {
+  .ul-iframe li,
+  .iframe-ul li {
+    margin-bottom: 20px;
+  }
+}
+.ul-iframe li::marker,
+.iframe-ul li::marker {
   color: #EA0000;
   font-size: 40px;
   font-family: "Anton", sans-serif;
+}
+
+@media (max-width: 768px) {
+  .ul-iframe {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .iframe-ul {
+    flex-direction: column-reverse;
+  }
 }
 
 /* PAGE CADA RESIDU AL SEU EQUIP */
@@ -1094,7 +1130,6 @@ body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-cons
 body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery {
   max-width: 1200px;
   justify-content: center;
-  margin-bottom: 100px !important;
 }
 body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card,
 body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card {
@@ -1115,21 +1150,29 @@ body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-cons
 body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption {
   display: block;
   position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
   bottom: 0;
   margin: auto;
-  width: 184px;
-  height: 50px;
   font-family: "Anton", sans-serif;
   font-size: 25px;
   background: none;
+  scrollbar-width: none;
+  /* Firefox */
+  -ms-overflow-style: none;
+  /* IE */
+}
+body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption::-webkit-scrollbar,
+body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari */
 }
 body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover img,
 body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover img {
   opacity: 0.9;
   filter: brightness(0.5);
+}
+body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card::before,
+body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card::before {
+  display: none;
 }
 body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained h3,
 body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained h3 {
@@ -1140,6 +1183,14 @@ body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained h3 {
   letter-spacing: 0;
   color: #EA0000;
 }
+@media (max-width: 768px) {
+  body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained h3,
+  body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained h3 {
+    line-height: 1;
+    font-size: 45px;
+    padding: 0 20px;
+  }
+}
 body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained p,
 body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained p {
   font-size: 32px;
@@ -1149,6 +1200,14 @@ body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained p {
   letter-spacing: 0;
   margin-bottom: 20px;
   max-width: 900px;
+}
+@media (max-width: 768px) {
+  body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained p,
+  body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained p {
+    font-size: 22px;
+    padding: 0 20px;
+    line-height: 25px;
+  }
 }
 body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio,
 body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio {
