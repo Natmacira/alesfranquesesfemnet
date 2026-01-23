@@ -33,13 +33,14 @@
   font-weight: 700;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
-  padding: 12px 24px;
+  padding: 2px 14px;
   max-width: 183px;
   text-align: center;
   height: 48px;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
+  line-height: normal;
   /* Gradient border */
   background-image: linear-gradient(white, white), linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
   background-origin: border-box;
@@ -55,7 +56,7 @@
 }
 .wp-block-post-excerpt__more-link {
   font-size: 20px;
-  padding: 3px 5px;
+  padding: 10px 5px;
   background-image: linear-gradient(90deg, #d51116 0%, #f6a307 100%);
   color: white;
   width: 244px;

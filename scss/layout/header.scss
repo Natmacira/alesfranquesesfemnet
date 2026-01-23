@@ -2,7 +2,7 @@
 @use "../abstracts/mixins" as m;
 
 .custom-logo {
-    width: 248px;
+    width: 170px;
     height: auto;
     display: block;
 
@@ -40,7 +40,7 @@
     min-width: 130px;
     margin: 0 auto;
     padding-inline: 0;
-    justify-content: space-around;
+    justify-content: space-between;
 
     @media (max-width: 1200px) {
         padding-left: 50px;

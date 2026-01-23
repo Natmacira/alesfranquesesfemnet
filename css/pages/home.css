@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* HOME AND MAIN PAGES TEMPLATE STYLES */
 /* HOME SECTION VIDEO */
 .home-section-video {
@@ -15,7 +16,7 @@
   font-weight: 400;
   line-height: 1;
   color: #EA0000;
-  padding-top: 120px !important;
+  padding-top: 70px !important;
   margin-bottom: 0 !important;
   padding-bottom: 31px;
 }
@@ -52,11 +53,6 @@
     font-size: 35px;
   }
 }
-@media (max-width: 568px) {
-  .home-section-residu .residu-h3 {
-    font-size: 28px;
-  }
-}
 .home-section-residu .residu-h3 {
   letter-spacing: 0;
   padding-bottom: 65px;
@@ -86,9 +82,6 @@
 }
 .bin.green figcaption {
   background: linear-gradient(90deg, #42a650 0%, #0f704d 100%) !important;
-}
-.bin.green img {
-  object-position: top;
 }
 .bin.blue figcaption {
   background: linear-gradient(90deg, #317fc2 0%, #253c8a 100%) !important;
@@ -126,11 +119,6 @@
     font-size: 35px;
   }
 }
-@media (max-width: 568px) {
-  .home-section-pasapas .residu-h3 {
-    font-size: 28px;
-  }
-}
 .home-section-pasapas .residu-h3 {
   color: #EA0000;
   padding-bottom: 20px;
@@ -141,7 +129,7 @@
   letter-spacing: 0;
   font-family: "Roboto", sans-serif;
   text-align: center;
-  line-height: 32px;
+  line-height: normal;
   padding-bottom: 20px;
   max-width: 500px;
 }
@@ -179,11 +167,6 @@
     font-size: 35px;
   }
 }
-@media (max-width: 568px) {
-  .home-section-video .residu-h3 {
-    font-size: 28px;
-  }
-}
 .home-section-video .residu-h3 {
   color: #EA0000;
 }
@@ -197,6 +180,7 @@
   margin: 0 auto;
   display: block !important;
   margin: auto !important;
+  padding-bottom: 55px !important;
 }
 
 /* HOME SECTION AGENDA */
@@ -243,7 +227,7 @@
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    gap: 16px;
+    gap: 0;
     padding-bottom: 10px;
   }
   .home-section-agenda .agenda-card {
@@ -268,6 +252,8 @@
   .abcs::scroll-button(right) {
     background-color: #EA0000;
     border: none;
+    width: 60px;
+    height: 60px;
   }
   .abcs::scroll-button(left):hover,
   .abcs::scroll-button(right):hover {
@@ -276,6 +262,38 @@
   .abcs::scroll-button(left) {
     left: -50px;
     right: 50px;
+  }
+  @media (max-width: 767px) {
+    .abcs::scroll-button(right) {
+      margin-right: 35px;
+    }
+  }
+}
+body.home .home-section-descobreix .main-btns {
+  margin-top: 25px !important;
+}
+body.home .wp-block-gallery {
+  padding-bottom: 0;
+}
+
+/* agenda arrow  */
+.agenda-home-grid-container {
+  max-width: 1200px;
+  margin: auto;
+}
+.agenda-home-grid-container .arrow-direction::before {
+  display: none;
+}
+@media (max-width: 767px) {
+  .agenda-home-grid-container .arrow-direction::before {
+    display: block;
+    content: "⇢";
+    position: absolute;
+    left: 45%;
+    right: 0;
+    top: 95%;
+    transform: translateY(-50%);
+    font-size: 4.2em;
   }
 }
 

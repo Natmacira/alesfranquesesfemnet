@@ -22,9 +22,9 @@ function alesfranqueses_child_styles() {
     // Main compiled SCSS file
     wp_enqueue_style(
         'alesfranqueses-main',
-        get_stylesheet_directory_uri() . '/css/main-v122.css',
+        get_stylesheet_directory_uri() . '/css/main.css',
         array('alesfranqueses-child-style'),
-        filemtime( get_stylesheet_directory() . '/css/main-v122.css' )    );
+        filemtime( get_stylesheet_directory() . '/css/main.css' )    );
 }
 
 add_action('wp_enqueue_scripts', 'alesfranqueses_child_styles');
@@ -61,6 +61,7 @@ add_shortcode('query_agenda', function () {
 
     ob_start();
 
+    echo '<div class="agenda-home-grid-container">';
     echo '<div class="agenda-home-grid">';
 
     while ($q->have_posts()) {
@@ -70,9 +71,12 @@ add_shortcode('query_agenda', function () {
             <?php if (has_post_thumbnail()) the_post_thumbnail('medium'); ?>
             <p><?php the_content(); ?></p>
         </article>
+        
         <?php
     }
 
+    echo '</div>';
+    echo '<span class="arrow-direction"></span>';    
     echo '</div>';
 
     wp_reset_postdata();

@@ -10,18 +10,8 @@ h2 {
 }
 @media (max-width: 768px) {
   h2 {
-    font-size: 30px;
-  }
-}
-@media (max-width: 568px) {
-  h2 {
-    font-size: 21px;
-    letter-spacing: 0.5px;
-  }
-}
-@media (max-width: 420px) {
-  h2 {
-    font-size: 18px;
+    font-size: 32px;
+    padding: 40px 39px;
   }
 }
 
@@ -73,13 +63,12 @@ h1.wp-block-heading span.title-highlight {
 @media (max-width: 768px) {
   h1.wp-block-heading {
     font-size: 65px;
-    width: 400px;
+    width: 100%;
   }
 }
 @media (max-width: 530px) {
   h1.wp-block-heading {
     font-size: 45px;
-    width: 235px;
   }
 }
 
@@ -93,6 +82,7 @@ h1.wp-block-heading span.title-highlight {
   margin: 0 auto;
   max-width: 1200px;
   padding-bottom: 0 !important;
+  padding: 0 !important;
 }
 .home-section-descobreix.recollida {
   justify-content: center;
@@ -175,7 +165,7 @@ h1.wp-block-heading span.title-highlight {
 }
 .bin-container figure.wp-block-gallery .bin img {
   object-fit: none !important;
-  padding-bottom: 40px;
+  padding-bottom: 26px;
 }
 .bin-container figure.wp-block-gallery .bin.brown img {
   object-fit: contain !important;
@@ -200,6 +190,11 @@ summary:focus,
 summary:focus-visible {
   outline: 2px solid transparent !important;
   box-shadow: none !important;
+}
+
+/* CLASS FOR DISPLAY NONE  */
+.display-none {
+  display: none !important;
 }
 
 /*# sourceMappingURL=general.css.map */

@@ -38,7 +38,7 @@ p {
 
 /* 3. Layout */
 .custom-logo {
-  width: 248px;
+  width: 170px;
   height: auto;
   display: block;
 }
@@ -76,7 +76,7 @@ p {
   min-width: 130px;
   margin: 0 auto;
   padding-inline: 0;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 @media (max-width: 1200px) {
   .bottom-header {
@@ -334,13 +334,14 @@ footer .wp-block-template-part {
   font-weight: 700;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
-  padding: 12px 24px;
+  padding: 2px 14px;
   max-width: 183px;
   text-align: center;
   height: 48px;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
+  line-height: normal;
   /* Gradient border */
   background-image: linear-gradient(white, white), linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
   background-origin: border-box;
@@ -363,13 +364,14 @@ footer .wp-block-template-part {
   font-weight: 700;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
-  padding: 12px 24px;
+  padding: 2px 14px;
   max-width: 183px;
   text-align: center;
   height: 48px;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
+  line-height: normal;
   /* Gradient border */
   background-image: linear-gradient(white, white), linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
   background-origin: border-box;
@@ -446,13 +448,14 @@ footer .wp-block-template-part {
   font-weight: 700;
   font-size: 18px;
   font-family: "Roboto", sans-serif;
-  padding: 12px 24px;
+  padding: 2px 14px;
   max-width: 183px;
   text-align: center;
   height: 48px;
   text-transform: uppercase;
   cursor: pointer;
   transition: all 0.3s ease;
+  line-height: normal;
   /* Gradient border */
   background-image: linear-gradient(white, white), linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
   background-origin: border-box;
@@ -468,7 +471,7 @@ footer .wp-block-template-part {
 }
 .wp-block-post-excerpt__more-link {
   font-size: 20px;
-  padding: 3px 5px;
+  padding: 10px 5px;
   background-image: linear-gradient(90deg, #d51116 0%, #f6a307 100%);
   color: white;
   width: 244px;
@@ -518,18 +521,8 @@ h2 {
 }
 @media (max-width: 768px) {
   h2 {
-    font-size: 30px;
-  }
-}
-@media (max-width: 568px) {
-  h2 {
-    font-size: 21px;
-    letter-spacing: 0.5px;
-  }
-}
-@media (max-width: 420px) {
-  h2 {
-    font-size: 18px;
+    font-size: 32px;
+    padding: 40px 39px;
   }
 }
 
@@ -581,13 +574,12 @@ h1.wp-block-heading span.title-highlight {
 @media (max-width: 768px) {
   h1.wp-block-heading {
     font-size: 65px;
-    width: 400px;
+    width: 100%;
   }
 }
 @media (max-width: 530px) {
   h1.wp-block-heading {
     font-size: 45px;
-    width: 235px;
   }
 }
 
@@ -601,6 +593,7 @@ h1.wp-block-heading span.title-highlight {
   margin: 0 auto;
   max-width: 1200px;
   padding-bottom: 0 !important;
+  padding: 0 !important;
 }
 .home-section-descobreix.recollida {
   justify-content: center;
@@ -683,7 +676,7 @@ h1.wp-block-heading span.title-highlight {
 }
 .bin-container figure.wp-block-gallery .bin img {
   object-fit: none !important;
-  padding-bottom: 40px;
+  padding-bottom: 26px;
 }
 .bin-container figure.wp-block-gallery .bin.brown img {
   object-fit: contain !important;
@@ -710,6 +703,11 @@ summary:focus-visible {
   box-shadow: none !important;
 }
 
+/* CLASS FOR DISPLAY NONE  */
+.display-none {
+  display: none !important;
+}
+
 /* 5. Pages */
 /* HOME AND MAIN PAGES TEMPLATE STYLES */
 /* HOME SECTION VIDEO */
@@ -728,7 +726,7 @@ summary:focus-visible {
   font-weight: 400;
   line-height: 1;
   color: #EA0000;
-  padding-top: 120px !important;
+  padding-top: 70px !important;
   margin-bottom: 0 !important;
   padding-bottom: 31px;
 }
@@ -765,11 +763,6 @@ summary:focus-visible {
     font-size: 35px;
   }
 }
-@media (max-width: 568px) {
-  .home-section-residu .residu-h3 {
-    font-size: 28px;
-  }
-}
 .home-section-residu .residu-h3 {
   letter-spacing: 0;
   padding-bottom: 65px;
@@ -799,9 +792,6 @@ summary:focus-visible {
 }
 .bin.green figcaption {
   background: linear-gradient(90deg, #42a650 0%, #0f704d 100%) !important;
-}
-.bin.green img {
-  object-position: top;
 }
 .bin.blue figcaption {
   background: linear-gradient(90deg, #317fc2 0%, #253c8a 100%) !important;
@@ -839,11 +829,6 @@ summary:focus-visible {
     font-size: 35px;
   }
 }
-@media (max-width: 568px) {
-  .home-section-pasapas .residu-h3 {
-    font-size: 28px;
-  }
-}
 .home-section-pasapas .residu-h3 {
   color: #EA0000;
   padding-bottom: 20px;
@@ -854,7 +839,7 @@ summary:focus-visible {
   letter-spacing: 0;
   font-family: "Roboto", sans-serif;
   text-align: center;
-  line-height: 32px;
+  line-height: normal;
   padding-bottom: 20px;
   max-width: 500px;
 }
@@ -892,11 +877,6 @@ summary:focus-visible {
     font-size: 35px;
   }
 }
-@media (max-width: 568px) {
-  .home-section-video .residu-h3 {
-    font-size: 28px;
-  }
-}
 .home-section-video .residu-h3 {
   color: #EA0000;
 }
@@ -910,6 +890,7 @@ summary:focus-visible {
   margin: 0 auto;
   display: block !important;
   margin: auto !important;
+  padding-bottom: 55px !important;
 }
 
 /* HOME SECTION AGENDA */
@@ -956,7 +937,7 @@ summary:focus-visible {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    gap: 16px;
+    gap: 0;
     padding-bottom: 10px;
   }
   .home-section-agenda .agenda-card {
@@ -981,6 +962,8 @@ summary:focus-visible {
   .abcs::scroll-button(right) {
     background-color: #EA0000;
     border: none;
+    width: 60px;
+    height: 60px;
   }
   .abcs::scroll-button(left):hover,
   .abcs::scroll-button(right):hover {
@@ -990,7 +973,40 @@ summary:focus-visible {
     left: -50px;
     right: 50px;
   }
+  @media (max-width: 767px) {
+    .abcs::scroll-button(right) {
+      margin-right: 35px;
+    }
+  }
 }
+body.home .home-section-descobreix .main-btns {
+  margin-top: 25px !important;
+}
+body.home .wp-block-gallery {
+  padding-bottom: 0;
+}
+
+/* agenda arrow  */
+.agenda-home-grid-container {
+  max-width: 1200px;
+  margin: auto;
+}
+.agenda-home-grid-container .arrow-direction::before {
+  display: none;
+}
+@media (max-width: 767px) {
+  .agenda-home-grid-container .arrow-direction::before {
+    display: block;
+    content: "⇢";
+    position: absolute;
+    left: 45%;
+    right: 0;
+    top: 95%;
+    transform: translateY(-50%);
+    font-size: 4.2em;
+  }
+}
+
 /* Specific styles adjustmentes for each page */
 /* PAGE RECOLLIDA */
 body.page-coneix-el-sistema-de-recollida h2.recollida-h2,
@@ -1051,11 +1067,11 @@ body.page-pas-a-pas h3.residu-h3.recollida-h3 {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1200px !important;
   margin: auto;
   /* para versión con video en vez de foto  */
 }
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .ul-iframe,
   .iframe-ul {
     flex-direction: column;
@@ -1064,6 +1080,13 @@ body.page-pas-a-pas h3.residu-h3.recollida-h3 {
 .ul-iframe .wp-block-image img,
 .iframe-ul .wp-block-image img {
   max-width: 300px;
+  padding-top: 120px;
+}
+@media (max-width: 1200px) {
+  .ul-iframe .wp-block-image img,
+  .iframe-ul .wp-block-image img {
+    padding-top: 0;
+  }
 }
 @media (max-width: 768px) {
   .ul-iframe .wp-block-image img,
@@ -1129,9 +1152,44 @@ body.page-pas-a-pas h3.residu-h3.recollida-h3 {
 body.page-pas-a-pas .home-section-descobreix img {
   max-width: 500px;
 }
+body.page-pas-a-pas .iframe-ul .wp-block-group p,
+body.page-pas-a-pas .iframe-ul .wp-block-group .wp-block-list,
+body.page-pas-a-pas .ul-iframe .wp-block-group p,
+body.page-pas-a-pas .ul-iframe .wp-block-group .wp-block-list {
+  font-family: "Roboto", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+}
+body.page-pas-a-pas .iframe-ul .wp-block-group .wp-block-list,
+body.page-pas-a-pas .ul-iframe .wp-block-group .wp-block-list {
+  list-style: none;
+  padding-left: 0;
+}
+body.page-pas-a-pas .iframe-ul .wp-block-group .wp-block-list li,
+body.page-pas-a-pas .ul-iframe .wp-block-group .wp-block-list li {
+  position: relative;
+  padding-left: 1.5rem;
+}
+body.page-pas-a-pas .iframe-ul .wp-block-group .wp-block-list li::before,
+body.page-pas-a-pas .ul-iframe .wp-block-group .wp-block-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.2em;
+  color: #EA0000;
+}
 body.page-pas-a-pas .first-pasapas {
   display: flex;
   align-items: center;
+  padding-left: 0;
+  padding-right: 79px;
+}
+@media (max-width: 1200px) {
+  body.page-pas-a-pas .first-pasapas {
+    flex-direction: column;
+  }
 }
 body.page-pas-a-pas .first-pasapas p {
   font-size: 40px;
@@ -1152,6 +1210,49 @@ body.page-pas-a-pas .first-pasapas p:first-child {
   font-weight: bold;
   line-height: 1;
   padding-bottom: 0px;
+}
+body.page-pas-a-pas .snd-pasapas {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+body.page-pas-a-pas .snd-pasapas .first-pasapas {
+  padding-right: 0;
+  width: 500px;
+}
+body.page-pas-a-pas figure.wp-block-gallery {
+  justify-content: center;
+  max-width: 1000px !important;
+  margin: auto;
+  gap: 46px;
+  padding-top: 50px;
+}
+@media (max-width: 1200px) {
+  body.page-pas-a-pas figure.wp-block-gallery {
+    max-width: 700px;
+    margin: auto;
+  }
+}
+@media (max-width: 520px) {
+  body.page-pas-a-pas figure.wp-block-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+body.page-pas-a-pas figure.wp-block-gallery .bin {
+  max-width: 190px !important;
+  height: 155px;
+  background-color: rgb(250, 250, 250);
+}
+body.page-pas-a-pas figure.wp-block-gallery .bin img {
+  object-fit: contain !important;
+  padding-bottom: 40px;
+}
+body.page-pas-a-pas figure.wp-block-gallery .bin figcaption {
+  color: black;
+  font-size: 15px !important;
+  font-family: "Roboto", sans-serif;
+  background: transparent;
 }
 
 /* PAGE CADA RESIDU AL SEU EQUIP */
