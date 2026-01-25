@@ -109,6 +109,7 @@ html.has-modal-open .wp-block-navigation__container.is-responsive.items-justifie
   align-items: center !important;
   width: 100% !important;
   flex-direction: row !important;
+  justify-content: center !important;
 }
 html.has-modal-open .wp-block-navigation__container.is-responsive.items-justified-right.ul-btns-header.wp-block-navigation .wp-block-navigation-item.main-btns.wp-block-navigation-link {
   /* Gradient border */
@@ -133,6 +134,14 @@ html.has-modal-open .wp-block-navigation__container.is-responsive.items-justifie
 .wp-block-navigation__responsive-container-close svg path {
   transform: scaleY(1.4);
   transform-origin: center;
+}
+
+/* SWITCHER */
+.wpml-language-switcher-navigation-block.wpml-ls-dropdown ul,
+.wpml-language-switcher-navigation-block.wpml-ls-dropdown li {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
 }
 
 /*# sourceMappingURL=header.css.map */

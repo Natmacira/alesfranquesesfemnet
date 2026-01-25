@@ -208,7 +208,8 @@ body.page-pas-a-pas {
         display: flex;
         align-items: center;
         padding-left: 0;
-        padding-right: 79px;
+        // padding-right: 79px;
+        max-width: 100% !important;
 
         @media (max-width: 1200px) {
             flex-direction: column;
@@ -227,18 +228,24 @@ body.page-pas-a-pas {
         background: v.$primary;
         color: white;
 
-        width: 48px;
-        height: 48px;
+        width: 100px;
+        height: 100px;
 
         border-radius: 50%;
         display: inline-flex;
         align-items: center;
         justify-content: center;
 
-        font-size: 24px;
+        font-size: 55px;
         font-weight: bold;
         line-height: 1;
         padding-bottom: 0px;
+
+        @media (max-width: 1200px) {
+            font-size: 32px;
+            width: 50px;
+            height: 50px;
+        }
 
     }
 
@@ -249,7 +256,7 @@ body.page-pas-a-pas {
 
         .first-pasapas {
             padding-right: 0;
-            width: 500px;
+
         }
     }
 
@@ -289,8 +296,113 @@ body.page-pas-a-pas {
         }
 
     }
+
+    .iframe-ul {
+        position: relative;
+
+        .pasapas-one {
+            position: absolute;
+            top: 0;
+            left: -130px;
+
+            @media (max-width: 1200px) {
+                position: relative;
+                left: 0;
+
+            }
+        }
+
+        .rebras-lainfo {
+            max-width: 100% !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            font-size: 45px !important;
+            font-family: v.$font-heading;
+            line-height: normal !important;
+
+            @media (max-width: 1200px) {
+                font-size: 32px !important;
+                text-align: center;
+            }
+        }
+
+
+    }
 }
 
+
+.acada-llar {
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    font-size: 32px;
+    padding-top: 26px;
+    max-width: 870px !important;
+    line-height: normal;
+    font-weight: bold;
+    color: black !important;
+
+    @media (max-width: 1200px) {
+        font-size: 20px !important;
+
+    }
+}
+
+.responsive-paragraph {
+    @media (max-width: 1200px) {
+        font-size: 20px !important;
+
+        ul,
+        li {
+            font-size: 20px !important;
+        }
+    }
+
+    font-family: v.$font-main !important;
+    line-height: normal !important;
+}
+
+.first-pasapas.third {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    max-width: 1200px !important;
+    justify-content: center;
+    margin: auto;
+
+    p {
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-top: 0 !important;
+
+    }
+
+    p.tancament {
+        font-size: 45px;
+        padding-left: 50px;
+        padding-top: 21px;
+        line-height: normal !important;
+
+        @media (max-width: 1200px) {
+            font-size: 32px !important;
+            text-align: center;
+            padding-left: 0;
+
+        }
+    }
+}
+
+.recollide-dels-materials.snd-pasapas.wp-block-group.has-background-background-color.has-background.has-global-padding.is-layout-constrained.wp-block-group-is-layout-constrained {
+    @media (max-width: 1200px) {
+        padding-top: 50px !important;
+
+        .acada-llar {
+            padding-top: 0 !important;
+        }
+    }
+}
 
 /* PAGE CADA RESIDU AL SEU EQUIP */
 
@@ -306,6 +418,26 @@ body.page-pas-a-pas {
         figure.wp-block-gallery {
             max-width: 1200px;
             justify-content: center;
+
+            @media (max-width: 1200px) {
+                max-width: 800px;
+
+            }
+
+            @media (max-width: 768px) {
+                max-width: 650px;
+
+            }
+
+            @media (max-width: 568px) {
+                max-width: 400px;
+
+            }
+
+            @media (max-width: 359px) {
+                max-width: 300px;
+
+            }
 
             .wp-block-image.residu-gallery-card {
                 width: 167px !important;
@@ -517,7 +649,7 @@ body.page-preguntes-frequents {
         margin: auto;
         margin-bottom: 100px;
 
-        @media (max-width: 1300px) {
+        @media (max-width: 1350px) {
             max-width: 1000px;
         }
 
@@ -525,12 +657,12 @@ body.page-preguntes-frequents {
             max-width: 700px;
         }
 
-        @media (max-width: 800px) {
-            max-width: 500px;
+        @media (max-width: 845px) {
+            max-width: 600px;
         }
 
-        @media (max-width: 700px) {
-            max-width: 400px;
+        @media (max-width: 720px) {
+            max-width: 500px;
         }
 
         @media (max-width: 600px) {
@@ -538,10 +670,14 @@ body.page-preguntes-frequents {
         }
 
         @media (max-width: 500px) {
-            max-width: 255px;
+            max-width: 325px;
         }
 
-        @media (max-width: 360px) {
+        @media (max-width: 450px) {
+            max-width: 250px;
+        }
+
+        @media (max-width: 350px) {
             max-width: 200px;
         }
 
