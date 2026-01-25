@@ -10,6 +10,11 @@ h2 {
 }
 @media (max-width: 768px) {
   h2 {
+    letter-spacing: 4px;
+  }
+}
+@media (max-width: 768px) {
+  h2 {
     font-size: 32px;
     padding: 40px 39px;
   }
@@ -85,7 +90,7 @@ h1.wp-block-heading span.title-highlight {
   padding: 0 !important;
 }
 .home-section-descobreix.recollida {
-  justify-content: center;
+  justify-content: space-between;
 }
 @media (max-width: 1200px) {
   .home-section-descobreix {
@@ -105,7 +110,7 @@ h1.wp-block-heading span.title-highlight {
 }
 
 .inside-container-descobreix {
-  padding-bottom: 45px;
+  padding-bottom: 70px;
   position: relative;
 }
 @media (max-width: 1200px) {
@@ -169,6 +174,10 @@ h1.wp-block-heading span.title-highlight {
 }
 .bin-container figure.wp-block-gallery .bin.brown img {
   object-fit: contain !important;
+}
+.bin-container .wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) {
+  margin: 0;
+  width: 100%;
 }
 
 /* cliclkeable elements */

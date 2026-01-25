@@ -26,7 +26,7 @@ footer {
         display: block;
         margin: 0 auto;
 
-        @media (max-width: 768px) {
+        @media (max-width: 1200px) {
             padding-right: 40px;
             padding-left: 40px;
             text-align: center;
@@ -71,10 +71,11 @@ footer {
             }
         }
 
-        @media (max-width: 767px) {
+        @media (max-width: 1200px) {
             .footer-grid {
                 display: grid;
                 grid-template-columns: repeat(1, 1fr);
+                margin: auto;
             }
 
 
@@ -101,6 +102,7 @@ footer {
 
             .phone {
                 order: 6;
+                line-height: 1.5;
             }
 
             .horari-title {
@@ -119,7 +121,7 @@ footer {
             align-items: start;
             padding: 20px 0 20px;
 
-            @media (max-width: 767px) {
+            @media (max-width: 1200px) {
                 display: grid;
                 grid-template-columns: repeat(1, 1fr);
             }
@@ -201,7 +203,7 @@ footer {
                 max-width: 150px;
             }
 
-            @media (max-width: 767px) {
+            @media (max-width: 1200px) {
                 grid-template-columns: repeat(2, 1fr);
                 align-items: center;
                 justify-content: revert;
@@ -223,12 +225,14 @@ footer .wp-block-template-part {
     text-align: left;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
 
     .footer-grid.titles,
     .footer-grid.info,
     .footer-grid.logos {
         grid-template-columns: 1fr 1fr;
+        max-width: 800px;
+        text-align: center;
     }
 }
 

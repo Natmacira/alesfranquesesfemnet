@@ -29,6 +29,7 @@
   .home-section-residu h2 {
     font-size: 55px;
     padding-top: 50px !important;
+    letter-spacing: 4px;
   }
 }
 @media (max-width: 568px) {
@@ -51,11 +52,17 @@
     padding-left: 40px;
     padding-right: 40px;
     font-size: 35px;
+    letter-spacing: 3px;
   }
 }
 .home-section-residu .residu-h3 {
   letter-spacing: 0;
   padding-bottom: 65px;
+}
+@media (max-width: 768px) {
+  .home-section-residu .residu-h3 {
+    letter-spacing: 4px;
+  }
 }
 
 .bin {
@@ -117,6 +124,7 @@
     padding-left: 40px;
     padding-right: 40px;
     font-size: 35px;
+    letter-spacing: 3px;
   }
 }
 .home-section-pasapas .residu-h3 {
@@ -165,6 +173,7 @@
     padding-left: 40px;
     padding-right: 40px;
     font-size: 35px;
+    letter-spacing: 3px;
   }
 }
 .home-section-video .residu-h3 {
@@ -263,9 +272,9 @@
     left: -50px;
     right: 50px;
   }
-  @media (max-width: 767px) {
+  @media (max-width: 1200px) {
     .abcs::scroll-button(right) {
-      margin-right: 35px;
+      margin-right: 15%;
     }
   }
 }

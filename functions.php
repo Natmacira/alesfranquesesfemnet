@@ -22,9 +22,10 @@ function alesfranqueses_child_styles() {
     // Main compiled SCSS file
     wp_enqueue_style(
         'alesfranqueses-main',
-        get_stylesheet_directory_uri() . '/css/main.css',
+        get_stylesheet_directory_uri() . '/css/main-v456.css',
         array('alesfranqueses-child-style'),
-        filemtime( get_stylesheet_directory() . '/css/main.css' )    );
+        filemtime( get_stylesheet_directory() . '/css/main-456.css' )
+    );
 }
 
 add_action('wp_enqueue_scripts', 'alesfranqueses_child_styles');
@@ -118,3 +119,7 @@ add_filter('body_class', function ($classes) {
 
     return $classes;
 });
+
+add_action('wp_head', function () {
+    echo '<!-- cache-bust-' . time() . ' -->';
+}, 0);

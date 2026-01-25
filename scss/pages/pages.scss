@@ -12,14 +12,14 @@ body.page-pas-a-pas {
         padding-top: 15px !important;
 
         @media (max-width: 568px) {
-            font-size: 45px;
+            font-size: 32px;
 
         }
     }
 
     h3.residu-h3.recollida-h3 {
         text-align: center;
-        font-size: 32px;
+        font-size: 24px;
         font-family: v.$font-main;
         width: 100%;
         max-width: 1200px;
@@ -49,6 +49,11 @@ body.page-coneix-el-sistema-de-recollida {
             top: 0;
         }
     }
+
+    .ul-iframe .wp-block-image img,
+    .iframe-ul .wp-block-image img {
+        padding-top: 0 !important;
+    }
 }
 
 .wp-block-gallery.has-nested-images {
@@ -69,8 +74,22 @@ body.page-coneix-el-sistema-de-recollida {
         font-family: v.$font-heading;
         padding: 40px 0 0;
 
-        /* para la versión video borrar la línea de abajo  */
-        margin-bottom: 0 !important;
+        @media (max-width: 768px) {
+            letter-spacing: 2px;
+            font-size: 32px;
+        }
+
+    }
+
+    .wp-block-group.ul-iframe .wp-block-group.ul-iframe,
+    .wp-block-group.ul-iframe .wp-block-group.iframe-ul {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .wp-block-group.ul-iframe .wp-block-group.iframe-ul {
+        margin-top: 50px !important;
+
     }
 }
 
@@ -119,15 +138,21 @@ body.page-coneix-el-sistema-de-recollida {
         font-size: 32px;
         color: v.$primary;
         line-height: 35px;
-        letter-spacing: 0;
+        // letter-spacing: 0;
         margin-bottom: 25px;
+
+        @media (max-width: 768px) {
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
     }
 
     li {
         font-size: 25px;
         font-family: v.$font-main;
         line-height: 27px;
-        letter-spacing: 0;
+        // letter-spacing: 0;
         margin-bottom: 50px;
 
         @media (max-width: 768px) {
@@ -162,6 +187,24 @@ body.page-coneix-el-sistema-de-recollida {
 /* PAGE PAS A PAS  */
 
 body.page-pas-a-pas {
+
+    h1 {
+        top: -225px;
+        line-height: 100px;
+
+        @media (max-width: 1200px) {
+            top: 0 !important;
+        }
+
+        @media (max-width: 550px) {
+            line-height: 82px;
+        }
+
+        @media (max-width: 500px) {
+            line-height: 60px;
+        }
+    }
+
     .home-section-descobreix {
         img {
             max-width: 500px;
@@ -220,6 +263,11 @@ body.page-pas-a-pas {
             color: v.$primary;
             font-family: v.$font-heading;
             padding-bottom: 20px;
+
+            @media (max-width: 768px) {
+                letter-spacing: 2px;
+            }
+
         }
 
     }
@@ -324,6 +372,11 @@ body.page-pas-a-pas {
                 font-size: 32px !important;
                 text-align: center;
             }
+
+            @media (max-width: 768px) {
+                letter-spacing: 2px;
+            }
+
         }
 
 
@@ -345,7 +398,7 @@ body.page-pas-a-pas {
 
     @media (max-width: 1200px) {
         font-size: 20px !important;
-
+        text-align: center;
     }
 }
 
@@ -471,6 +524,11 @@ body.page-pas-a-pas {
                             display: none;
                             /* Chrome, Safari */
                         }
+
+                        @media (max-width: 768px) {
+                            letter-spacing: 2px;
+                        }
+
                     }
 
                     img {
@@ -490,24 +548,25 @@ body.page-pas-a-pas {
             font-family: v.$font-heading;
             text-align: center;
             line-height: 82px;
-            letter-spacing: 0;
+            // letter-spacing: 0;
             color: v.$primary;
 
             @media (max-width: 768px) {
                 line-height: 1;
-                font-size: 45px;
+                font-size: 35px;
                 padding: 0 20px;
+                letter-spacing: 2px;
             }
         }
 
         p {
-            font-size: 32px;
+            font-size: 24px;
             font-family: v.$font-main;
             text-align: center;
             line-height: 35px;
-            letter-spacing: 0;
+            // letter-spacing: 0;
             margin-bottom: 20px;
-            max-width: 900px;
+            max-width: 800px;
 
             @media (max-width: 768px) {
                 font-size: 22px;
@@ -525,7 +584,7 @@ body.page-pas-a-pas {
                     font-family: v.$font-main;
                     font-size: 20px;
                     font-weight: bold;
-                    letter-spacing: 0;
+                    // letter-spacing: 0;
                     margin-bottom: 0;
                     padding-bottom: 0;
                 }
@@ -608,8 +667,14 @@ body.page-pas-a-pas {
             font-family: v.$font-heading;
             text-align: center;
             line-height: 82px;
-            letter-spacing: 0;
+            // letter-spacing: 0;
             color: v.$primary;
+
+            @media (max-width: 768px) {
+                letter-spacing: 2px;
+                font-size: 35px;
+            }
+
         }
 
         p {
@@ -617,9 +682,13 @@ body.page-pas-a-pas {
             font-family: v.$font-main;
             text-align: center;
             line-height: 35px;
-            letter-spacing: 0;
+            // letter-spacing: 0;
             margin-bottom: 20px;
             max-width: 1200px;
+
+            @media (max-width: 768px) {
+                font-size: 24px;
+            }
         }
 
         .wp-block-buttons {
@@ -629,11 +698,73 @@ body.page-pas-a-pas {
     }
 }
 
+body.page-cada-residu-al-seu-equip {
+    h1.wp-block-heading {
+        top: -200px;
+
+        @media (max-width: 1200px) {
+            top: 0;
+        }
+    }
+
+    .deixaleria-localitzacio.mobile {
+        display: none;
+    }
+
+    @media (max-width: 1200px) {
+        .deixaleria-localitzacio.desktop {
+            display: none;
+        }
+
+        .deixaleria-localitzacio.mobile {
+            display: block;
+        }
+
+        .deixaleria-localitzacio-titles {
+            display: flex;
+            flex-direction: column;
+
+            .deixalleria-item-one {
+                order: 1;
+            }
+
+            .deixalleria-item-three {
+                order: 2;
+                color: black;
+
+                &::before {
+                    display: none !important;
+                }
+
+            }
+
+            .deixalleria-item-two {
+                order: 3;
+            }
+
+            .deixalleria-item-four {
+                order: 4;
+                color: black;
+
+                &::before {
+                    display: none !important;
+                }
+            }
+        }
+    }
+}
+
 /* PAGE PREG FREQUENTES  */
+
 
 body.page-preguntes-frequents {
     h1.wp-block-heading {
         line-height: 95px;
+        top: -200px;
+
+        @media (max-width: 1200px) {
+            top: 0;
+        }
 
         @media (max-width: 768px) {
             line-height: 75px;
@@ -690,7 +821,7 @@ body.page-preguntes-frequents {
 
             @media (max-width: 768px) {
                 font-size: 28px;
-
+                letter-spacing: 2px;
             }
 
             @media (max-width: 568px) {
@@ -724,7 +855,7 @@ body.page-preguntes-frequents {
         }
 
         p {
-            font-size: 32px;
+            font-size: 24px;
 
             @media (max-width: 768px) {
                 font-size: 24px;
@@ -737,6 +868,8 @@ body.page-preguntes-frequents {
 
         }
     }
+
+
 
     /* Oculta el marcador en Chrome, Safari y Edge */
     summary::-webkit-details-marker {
@@ -769,6 +902,7 @@ body.blog {
 
         @media (max-width: 768px) {
             font-size: 24px;
+            letter-spacing: 2px;
         }
     }
 
@@ -803,7 +937,7 @@ body.error404 {
             font-size: 20px;
             font-family: v.$font-main;
             text-align: left;
-            letter-spacing: 0;
+            // letter-spacing: 0;
             margin-bottom: 20px;
             max-width: 1200px;
             font-weight: bold;

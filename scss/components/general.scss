@@ -29,10 +29,6 @@ h2 {
     padding-bottom: 0 !important;
 }
 
-// .wp-block-group.is-layout-constrained {
-//     padding-inline: 1;
-// }
-
 
 /* HERO SECTION  */
 
@@ -87,7 +83,7 @@ h1.wp-block-heading {
     padding: 0 !important;
 
     &.recollida {
-        justify-content: center;
+        justify-content: space-between;
     }
 
     @media (max-width: 1200px) {
@@ -106,7 +102,7 @@ h1.wp-block-heading {
 }
 
 .inside-container-descobreix {
-    padding-bottom: 45px;
+    padding-bottom: 70px;
     position: relative;
 
     @media (max-width: 1200px) {
@@ -174,6 +170,11 @@ h1.wp-block-heading {
                 }
             }
         }
+    }
+
+    .wp-block-gallery.has-nested-images figure.wp-block-image:not(#individual-image) {
+        margin: 0;
+        width: 100%;
     }
 }
 

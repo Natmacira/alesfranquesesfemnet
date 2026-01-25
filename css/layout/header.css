@@ -57,11 +57,6 @@
     max-width: 550px;
   }
 }
-@media (max-width: 768px) {
-  .wp-block-navigation li.main-btns {
-    font-size: 14px !important;
-  }
-}
 @media (max-width: 599px) {
   .wp-block-navigation li.main-btns {
     font-size: 20px !important;
@@ -142,6 +137,12 @@ html.has-modal-open .wp-block-navigation__container.is-responsive.items-justifie
   display: flex;
   align-items: center;
   font-size: 24px;
+}
+
+@media (max-width: 1200px) {
+  .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .has-child .wp-block-navigation__submenu-container {
+    padding-right: 0 !important;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

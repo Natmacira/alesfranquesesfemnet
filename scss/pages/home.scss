@@ -34,6 +34,7 @@
         @media (max-width: 768px) {
             font-size: 55px;
             padding-top: 50px !important;
+            letter-spacing: 4px;
         }
 
         @media (max-width: 568px) {
@@ -46,6 +47,9 @@
         letter-spacing: 0;
         padding-bottom: 65px;
 
+        @media (max-width: 768px) {
+            letter-spacing: 4px;
+        }
     }
 }
 
@@ -81,9 +85,6 @@
             background: v.$gradient-green !important;
         }
 
-        // img {
-        //     object-position: top;
-        // }
     }
 
     &.blue {
@@ -270,9 +271,9 @@
         right: 50px;
     }
 
-    @media (max-width: 767px) {
+    @media (max-width: 1200px) {
         .abcs::scroll-button(right) {
-            margin-right: 35px;
+            margin-right: 15%;
         }
     }
 

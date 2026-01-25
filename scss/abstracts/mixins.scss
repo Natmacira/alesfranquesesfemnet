@@ -46,6 +46,11 @@
   color: white;
   padding: 59px 39px;
   margin-bottom: 120px !important;
+
+  @media (max-width: 768px) {
+    letter-spacing: 4px;
+  }
+
 }
 
 @mixin heading-h3 {
@@ -62,5 +67,6 @@
     padding-left: 40px;
     padding-right: 40px;
     font-size: 35px;
+    letter-spacing: 3px;
   }
 }
