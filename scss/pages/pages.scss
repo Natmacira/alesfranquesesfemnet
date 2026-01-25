@@ -41,25 +41,37 @@ body.page-pas-a-pas {
     }
 }
 
-.wp-block-gallery {
+body.page-coneix-el-sistema-de-recollida {
+    h1 {
+        top: -184px;
+
+        @media (max-width: 1200px) {
+            top: 0;
+        }
+    }
+}
+
+.wp-block-gallery.has-nested-images {
     padding-bottom: 56px;
 
-    .bin.yellow {
+    figure.wp-block-image.bin.yellow {
         img {
             object-fit: contain !important;
         }
     }
 }
 
-.special-h2-targeta {
-    background-image: none;
-    color: v.$primary;
-    font-size: 55px;
-    font-family: v.$font-heading;
-    padding: 40px 0 0;
+body.page-coneix-el-sistema-de-recollida {
+    .special-h2-targeta {
+        background-image: none;
+        color: v.$primary;
+        font-size: 55px;
+        font-family: v.$font-heading;
+        padding: 40px 0 0;
 
-    /* para la versión video borrar la línea de abajo  */
-    margin-bottom: 0 !important;
+        /* para la versión video borrar la línea de abajo  */
+        margin-bottom: 0 !important;
+    }
 }
 
 .ul-iframe,
@@ -68,7 +80,7 @@ body.page-pas-a-pas {
     justify-content: space-evenly;
     align-items: center;
     max-width: 1200px !important;
-    margin: auto;
+    margin: auto !important;
     /* para versión con video en vez de foto  */
     // padding-bottom: 100px;
     // padding-top: 100px;
@@ -127,6 +139,7 @@ body.page-pas-a-pas {
             color: v.$primary;
             font-size: 40px;
             font-family: v.$font-heading;
+            display: none;
         }
     }
 }
@@ -186,6 +199,7 @@ body.page-pas-a-pas {
                 transform: translateY(-50%);
                 font-size: 2.2em;
                 color: v.$primary;
+
             }
         }
     }
@@ -503,6 +517,34 @@ body.page-preguntes-frequents {
         margin: auto;
         margin-bottom: 100px;
 
+        @media (max-width: 1300px) {
+            max-width: 1000px;
+        }
+
+        @media (max-width: 1200px) {
+            max-width: 700px;
+        }
+
+        @media (max-width: 800px) {
+            max-width: 500px;
+        }
+
+        @media (max-width: 700px) {
+            max-width: 400px;
+        }
+
+        @media (max-width: 600px) {
+            max-width: 355px;
+        }
+
+        @media (max-width: 500px) {
+            max-width: 255px;
+        }
+
+        @media (max-width: 360px) {
+            max-width: 200px;
+        }
+
         summary {
             color: v.$primary;
             font-size: 45px;
@@ -520,6 +562,31 @@ body.page-preguntes-frequents {
             }
         }
 
+        details {
+            position: relative;
+            padding-left: 20px;
+
+        }
+
+        details::before {
+            content: "?";
+            position: absolute;
+            left: -40px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2.2em;
+            background-color: v.$primary;
+            color: white;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+
+        details[open]::before {
+            top: 36px;
+        }
+
         p {
             font-size: 32px;
 
@@ -535,6 +602,22 @@ body.page-preguntes-frequents {
         }
     }
 
+    /* Oculta el marcador en Chrome, Safari y Edge */
+    summary::-webkit-details-marker {
+        display: none;
+    }
+
+    /* Para compatibilidad con Firefox */
+    summary {
+        list-style: none;
+    }
+
+    /* Opcional: Ocultar el marcador en navegadores que soportan list-style en summary */
+    summary::-moz-list-bullet {
+        list-style: none;
+        display: none;
+    }
+
 }
 
 /* TEMPLATE NOTICIAS  */
@@ -543,9 +626,51 @@ body.blog {
     h2 {
         background-image: none;
         color: v.$primary;
-        font-size: 55px;
+        font-size: 75px !important;
         font-family: v.$font-heading;
         text-align: center;
         padding: 0;
+
+        @media (max-width: 768px) {
+            font-size: 24px;
+        }
+    }
+
+    ul {
+        @media (max-width: 1200px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr;
+        }
+    }
+}
+
+/* NOT FOUND */
+
+body.error404 {
+    .not-found-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        h1.wp-block-heading {
+            position: relative;
+            top: 0;
+            text-align: center;
+            color: v.$primary;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: v.$font-main;
+            text-align: left;
+            letter-spacing: 0;
+            margin-bottom: 20px;
+            max-width: 1200px;
+            font-weight: bold;
+        }
     }
 }

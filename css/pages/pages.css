@@ -37,14 +37,23 @@ body.page-pas-a-pas h3.residu-h3.recollida-h3 {
   }
 }
 
-.wp-block-gallery {
+body.page-coneix-el-sistema-de-recollida h1 {
+  top: -184px;
+}
+@media (max-width: 1200px) {
+  body.page-coneix-el-sistema-de-recollida h1 {
+    top: 0;
+  }
+}
+
+.wp-block-gallery.has-nested-images {
   padding-bottom: 56px;
 }
-.wp-block-gallery .bin.yellow img {
+.wp-block-gallery.has-nested-images figure.wp-block-image.bin.yellow img {
   object-fit: contain !important;
 }
 
-.special-h2-targeta {
+body.page-coneix-el-sistema-de-recollida .special-h2-targeta {
   background-image: none;
   color: #EA0000;
   font-size: 55px;
@@ -60,7 +69,7 @@ body.page-pas-a-pas h3.residu-h3.recollida-h3 {
   justify-content: space-evenly;
   align-items: center;
   max-width: 1200px !important;
-  margin: auto;
+  margin: auto !important;
   /* para versión con video en vez de foto  */
 }
 @media (max-width: 1200px) {
@@ -126,6 +135,7 @@ body.page-pas-a-pas h3.residu-h3.recollida-h3 {
   color: #EA0000;
   font-size: 40px;
   font-family: "Anton", sans-serif;
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -459,6 +469,41 @@ body.page-preguntes-frequents .detail-container {
   margin: auto;
   margin-bottom: 100px;
 }
+@media (max-width: 1300px) {
+  body.page-preguntes-frequents .detail-container {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1200px) {
+  body.page-preguntes-frequents .detail-container {
+    max-width: 700px;
+  }
+}
+@media (max-width: 800px) {
+  body.page-preguntes-frequents .detail-container {
+    max-width: 500px;
+  }
+}
+@media (max-width: 700px) {
+  body.page-preguntes-frequents .detail-container {
+    max-width: 400px;
+  }
+}
+@media (max-width: 600px) {
+  body.page-preguntes-frequents .detail-container {
+    max-width: 355px;
+  }
+}
+@media (max-width: 500px) {
+  body.page-preguntes-frequents .detail-container {
+    max-width: 255px;
+  }
+}
+@media (max-width: 360px) {
+  body.page-preguntes-frequents .detail-container {
+    max-width: 200px;
+  }
+}
 body.page-preguntes-frequents .detail-container summary {
   color: #EA0000;
   font-size: 45px;
@@ -475,6 +520,27 @@ body.page-preguntes-frequents .detail-container summary {
     font-size: 24px;
   }
 }
+body.page-preguntes-frequents .detail-container details {
+  position: relative;
+  padding-left: 20px;
+}
+body.page-preguntes-frequents .detail-container details::before {
+  content: "?";
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2.2em;
+  background-color: #EA0000;
+  color: white;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+body.page-preguntes-frequents .detail-container details[open]::before {
+  top: 36px;
+}
 body.page-preguntes-frequents .detail-container p {
   font-size: 32px;
 }
@@ -489,15 +555,71 @@ body.page-preguntes-frequents .detail-container p {
     font-size: 22px;
   }
 }
+body.page-preguntes-frequents {
+  /* Oculta el marcador en Chrome, Safari y Edge */
+}
+body.page-preguntes-frequents summary::-webkit-details-marker {
+  display: none;
+}
+body.page-preguntes-frequents {
+  /* Para compatibilidad con Firefox */
+}
+body.page-preguntes-frequents summary {
+  list-style: none;
+}
+body.page-preguntes-frequents {
+  /* Opcional: Ocultar el marcador en navegadores que soportan list-style en summary */
+}
+body.page-preguntes-frequents summary::-moz-list-bullet {
+  list-style: none;
+  display: none;
+}
 
 /* TEMPLATE NOTICIAS  */
 body.blog h2 {
   background-image: none;
   color: #EA0000;
-  font-size: 55px;
+  font-size: 75px !important;
   font-family: "Anton", sans-serif;
   text-align: center;
   padding: 0;
+}
+@media (max-width: 768px) {
+  body.blog h2 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1200px) {
+  body.blog ul {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  body.blog ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* NOT FOUND */
+body.error404 .not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body.error404 .not-found-container h1.wp-block-heading {
+  position: relative;
+  top: 0;
+  text-align: center;
+  color: #EA0000;
+}
+body.error404 .not-found-container p {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  text-align: left;
+  letter-spacing: 0;
+  margin-bottom: 20px;
+  max-width: 1200px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=pages.css.map */

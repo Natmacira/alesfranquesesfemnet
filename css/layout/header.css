@@ -47,12 +47,6 @@
     max-width: 900px !important;
   }
 }
-@media (max-width: 599px) {
-  .bottom-header {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
 
 @media (max-width: 1200px) {
   .ul.wp-block-navigation__container {
@@ -75,9 +69,70 @@
     max-width: 250px;
   }
 }
-/* HAMBURGUESA DESDE 1200px */
-/* Mostrar botón */
-/* Ocultar menú horizontal */
-/* DESKTOP REAL */
+/* =========================
+   DESKTOP (1200px +)
+========================= */
+@media (min-width: 1200px) {
+  /* menú horizontal visible */
+  .wp-block-navigation__container {
+    display: flex;
+  }
+  /* ocultar hamburguesa */
+  .wp-block-navigation__responsive-container-open {
+    display: none;
+  }
+  /* por las dudas */
+  .wp-block-navigation__responsive-container {
+    display: none;
+  }
+}
+/* =========================
+     TABLET & MOBILE (<1200px)
+  ========================= */
+@media (max-width: 1199px) {
+  /* ocultar menú horizontal */
+  .wp-block-navigation__container {
+    display: none;
+  }
+  /* mostrar hamburguesa */
+  .wp-block-navigation__responsive-container-open {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 1200px) {
+  .wp-block-navigation__responsive-container-open:not(.always-shown) {
+    display: block;
+  }
+}
+html.has-modal-open .wp-block-navigation__container.is-responsive.items-justified-right.ul-btns-header.wp-block-navigation {
+  align-items: center !important;
+  width: 100% !important;
+  flex-direction: row !important;
+}
+html.has-modal-open .wp-block-navigation__container.is-responsive.items-justified-right.ul-btns-header.wp-block-navigation .wp-block-navigation-item.main-btns.wp-block-navigation-link {
+  /* Gradient border */
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #FF0000 0%, #FF9400 100%) !important;
+  background-origin: border-box !important;
+  background-clip: padding-box, border-box !important;
+  width: 100% !important;
+  max-width: none !important;
+  flex-direction: row !important;
+  text-align: center !important;
+  padding: 0 !important;
+  align-items: center !important;
+}
+
+.wp-block-navigation__responsive-container-open svg,
+.wp-block-navigation__responsive-container-close svg {
+  width: 36px;
+  height: 36px;
+}
+
+.wp-block-navigation__responsive-container-open svg path,
+.wp-block-navigation__responsive-container-close svg path {
+  transform: scaleY(1.4);
+  transform-origin: center;
+}
 
 /*# sourceMappingURL=header.css.map */
