@@ -4,6 +4,8 @@
 h2 {
     @include m.section-title;
 
+
+
     @media (max-width: 768px) {
         font-size: 32px;
         padding: 40px 39px;

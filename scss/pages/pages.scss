@@ -247,6 +247,11 @@ body.page-pas-a-pas {
         }
     }
 
+    .wp-block-list.list-bullets li::before {
+        top: 30% !important;
+    }
+
+
     .first-pasapas {
         display: flex;
         align-items: center;
@@ -327,12 +332,16 @@ body.page-pas-a-pas {
 
         .bin {
             max-width: 190px !important;
-            height: 155px;
+            height: auto;
             background-color: rgba(250, 250, 250, 1);
 
             img {
                 object-fit: contain !important;
                 padding-bottom: 40px;
+                width: 141px !important;
+                margin: auto;
+                margin-bottom: 25px;
+                margin-top: 25px;
             }
 
             figcaption {
@@ -512,7 +521,8 @@ body.page-pas-a-pas {
                         position: absolute;
                         bottom: 0;
                         margin: auto;
-                        font-family: v.$font-heading;
+                        font-family: v.$font-main;
+                        font-weight: 900;
                         font-size: 25px;
                         background: none;
                         scrollbar-width: none;
@@ -814,9 +824,10 @@ body.page-preguntes-frequents {
 
         summary {
             color: v.$primary;
-            font-size: 45px;
-            font-family: v.$font-heading;
+            font-size: 35px;
+            font-family: v.$font-main;
             text-transform: uppercase;
+            font-weight: 900;
 
 
             @media (max-width: 768px) {

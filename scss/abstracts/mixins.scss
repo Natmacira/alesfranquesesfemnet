@@ -20,12 +20,12 @@
   /* Gradient border */
   background-image:
     linear-gradient(white, white),
-    linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+    linear-gradient(90deg, #d51116 0%, #FF9400 100%);
   background-origin: border-box;
   background-clip: padding-box, border-box;
 
   &:hover {
-    background-image: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+    background-image: linear-gradient(90deg, #d51116 0%, #FF9400 100%);
     color: white;
   }
 
@@ -38,17 +38,18 @@
 
 
 @mixin section-title {
-  font-family: v.$font-heading;
+  font-family: v.$font-main;
   font-size: 45px;
   text-transform: uppercase;
   text-align: center;
-  background-image: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  background-image: linear-gradient(90deg, #d51116 0%, #FF9400 100%);
   color: white;
   padding: 59px 39px;
   margin-bottom: 120px !important;
+  font-weight: 900;
 
   @media (max-width: 768px) {
-    letter-spacing: 4px;
+    letter-spacing: 2px;
   }
 
 }

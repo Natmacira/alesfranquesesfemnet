@@ -22,10 +22,11 @@
 
 .main-btns.body-btns {
     font-size: 20px;
-    padding: 0px 28px;
+    padding: 14px 28px;
     background-image: v.$gradient;
     color: white;
     width: 244px;
+    height: auto;
 
     &:hover {
         background-image:

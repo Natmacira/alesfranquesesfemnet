@@ -22,9 +22,9 @@ function alesfranqueses_child_styles() {
     // Main compiled SCSS file
     wp_enqueue_style(
         'alesfranqueses-main',
-        get_stylesheet_directory_uri() . '/css/main-v456.css',
+        get_stylesheet_directory_uri() . '/css/main.css',
         array('alesfranqueses-child-style'),
-        filemtime( get_stylesheet_directory() . '/css/main-456.css' )
+        filemtime( get_stylesheet_directory() . '/css/main.css' )
     );
 }
 

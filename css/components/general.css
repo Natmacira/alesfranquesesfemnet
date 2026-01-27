@@ -1,16 +1,17 @@
 h2 {
-  font-family: "Anton", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 45px;
   text-transform: uppercase;
   text-align: center;
-  background-image: linear-gradient(90deg, #FF0000 0%, #FF9400 100%);
+  background-image: linear-gradient(90deg, #d51116 0%, #FF9400 100%);
   color: white;
   padding: 59px 39px;
   margin-bottom: 120px !important;
+  font-weight: 900;
 }
 @media (max-width: 768px) {
   h2 {
-    letter-spacing: 4px;
+    letter-spacing: 2px;
   }
 }
 @media (max-width: 768px) {
@@ -52,7 +53,7 @@ h1.wp-block-heading {
   line-height: 1;
 }
 h1.wp-block-heading span.title-highlight {
-  color: #EA0000;
+  color: #d50911;
 }
 @media (max-width: 1200px) {
   h1.wp-block-heading {

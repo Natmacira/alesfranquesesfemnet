@@ -59,7 +59,7 @@ body.page-coneix-el-sistema-de-recollida .iframe-ul .wp-block-image img {
 
 body.page-coneix-el-sistema-de-recollida .special-h2-targeta {
   background-image: none;
-  color: #EA0000;
+  color: #d50911;
   font-size: 55px;
   font-family: "Anton", sans-serif;
   padding: 40px 0 0;
@@ -127,7 +127,7 @@ body.page-coneix-el-sistema-de-recollida .wp-block-group.ul-iframe .wp-block-gro
 .iframe-ul h4 {
   font-family: "Anton", sans-serif;
   font-size: 32px;
-  color: #EA0000;
+  color: #d50911;
   line-height: 35px;
   margin-bottom: 25px;
 }
@@ -153,7 +153,7 @@ body.page-coneix-el-sistema-de-recollida .wp-block-group.ul-iframe .wp-block-gro
 }
 .ul-iframe li::marker,
 .iframe-ul li::marker {
-  color: #EA0000;
+  color: #d50911;
   font-size: 40px;
   font-family: "Anton", sans-serif;
   display: none;
@@ -220,7 +220,10 @@ body.page-pas-a-pas .ul-iframe .wp-block-group .wp-block-list li::before {
   top: 50%;
   transform: translateY(-50%);
   font-size: 2.2em;
-  color: #EA0000;
+  color: #d50911;
+}
+body.page-pas-a-pas .wp-block-list.list-bullets li::before {
+  top: 30% !important;
 }
 body.page-pas-a-pas .first-pasapas {
   display: flex;
@@ -235,7 +238,7 @@ body.page-pas-a-pas .first-pasapas {
 }
 body.page-pas-a-pas .first-pasapas p {
   font-size: 40px;
-  color: #EA0000;
+  color: #d50911;
   font-family: "Anton", sans-serif;
   padding-bottom: 20px;
 }
@@ -245,7 +248,7 @@ body.page-pas-a-pas .first-pasapas p {
   }
 }
 body.page-pas-a-pas .first-pasapas p:first-child {
-  background: #EA0000;
+  background: #d50911;
   color: white;
   width: 100px;
   height: 100px;
@@ -294,12 +297,16 @@ body.page-pas-a-pas figure.wp-block-gallery {
 }
 body.page-pas-a-pas figure.wp-block-gallery .bin {
   max-width: 190px !important;
-  height: 155px;
+  height: auto;
   background-color: rgb(250, 250, 250);
 }
 body.page-pas-a-pas figure.wp-block-gallery .bin img {
   object-fit: contain !important;
   padding-bottom: 40px;
+  width: 141px !important;
+  margin: auto;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 body.page-pas-a-pas figure.wp-block-gallery .bin figcaption {
   color: black;
@@ -470,7 +477,8 @@ body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained figure.
   position: absolute;
   bottom: 0;
   margin: auto;
-  font-family: "Anton", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
   font-size: 25px;
   background: none;
   scrollbar-width: none;
@@ -504,7 +512,7 @@ body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained h3 {
   font-family: "Anton", sans-serif;
   text-align: center;
   line-height: 82px;
-  color: #EA0000;
+  color: #d50911;
 }
 @media (max-width: 768px) {
   body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained h3,
@@ -546,7 +554,7 @@ body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained.deixale
 }
 body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles,
 body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles {
-  color: #EA0000;
+  color: #d50911;
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -584,7 +592,7 @@ body.page-pas-a-pas .section-horaris {
 }
 body.page-cada-residu-al-seu-equip .section-horaris h5,
 body.page-pas-a-pas .section-horaris h5 {
-  color: #EA0000;
+  color: #d50911;
   font-size: 20px;
   font-weight: bold;
 }
@@ -614,7 +622,7 @@ body.page-pas-a-pas .section-tes-dubtes h3 {
   font-family: "Anton", sans-serif;
   text-align: center;
   line-height: 82px;
-  color: #EA0000;
+  color: #d50911;
 }
 @media (max-width: 768px) {
   body.page-cada-residu-al-seu-equip .section-tes-dubtes h3,
@@ -753,10 +761,11 @@ body.page-preguntes-frequents .detail-container {
   }
 }
 body.page-preguntes-frequents .detail-container summary {
-  color: #EA0000;
-  font-size: 45px;
-  font-family: "Anton", sans-serif;
+  color: #d50911;
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
+  font-weight: 900;
 }
 @media (max-width: 768px) {
   body.page-preguntes-frequents .detail-container summary {
@@ -780,7 +789,7 @@ body.page-preguntes-frequents .detail-container details::before {
   top: 50%;
   transform: translateY(-50%);
   font-size: 2.2em;
-  background-color: #EA0000;
+  background-color: #d50911;
   color: white;
   border-radius: 50%;
   width: 50px;
@@ -827,7 +836,7 @@ body.page-preguntes-frequents summary::-moz-list-bullet {
 /* TEMPLATE NOTICIAS  */
 body.blog h2 {
   background-image: none;
-  color: #EA0000;
+  color: #d50911;
   font-size: 75px !important;
   font-family: "Anton", sans-serif;
   text-align: center;
@@ -860,7 +869,7 @@ body.error404 .not-found-container h1.wp-block-heading {
   position: relative;
   top: 0;
   text-align: center;
-  color: #EA0000;
+  color: #d50911;
 }
 body.error404 .not-found-container p {
   font-size: 20px;
