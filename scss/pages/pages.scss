@@ -6,7 +6,12 @@
 /* PAGE RECOLLIDA */
 
 body.page-coneix-el-sistema-de-recollida,
-body.page-pas-a-pas {
+body.page-conozca-el-sistema-de-recogida,
+body.page-pas-a-pas,
+body.page--,
+body.page-paso-a-paso,
+body.page-decouvrez-le-systeme-de-collecte,
+body.page--- {
     h2.recollida-h2 {
         font-size: 55px;
         padding-top: 15px !important;
@@ -39,9 +44,16 @@ body.page-pas-a-pas {
             display: none;
         }
     }
+
+    .tancament-dels-contenidors {
+        padding-inline: 0;
+    }
 }
 
-body.page-coneix-el-sistema-de-recollida {
+body.page-coneix-el-sistema-de-recollida,
+body.page-conozca-el-sistema-de-recogida,
+body.page-decouvrez-le-systeme-de-collecte,
+body.page--- {
     h1 {
         top: -184px;
 
@@ -66,7 +78,10 @@ body.page-coneix-el-sistema-de-recollida {
     }
 }
 
-body.page-coneix-el-sistema-de-recollida {
+body.page-coneix-el-sistema-de-recollida,
+body.page-conozca-el-sistema-de-recogida,
+body.page-decouvrez-le-systeme-de-collecte,
+body.page--- {
     .special-h2-targeta {
         background-image: none;
         color: v.$primary;
@@ -186,7 +201,9 @@ body.page-coneix-el-sistema-de-recollida {
 
 /* PAGE PAS A PAS  */
 
-body.page-pas-a-pas {
+body.page-pas-a-pas,
+body.page-paso-a-paso,
+body.page-- {
 
     h1 {
         top: -225px;
@@ -469,7 +486,12 @@ body.page-pas-a-pas {
 /* PAGE CADA RESIDU AL SEU EQUIP */
 
 body.page-cada-residu-al-seu-equip,
-body.page-pas-a-pas {
+body.page-chaque-dechet-a-son-equipement,
+body.page-pas-a-pas,
+body.page--,
+body.page-paso-a-paso,
+body.page-cada-residuo-en-su-equipo,
+body.page---- {
     .alseu-equip {
         padding-inline: 0;
     }
@@ -708,7 +730,9 @@ body.page-pas-a-pas {
     }
 }
 
-body.page-cada-residu-al-seu-equip {
+body.page-cada-residu-al-seu-equip,
+body.page-chaque-dechet-a-son-equipement,
+body.page-cada-residuo-en-su-equipo {
     h1.wp-block-heading {
         top: -200px;
 
@@ -767,7 +791,10 @@ body.page-cada-residu-al-seu-equip {
 /* PAGE PREG FREQUENTES  */
 
 
-body.page-preguntes-frequents {
+body.page-preguntes-frequents,
+body.page-questions-frequentes,
+body.page-preguntas-frecuentes,
+body.page-- {
     h1.wp-block-heading {
         line-height: 95px;
         top: -200px;
@@ -832,7 +859,6 @@ body.page-preguntes-frequents {
 
             @media (max-width: 768px) {
                 font-size: 28px;
-                letter-spacing: 2px;
             }
 
             @media (max-width: 568px) {
@@ -913,7 +939,7 @@ body.blog {
 
         @media (max-width: 768px) {
             font-size: 24px;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
         }
     }
 
