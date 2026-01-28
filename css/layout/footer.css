@@ -168,6 +168,9 @@ footer .footer-grid.logos {
 footer .footer-grid.logos img {
   max-width: 150px;
 }
+footer .footer-grid.logos .logo-gob-es img {
+  max-width: 100%;
+}
 @media (max-width: 1200px) {
   footer .footer-grid.logos {
     grid-template-columns: repeat(2, 1fr);

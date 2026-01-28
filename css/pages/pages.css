@@ -219,6 +219,10 @@ body.page--- .wp-block-group.ul-iframe .wp-block-group.iframe-ul {
   font-family: "Anton", sans-serif;
   display: none;
 }
+.ul-iframe .organica-conteiner img,
+.iframe-ul .organica-conteiner img {
+  padding-top: 0;
+}
 
 @media (max-width: 768px) {
   .ul-iframe {
@@ -1130,10 +1134,9 @@ body.page-preguntes-frequents .detail-container summary,
 body.page-questions-frequentes .detail-container summary,
 body.page-preguntas-frecuentes .detail-container summary,
 body.page-- .detail-container summary {
-  color: #d50911;
+  color: black;
   font-size: 35px;
   font-family: "Roboto", sans-serif;
-  text-transform: uppercase;
   font-weight: 900;
 }
 @media (max-width: 768px) {
@@ -1175,6 +1178,12 @@ body.page-- .detail-container details::before {
   width: 50px;
   height: 50px;
   text-align: center;
+}
+body.page-preguntes-frequents .detail-container details[open] summary strong,
+body.page-questions-frequentes .detail-container details[open] summary strong,
+body.page-preguntas-frecuentes .detail-container details[open] summary strong,
+body.page-- .detail-container details[open] summary strong {
+  color: #d50911;
 }
 body.page-preguntes-frequents .detail-container details[open]::before,
 body.page-questions-frequentes .detail-container details[open]::before,
