@@ -2298,6 +2298,29 @@ body.page-preguntas-frecuentes .detail-container details[open]::before,
 body.page-- .detail-container details[open]::before {
   top: 36px;
 }
+body.page-preguntes-frequents .detail-container summary,
+body.page-questions-frequentes .detail-container summary,
+body.page-preguntas-frecuentes .detail-container summary,
+body.page-- .detail-container summary {
+  position: relative;
+  width: fit-content;
+}
+body.page-preguntes-frequents .detail-container summary::after,
+body.page-questions-frequentes .detail-container summary::after,
+body.page-preguntas-frecuentes .detail-container summary::after,
+body.page-- .detail-container summary::after {
+  content: "";
+  position: absolute;
+  right: -35px;
+  top: 35%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background-image: url("../img/rowdown.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
 body.page-preguntes-frequents .detail-container p,
 body.page-questions-frequentes .detail-container p,
 body.page-preguntas-frecuentes .detail-container p,

@@ -903,6 +903,25 @@ body.page-- {
             top: 36px;
         }
 
+        summary {
+            position: relative;
+            width: fit-content;
+        }
+
+        summary::after {
+            content: "";
+            position: absolute;
+            right: -35px;
+            top: 35%;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            background-image: url("../img/rowdown.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
         p {
             font-size: 24px;
 
