@@ -78,6 +78,8 @@ body.page--- {
     }
 }
 
+
+
 body.page-coneix-el-sistema-de-recollida,
 body.page-conozca-el-sistema-de-recogida,
 body.page-decouvrez-le-systeme-de-collecte,
@@ -235,6 +237,7 @@ body.page-- {
         }
     }
 
+
     .iframe-ul,
     .ul-iframe {
         .wp-block-group {
@@ -266,7 +269,7 @@ body.page-- {
                 transform: translateY(-50%);
                 font-size: 2.2em;
                 color: v.$primary;
-
+                font-weight: normal;
             }
         }
     }
@@ -802,6 +805,21 @@ body.page-preguntes-frequents,
 body.page-questions-frequentes,
 body.page-preguntas-frecuentes,
 body.page-- {
+
+    .special-h2-targeta {
+        background-image: none;
+        color: v.$primary;
+        font-size: 55px;
+        font-family: v.$font-heading;
+        padding: 40px 0 0;
+
+        @media (max-width: 768px) {
+            letter-spacing: 2px;
+            font-size: 32px;
+        }
+
+    }
+
     h1.wp-block-heading {
         line-height: 95px;
         top: -200px;
@@ -1009,6 +1027,79 @@ body.error404 {
             margin-bottom: 20px;
             max-width: 1200px;
             font-weight: bold;
+        }
+    }
+}
+
+/* Page OFICINES */
+body.page-oficines,
+body.page-contacto,
+body.page-contact,
+body.page-- {
+
+    .inside-container-descobreix {
+        padding-bottom: 0 !important;
+    }
+
+    h2.wp-block-heading {
+        margin-top: 0 !important;
+    }
+
+    .special-h2-targeta {
+        background-image: none;
+        color: v.$primary;
+        font-size: 55px;
+        font-family: v.$font-heading;
+        padding: 40px 0 0;
+
+        @media (max-width: 768px) {
+            letter-spacing: 2px;
+            font-size: 32px;
+        }
+
+    }
+
+    .section-horaris {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        display: flex;
+        max-width: 1200px !important;
+        align-items: baseline;
+        gap: 10px;
+
+        img {
+            width: 300px;
+
+            &.emoji {
+                width: auto;
+            }
+        }
+
+        h5 {
+            color: v.$primary;
+            font-size: 20px;
+            font-weight: bold;
+
+            &::before {
+                content: "";
+                width: 35px;
+                height: 35px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                flex-shrink: 0;
+                display: inline-block;
+                vertical-align: bottom;
+                margin-right: 10px;
+                background-image: url("../img/clock.png");
+                vertical-align: middle;
+            }
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: bold;
+            max-width: 280px;
         }
     }
 }

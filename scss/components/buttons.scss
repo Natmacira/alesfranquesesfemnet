@@ -25,7 +25,8 @@
     padding: 14px 28px;
     background-image: v.$gradient;
     color: white;
-    width: 244px;
+    max-width: 300px;
+    width: 300px;
     height: auto;
 
     &:hover {

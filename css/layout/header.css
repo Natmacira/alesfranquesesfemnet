@@ -20,6 +20,9 @@
     width: 130px;
   }
 }
+.wp-block-navigation__responsive-container-content .wp-block-navigation li.main-btns.french-btns {
+  width: auto;
+}
 
 .header-custom {
   min-width: 130px;
@@ -136,7 +139,7 @@ html.has-modal-open .wp-block-navigation__container.is-responsive.items-justifie
 .wpml-language-switcher-navigation-block.wpml-ls-dropdown li {
   display: flex;
   align-items: center;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 @media (max-width: 1200px) {

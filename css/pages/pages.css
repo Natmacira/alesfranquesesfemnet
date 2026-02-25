@@ -316,6 +316,7 @@ body.page-- .ul-iframe .wp-block-group .wp-block-list li::before {
   transform: translateY(-50%);
   font-size: 2.2em;
   color: #d50911;
+  font-weight: normal;
 }
 body.page-pas-a-pas .wp-block-list.list-bullets li::before,
 body.page-paso-a-paso .wp-block-list.list-bullets li::before,
@@ -1027,6 +1028,25 @@ body.page-cada-residuo-en-su-equipo .deixaleria-localitzacio.mobile {
 }
 
 /* PAGE PREG FREQUENTES  */
+body.page-preguntes-frequents .special-h2-targeta,
+body.page-questions-frequentes .special-h2-targeta,
+body.page-preguntas-frecuentes .special-h2-targeta,
+body.page-- .special-h2-targeta {
+  background-image: none;
+  color: #d50911;
+  font-size: 55px;
+  font-family: "Anton", sans-serif;
+  padding: 40px 0 0;
+}
+@media (max-width: 768px) {
+  body.page-preguntes-frequents .special-h2-targeta,
+  body.page-questions-frequentes .special-h2-targeta,
+  body.page-preguntas-frecuentes .special-h2-targeta,
+  body.page-- .special-h2-targeta {
+    letter-spacing: 2px;
+    font-size: 32px;
+  }
+}
 body.page-preguntes-frequents h1.wp-block-heading,
 body.page-questions-frequentes h1.wp-block-heading,
 body.page-preguntas-frecuentes h1.wp-block-heading,
@@ -1320,6 +1340,95 @@ body.error404 .not-found-container p {
   margin-bottom: 20px;
   max-width: 1200px;
   font-weight: bold;
+}
+
+/* Page OFICINES */
+body.page-oficines .inside-container-descobreix,
+body.page-contacto .inside-container-descobreix,
+body.page-contact .inside-container-descobreix,
+body.page-- .inside-container-descobreix {
+  padding-bottom: 0 !important;
+}
+body.page-oficines h2.wp-block-heading,
+body.page-contacto h2.wp-block-heading,
+body.page-contact h2.wp-block-heading,
+body.page-- h2.wp-block-heading {
+  margin-top: 0 !important;
+}
+body.page-oficines .special-h2-targeta,
+body.page-contacto .special-h2-targeta,
+body.page-contact .special-h2-targeta,
+body.page-- .special-h2-targeta {
+  background-image: none;
+  color: #d50911;
+  font-size: 55px;
+  font-family: "Anton", sans-serif;
+  padding: 40px 0 0;
+}
+@media (max-width: 768px) {
+  body.page-oficines .special-h2-targeta,
+  body.page-contacto .special-h2-targeta,
+  body.page-contact .special-h2-targeta,
+  body.page-- .special-h2-targeta {
+    letter-spacing: 2px;
+    font-size: 32px;
+  }
+}
+body.page-oficines .section-horaris,
+body.page-contacto .section-horaris,
+body.page-contact .section-horaris,
+body.page-- .section-horaris {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  display: flex;
+  max-width: 1200px !important;
+  align-items: baseline;
+  gap: 10px;
+}
+body.page-oficines .section-horaris img,
+body.page-contacto .section-horaris img,
+body.page-contact .section-horaris img,
+body.page-- .section-horaris img {
+  width: 300px;
+}
+body.page-oficines .section-horaris img.emoji,
+body.page-contacto .section-horaris img.emoji,
+body.page-contact .section-horaris img.emoji,
+body.page-- .section-horaris img.emoji {
+  width: auto;
+}
+body.page-oficines .section-horaris h5,
+body.page-contacto .section-horaris h5,
+body.page-contact .section-horaris h5,
+body.page-- .section-horaris h5 {
+  color: #d50911;
+  font-size: 20px;
+  font-weight: bold;
+}
+body.page-oficines .section-horaris h5::before,
+body.page-contacto .section-horaris h5::before,
+body.page-contact .section-horaris h5::before,
+body.page-- .section-horaris h5::before {
+  content: "";
+  width: 35px;
+  height: 35px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 10px;
+  background-image: url("../img/clock.png");
+  vertical-align: middle;
+}
+body.page-oficines .section-horaris p,
+body.page-contacto .section-horaris p,
+body.page-contact .section-horaris p,
+body.page-- .section-horaris p {
+  font-size: 20px;
+  font-weight: bold;
+  max-width: 280px;
 }
 
 /*# sourceMappingURL=pages.css.map */

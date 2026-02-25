@@ -64,18 +64,7 @@ h2.wp-block-heading {
 /* AGENDA CARD */
 
 .agenda-card {
-    width: 313px;
+    width: 365px;
     height: 500px;
     padding: 10px !important;
-
-    img {
-        max-width: 250px;
-    }
-}
-
-
-
-.home-section-agenda .agenda-home-grid {
-    grid-template-columns: repeat(4, 1fr) !important;
-
 }
