@@ -181,6 +181,7 @@ function buscador_residus_shortcode() {
                 'periode' => '25 de febrer',
                 'dies'    => '25 de febrer',
                 'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+                'tipus'   => ['DS'],
             ],
             'CAN PARERA' => [
                 'oficina' => 'Antigues Escoles de Marata',
@@ -190,6 +191,7 @@ function buscador_residus_shortcode() {
                 'periode' => '25 de febrer',
                 'dies'    => '25 de febrer',
                 'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+                'tipus'   => ['DS'],
             ],
             'CAN PERICA' => [
                 'oficina' => 'Antigues Escoles de Marata',
@@ -199,6 +201,7 @@ function buscador_residus_shortcode() {
                 'periode' => '25 de febrer',
                 'dies'    => '25 de febrer',
                 'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+                'tipus'   => ['DS'],
             ],
             'CAN PONETA' => [
                 'oficina' => 'Antigues Escoles de Marata',
@@ -208,6 +211,7 @@ function buscador_residus_shortcode() {
                 'periode' => '25 de febrer',
                 'dies'    => '25 de febrer',
                 'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+                'tipus'   => ['DS'],
             ],
 
        
@@ -230,6 +234,7 @@ function buscador_residus_shortcode() {
         'periode' => 'Del 26 al 28 de febrer',
         'dies'    => 'Del 26 al 28 de febrer',
         'oficinas' => 'Antigues Escoles de Marata i Antigues Escoles de Llerona ',
+        'tipus'   => ['DS'],
     ],
     'CAMELIA' => [
         'oficina' => 'Antigues Escoles de Corró d\'Amunt',
@@ -239,6 +244,7 @@ function buscador_residus_shortcode() {
         'periode' => 'Del 26 al 28 de febrer',
         'dies'    => 'Del 26 al 28 de febrer',
         'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+        'tipus'   => ['CL'],
     ],
     'CAN BASSO' => [
         'oficina' => 'Antigues Escoles de Corró d\'Amunt',
@@ -248,6 +254,7 @@ function buscador_residus_shortcode() {
         'periode' => 'Del 26 al 28 de febrer',
         'dies'    => 'Del 26 al 28 de febrer',
         'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+        'tipus'   => ['DS'],
     ],
     'CAN BERTRAN' => [
         'oficina' => 'Antigues Escoles de Corró d\'Amunt',
@@ -257,6 +264,7 @@ function buscador_residus_shortcode() {
         'periode' => 'Del 26 al 28 de febrer',
         'dies'    => 'Del 26 al 28 de febrer',
         'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+        'tipus'   => ['DS'],
     ],
     'CAN BESSÓ NOU' => [
         'oficina' => 'Antigues Escoles de Corró d\'Amunt',
@@ -266,6 +274,7 @@ function buscador_residus_shortcode() {
         'periode' => 'Del 26 al 28 de febrer',
         'dies'    => 'Del 26 al 28 de febrer',
         'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+        'tipus'   => ['DS'],
     ],
     'CAN CAMP' => [
         'oficina' => 'Antigues Escoles de Corró d\'Amunt',
@@ -275,6 +284,7 @@ function buscador_residus_shortcode() {
         'periode' => 'Del 26 al 28 de febrer',
         'dies'    => 'Del 26 al 28 de febrer',
         'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+        'tipus'   => ['DS'],
     ],
     'CAN MONTASELL' => [
         'oficina' => 'Antigues Escoles de Corró d\'Amunt',
@@ -284,6 +294,7 @@ function buscador_residus_shortcode() {
         'periode' => 'Del 26 al 28 de febrer',
         'dies'    => 'Del 26 al 28 de febrer',
         'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+        'tipus'   => ['DS'],
     ],
     'CAN PROFITOS' => [
         'oficina' => 'Antigues Escoles de Corró d\'Amunt',
@@ -293,6 +304,7 @@ function buscador_residus_shortcode() {
         'periode' => 'Del 26 al 28 de febrer',
         'dies'    => 'Del 26 al 28 de febrer',
         'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+        'tipus'   => ['DS'],
     ],
     'CAN SUQUET' => [
         'oficina' => 'Antigues Escoles de Corró d\'Amunt',
@@ -302,6 +314,7 @@ function buscador_residus_shortcode() {
         'periode' => 'Del 26 al 28 de febrer',
         'dies'    => 'Del 26 al 28 de febrer',
         'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+        'tipus'   => ['DS'],
     ],
     'CAN VIUDEZ' => [
         'oficina' => 'Antigues Escoles de Corró d\'Amunt',
@@ -311,6 +324,7 @@ function buscador_residus_shortcode() {
         'periode' => 'Del 26 al 28 de febrer',
         'dies'    => 'Del 26 al 28 de febrer',
         'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+        'tipus'   => ['DS'],
     ],
     'CAN XICU' => [
         'oficina' => 'Antigues Escoles de Corró d\'Amunt',
@@ -320,6 +334,7 @@ function buscador_residus_shortcode() {
         'periode' => 'Del 26 al 28 de febrer',
         'dies'    => 'Del 26 al 28 de febrer',
         'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+        'tipus'   => ['DS'],
     ],
     'CORRO DE MUNT' => [
         'oficina' => 'Antigues Escoles de Corró d\'Amunt',
@@ -329,6 +344,7 @@ function buscador_residus_shortcode() {
         'periode' => 'Del 26 al 28 de febrer',
         'dies'    => 'Del 26 al 28 de febrer',
         'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+        'tipus'   => ['DS'],
     ],
     'GLADIOL' => [
         'oficina' => 'Antigues Escoles de Corró d\'Amunt',
@@ -338,6 +354,7 @@ function buscador_residus_shortcode() {
         'periode' => 'Del 26 al 28 de febrer',
         'dies'    => 'Del 26 al 28 de febrer',
         'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+        'tipus'   => ['CL'],
     ],
     'LLIRI' => [
         'oficina' => 'Antigues Escoles de Corró d\'Amunt',
@@ -347,6 +364,7 @@ function buscador_residus_shortcode() {
         'periode' => 'Del 26 al 28 de febrer',
         'dies'    => 'Del 26 al 28 de febrer',
         'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+        'tipus'   => ['CL'],
     ],
     'SANT JERONI' => [
         'oficina' => 'Antigues Escoles de Corró d\'Amunt',
@@ -356,6 +374,7 @@ function buscador_residus_shortcode() {
         'periode' => 'Del 26 al 28 de febrer',
         'dies'    => 'Del 26 al 28 de febrer',
         'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+        'tipus'   => ['CL'],
     ],
     'TIBIDABO' => [
         'oficina' => 'Antigues Escoles de Corró d\'Amunt',
@@ -365,6 +384,7 @@ function buscador_residus_shortcode() {
         'periode' => 'Del 26 al 28 de febrer',
         'dies'    => 'Del 26 al 28 de febrer',
         'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+        'tipus'   => ['CL'],
     ],
     'TRAVESSIA DE GRACIA' => [
         'oficina' => 'Antigues Escoles de Corró d\'Amunt',
@@ -374,6 +394,7 @@ function buscador_residus_shortcode() {
         'periode' => 'Del 26 al 28 de febrer',
         'dies'    => 'Del 26 al 28 de febrer',
         'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+        'tipus'   => ['CL'],
     ],
     'TULIPA' => [
         'oficina' => 'Antigues Escoles de Corró d\'Amunt',
@@ -383,6 +404,7 @@ function buscador_residus_shortcode() {
         'periode' => 'Del 26 al 28 de febrer',
         'dies'    => 'Del 26 al 28 de febrer',
         'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+        'tipus'   => ['CL'],
     ],
     'UNIO' => [
         'oficina' => 'Antigues Escoles de Corró d\'Amunt',
@@ -392,6 +414,7 @@ function buscador_residus_shortcode() {
         'periode' => 'Del 26 al 28 de febrer',
         'dies'    => 'Del 26 al 28 de febrer',
         'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+        'tipus'   => ['CL'],
     ],
     'XALET PAS FONT' => [
         'oficina' => 'Antigues Escoles de Corró d\'Amunt',
@@ -401,6 +424,7 @@ function buscador_residus_shortcode() {
         'periode' => 'Del 26 al 28 de febrer',
         'dies'    => 'Del 26 al 28 de febrer',
         'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+        'tipus'   => ['DS'],
     ],
 
         // ── LLERONA ──────────────────────────────────────────────────────────
@@ -412,6 +436,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['CL'],
         ],
         'BOU D\'EN' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -439,6 +464,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['CL'],
         ],
         'CABIROL' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -448,6 +474,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['CL'],
         ],
         'CADI' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -457,6 +484,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['CL'],
         ],
         'CAL NEN' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -466,6 +494,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['DS'],
         ],
         'CAN BOU' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -475,6 +504,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['DS'],
         ],
         'CAN CALVET' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -484,6 +514,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['DS'],
         ],
         'CAN COLL D\'OCA' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -502,6 +533,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['DS'],
         ],
         'CAN GESA NOU' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -511,6 +543,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['DS'],
         ],
         'CAN LLOREDA' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -520,6 +553,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['DS'],
         ],
         'CAN MAS' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -529,6 +563,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['DS'],
         ],
         'CAN MINGUET' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -538,6 +573,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['DS'],
         ],
         'CAN PERICAS' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -547,6 +583,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['DS'],
         ],
         'CAN POSAS' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -556,6 +593,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['DS'],
         ],
         'CAN POUS DALT' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -565,6 +603,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['DS'],
         ],
         'CAN ROF' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -574,6 +613,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['DS'],
         ],
         'CAN ROGET' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -583,6 +623,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['DS'],
         ],
         'CAN SOLELLA' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -592,6 +633,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['DS'],
         ],
         'CAN TINET NOU' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -601,6 +643,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['DS'],
         ],
         'CANIGO' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -610,6 +653,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['CL'],
         ],
         'CARDENAL JUBANY' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -619,6 +663,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['CL'],
         ],
         'CONCA' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -628,6 +673,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['CL'],
         ],
         'DELTA' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -637,6 +683,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['CL'],
         ],
         'DORCA' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -646,6 +693,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['CL'],
         ],
         'ESGLESIA' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -655,6 +703,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['CL'],
         ],
         'ESTUARI' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -664,6 +713,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['CL'],
         ],
         'FABRICA' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -673,6 +723,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['CL'],
         ],
         'FERRERET' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -682,6 +733,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['CL'],
         ],
         'FONT DE LA' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -691,6 +743,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['CL'],
         ],
         'GORCS' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -700,6 +753,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['AV'],
         ],
         'JOSEP M BOIXAREU' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -709,6 +763,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['CL'],
         ],
         'LLUIS COMPANYS' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -718,6 +773,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['CL'],
         ],
         'MARIA MARGENS' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -727,6 +783,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['CL'],
         ],
         'RIBERA' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -736,6 +793,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['CL'],
         ],
         'SANTA DIGNA' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -745,6 +803,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['CL'],
         ],
         'SELVA DEL PLA' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -754,6 +813,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['DS'],
         ],
         'TORRENT' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -763,6 +823,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['CL'],
         ],
         'TURO MENTIDES' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -772,6 +833,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['CM'],
         ],
         'FINCA OLIVAR LLERONA' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -781,6 +843,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+            'tipus'   => ['DS'],
         ],
 
         // ── BELLAVISTA ───────────────────────────────────────────────────────
@@ -791,6 +854,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['CL'],
         ],
         'AMETLLERS' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -801,6 +865,7 @@ function buscador_residus_shortcode() {
             'rangs'   => [
                 ['portals' => [1, 3], 'dies' => 'Del 16 al 21 de març'],
                 ['portals' => 'resta', 'dies' => 'Del 30 de març al 4 d\'abril'],
+                'tipus'   => ['CL'],
             ],
         ],
         'ANDALUSIA' => [
@@ -814,6 +879,7 @@ function buscador_residus_shortcode() {
                 ['min' => 1,  'max' => 13,  'parell' => false, 'dies' => 'Del 16 al 21 de març'],
                 ['min' => 16, 'max' => 24,  'parell' => true,  'dies' => 'Del 30 de març al 4 d\'abril'],
                 ['min' => 15, 'max' => 115, 'parell' => false, 'dies' => 'Del 7 a l\'11 d\'abril'],
+                'tipus'   => ['PS'],
             ],
         ],
         'ARAGO' => [
@@ -826,6 +892,7 @@ function buscador_residus_shortcode() {
                 ['min' => 2,  'max' => 10,  'parell' => true, 'dies' => 'Del 23 al 28 de març'],
                 ['min' => 12, 'max' => 50,  'parell' => true, 'dies' => 'Del 16 al 21 de març'],
                 ['min' => 68, 'max' => 138, 'parell' => true, 'dies' => 'Del 7 a l\'11 d\'abril'],
+                'tipus'   => ['CL'],
             ],
         ],
         'BARCELONA' => [
@@ -838,6 +905,7 @@ function buscador_residus_shortcode() {
                 ['min' => 2,  'max' => 34,  'parell' => true,  'dies' => 'Del 23 al 28 de març'],
                 ['min' => 36, 'max' => 60,  'parell' => true,  'dies' => 'Del 30 de març al 4 d\'abril'],
                 ['min' => 1,  'max' => 999, 'parell' => false, 'dies' => 'Del 16 al 21 de març'],
+                'tipus'   => ['CL'],
             ],
         ],
         'BOSC' => [
@@ -847,6 +915,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['CL'],
         ],
         'CANTABRIA' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -855,6 +924,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 7 a l\'11 d\'abril',
+            'tipus'   => ['CL'],
         ],
         'CANUDAS' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -863,6 +933,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['CL'],
         ],
         'CARDEDEU' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -871,6 +942,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['CL'],
         ],
         'CAN REVERTER' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -879,6 +951,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['DS'],
         ],
         'EIVISSA' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -887,6 +960,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['CL'],
         ],
         'EMPORDA' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -895,6 +969,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+            'tipus'   => ['CL'],
         ],
         'ESBARJO' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -903,6 +978,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['PZ'],
         ],
         'ESCALA' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -911,6 +987,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['CL'],
         ],
         'ESPANYA' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -921,6 +998,7 @@ function buscador_residus_shortcode() {
             'rangs'   => [
                 ['portals' => [1, 2, 3], 'dies' => 'Del 16 al 21 de març'],
                 ['portals' => [6, 7, 9, 11], 'dies' => 'Del 23 al 28 de març'],
+                'tipus'   => ['PZ'],
             ],
         ],
         'EXTREMADURA' => [
@@ -934,6 +1012,7 @@ function buscador_residus_shortcode() {
                 ['min' => 1,  'max' => 51,  'parell' => false, 'dies' => 'Del 7 a l\'11 d\'abril'],
                 ['min' => 53, 'max' => 73,  'parell' => false, 'dies' => 'Del 30 de març al 4 d\'abril'],
                 ['min' => 70, 'max' => 76,  'parell' => true,  'dies' => 'Del 30 de març al 4 d\'abril'],
+                'tipus'   => ['CL'],
             ],
         ],
         'GIRONA' => [
@@ -948,6 +1027,7 @@ function buscador_residus_shortcode() {
                 ['min' => 51,  'max' => 115, 'parell' => false, 'dies' => 'Del 7 a l\'11 d\'abril'],
                 ['min' => 44,  'max' => 116, 'parell' => true,  'dies' => 'Del 7 a l\'11 d\'abril'],
                 ['min' => 290, 'max' => 308, 'parell' => true,  'dies' => 'Del 23 al 28 de març'],
+                'tipus'   => ['CL'],
             ],
         ],
         'ILLES MEDES' => [
@@ -960,6 +1040,7 @@ function buscador_residus_shortcode() {
                 ['min' => 2,  'max' => 20, 'parell' => true, 'dies' => 'Del 30 de març al 4 d\'abril'],
                 ['min' => 22, 'max' => 28, 'parell' => true, 'dies' => 'Del 23 al 28 de març'],
                 ['min' => 1,  'max' => 999,'parell' => false,'dies' => 'Del 23 al 28 de març'],
+                'tipus'   => ['CL'],
             ],
         ],
         'LLEIDA' => [
@@ -969,6 +1050,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+            'tipus'   => ['CL'],
         ],
         'MALLORCA' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -977,6 +1059,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+            'tipus'   => ['CL'],
         ],
         'MENORCA' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -985,6 +1068,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['CL'],
         ],
         'NORD' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -993,6 +1077,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 7 a l\'11 d\'abril',
+            'tipus'   => ['RD'],
         ],
         'NOVA' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -1001,6 +1086,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['PZ'],
         ],
         'ORIENT' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -1012,6 +1098,7 @@ function buscador_residus_shortcode() {
                 ['min' => 2,  'max' => 40,  'parell' => true,  'dies' => 'Del 7 a l\'11 d\'abril'],
                 ['min' => 1,  'max' => 999, 'parell' => false, 'dies' => 'Del 7 a l\'11 d\'abril'],
                 ['min' => 60, 'max' => 102, 'parell' => true,  'dies' => 'Del 30 de març al 4 d\'abril'],
+                'tipus'   => ['CL'],
             ],
         ],
         'PAIS BASC' => [
@@ -1021,6 +1108,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 7 a l\'11 d\'abril',
+            'tipus'   => ['PS'],
         ],
         'PERE EL GRAN' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -1029,6 +1117,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+            'tipus'   => ['CL'],
         ],
         'PONENT' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -1037,6 +1126,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['CL'],
         ],
         'PROVENCA' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -1049,6 +1139,7 @@ function buscador_residus_shortcode() {
                 ['min' => 1,  'max' => 27,  'parell' => false, 'dies' => 'Del 23 al 28 de març'],
                 ['min' => 20, 'max' => 30,  'parell' => true,  'dies' => 'Del 30 de març al 4 d\'abril'],
                 ['min' => 29, 'max' => 41,  'parell' => false, 'dies' => 'Del 30 de març al 4 d\'abril'],
+                'tipus'   => ['CL', 'PZ'],
             ],
         ],
         'RIOJA' => [
@@ -1058,6 +1149,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 7 a l\'11 d\'abril',
+            'tipus'   => ['CL'],
         ],
         'ROSSELLO' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -1070,6 +1162,7 @@ function buscador_residus_shortcode() {
                 ['min' => 1,  'max' => 35,  'parell' => false, 'dies' => 'Del 23 al 28 de març'],
                 ['min' => 38, 'max' => 54,  'parell' => true,  'dies' => 'Del 30 de març al 4 d\'abril'],
                 ['min' => 37, 'max' => 39,  'parell' => false, 'dies' => 'Del 30 de març al 4 d\'abril'],
+                'tipus'   => ['CL'],
             ],
         ],
         'TARRAGONA' => [
@@ -1079,6 +1172,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['CL'],
         ],
         'TERME' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -1087,6 +1181,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+            'tipus'   => ['CL'],
         ],
         'TORRE PINOS' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -1097,6 +1192,7 @@ function buscador_residus_shortcode() {
             'rangs'   => [
                 ['min' => 2,  'max' => 32, 'parell' => null, 'dies' => 'Del 30 de març al 4 d\'abril'],
                 ['min' => 34, 'max' => 42, 'parell' => null, 'dies' => 'Del 23 al 28 de març'],
+                'tipus'   => ['CL'],
             ],
         ],
         'TRAVESSIA' => [
@@ -1109,6 +1205,7 @@ function buscador_residus_shortcode() {
                 ['min' => 2,  'max' => 8,   'parell' => true,  'dies' => 'Del 16 al 21 de març'],
                 ['min' => 10, 'max' => 30,  'parell' => true,  'dies' => 'Del 23 al 28 de març'],
                 ['min' => 1,  'max' => 999, 'parell' => false, 'dies' => 'Del 30 de març al 4 d\'abril'],
+                'tipus'   => ['CL'],
             ],
         ],
         'VALENCIA' => [
@@ -1118,6 +1215,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+            'tipus'   => ['CL'],
         ],
         'VIA FERROCARRIL' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -1126,6 +1224,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
             'periode' => 'Del 16 de març al 18 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+            'tipus'   => ['CL'],
         ],
 
         // ── CORRÓ D'AVALL ────────────────────────────────────────────────────
@@ -1136,6 +1235,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 9 al 14 de març',
+            'tipus'   => ['CL'],
         ],
         'BALMES' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1144,6 +1244,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['CL'],
         ],
         'BRUC' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1152,6 +1253,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['CL'],
         ],
         'CALMA' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1160,6 +1262,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 9 al 14 de març',
+            'tipus'   => ['PS'],
         ],
         'CANARI' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1168,6 +1271,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+            'tipus'   => ['CL'],
         ],
         'CARBONELL' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1176,6 +1280,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['CL'],
         ],
         'CARDERNERA' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1184,6 +1289,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+            'tipus'   => ['CL'],
         ],
         'CASERIU' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1192,6 +1298,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['CL'],
         ],
         'CELLECS' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1203,6 +1310,7 @@ function buscador_residus_shortcode() {
                 ['min' => 2,  'max' => 12,  'parell' => true, 'dies' => 'Del 23 al 28 de març'],
                 ['min' => 1,  'max' => 999, 'parell' => false,'dies' => 'Del 23 al 28 de març'],
                 ['min' => 18, 'max' => 22,  'parell' => true, 'dies' => 'Del 30 de març al 4 d\'abril'],
+                'tipus'   => ['CL'],
             ],
         ],
         'CIRCUNVALLACIO' => [
@@ -1212,6 +1320,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['CL'],
         ],
         'COLOM' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1220,6 +1329,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+            'tipus'   => ['CL'],
         ],
         'CONGOST' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1228,6 +1338,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['CL'],
         ],
         'DIAGONAL' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1236,6 +1347,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 9 al 14 de març',
+            'tipus'   => ['CL'],
         ],
         'ESCORXADOR' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1244,6 +1356,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['CL', 'PZ'],
         ],
         'ESPOLSADA' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1252,6 +1365,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+            'tipus'   => ['PZ'],
         ],
         'ESPORTS' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1260,6 +1374,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['CL'],
         ],
         'FERRERIA' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1268,6 +1383,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['CL'],
         ],
         'FRANQUESAS' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1276,6 +1392,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['AV'],
         ],
         'JACINT VERDAGUER' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1284,6 +1401,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 9 al 14 de març',
+            'tipus'   => ['CL'],
         ],
         'JAUME I' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1292,6 +1410,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+            'tipus'   => ['CL'],
         ],
         'JOAN MARAGALL' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1300,6 +1419,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 9 al 14 de març',
+            'tipus'   => ['CL'],
         ],
         'JOAN OLIVER' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1308,6 +1428,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 9 al 14 de març',
+            'tipus'   => ['CL'],
         ],
         'LLEVANT' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1316,6 +1437,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+            'tipus'   => ['CL'],
         ],
         'MIGDIA' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1324,6 +1446,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['CL'],
         ],
         'MIL PINS' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1332,6 +1455,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['CL'],
         ],
         'MIQUEL MARTI I POL' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1340,6 +1464,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+            'tipus'   => ['CL'],
         ],
         'MONTSENY' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1348,6 +1473,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['AV'],
         ],
         'ONZE SETEMBRE' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1360,6 +1486,7 @@ function buscador_residus_shortcode() {
                 ['min' => 33, 'max' => 43,  'parell' => false, 'dies' => 'Del 9 al 14 de març'],
                 ['min' => 2,  'max' => 14,  'parell' => true,  'dies' => 'Del 16 al 21 de març'],
                 ['min' => 1,  'max' => 31,  'parell' => false, 'dies' => 'Del 16 al 21 de març'],
+                'tipus'   => ['CL'],
             ],
         ],
         'PAU CASALS' => [
@@ -1369,6 +1496,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['CL'],
         ],
         'PEDRAFORCA' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1377,6 +1505,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 9 al 14 de març',
+            'tipus'   => ['PS'],
         ],
         'PUIGGRACIOS' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1385,6 +1514,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 9 al 14 de març',
+            'tipus'   => ['CL'],
         ],
         'PUIGSACALM' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1393,6 +1523,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 9 al 14 de març',
+            'tipus'   => ['CL'],
         ],
         'RAFAEL ALBERTI' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1401,6 +1532,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 9 al 14 de març',
+            'tipus'   => ['CL'],
         ],
         'RIBES' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1416,6 +1548,7 @@ function buscador_residus_shortcode() {
                 ['min' => 131, 'max' => 205, 'parell' => false, 'dies' => 'Del 23 al 28 de març'],
                 ['min' => 122, 'max' => 264, 'parell' => true,  'dies' => 'Del 30 de març al 4 d\'abril'],
                 ['min' => 209, 'max' => 273, 'parell' => false, 'dies' => 'Del 30 de març al 4 d\'abril'],
+                'tipus'   => ['CR'],
             ],
         ],
         'SANT ANTONI' => [
@@ -1425,6 +1558,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['CL'],
         ],
         'SANT ISIDRE' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1436,6 +1570,7 @@ function buscador_residus_shortcode() {
                 ['min' => 42, 'max' => 50,  'parell' => true,  'dies' => 'Del 9 al 14 de març'],
                 ['min' => 2,  'max' => 40,  'parell' => true,  'dies' => 'Del 16 al 21 de març'],
                 ['min' => 3,  'max' => 3,   'parell' => false, 'dies' => 'Del 16 al 21 de març'],
+                'tipus'   => ['CL'],
             ],
         ],
         'SANT JOAN' => [
@@ -1445,6 +1580,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['PZ'],
         ],
         'SANT JOAQUIM' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1457,6 +1593,7 @@ function buscador_residus_shortcode() {
                 ['min' => 81,  'max' => 125, 'parell' => false, 'dies' => 'Del 9 al 14 de març'],
                 ['min' => 2,   'max' => 80,  'parell' => true,  'dies' => 'Del 16 al 21 de març'],
                 ['min' => 1,   'max' => 79,  'parell' => false, 'dies' => 'Del 16 al 21 de març'],
+                'tipus'   => ['CL'],
             ],
         ],
         'SANT JORDI' => [
@@ -1466,6 +1603,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['CL'],
         ],
         'SANT JOSEP' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1474,6 +1612,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+            'tipus'   => ['CL', 'TR'],
         ],
         'SANT PERE' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1482,6 +1621,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+            'tipus'   => ['CL'],
         ],
         'SANT PONC' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1490,6 +1630,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+                'tipus'   => ['CL'],
             ],
         'SANT TOMAS' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1498,6 +1639,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 9 al 14 de març',
+                'tipus'   => ['CL'],
             ],
         'SANTA EULALIA' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1508,6 +1650,7 @@ function buscador_residus_shortcode() {
             'rangs'   => [
                 ['portals' => [2, 4], 'dies' => 'Del 30 de març al 4 d\'abril'],
                 ['portals' => 'resta', 'dies' => 'Del 23 al 28 de març'],
+                'tipus'   => ['AV'],
             ],
             ],
         'SERRA' => [
@@ -1519,6 +1662,7 @@ function buscador_residus_shortcode() {
             'rangs'   => [
                 ['min' => 19, 'max' => 37,  'parell' => false, 'dies' => 'Del 23 al 28 de març'],
                 ['min' => 1,  'max' => 999, 'parell' => null,  'dies' => 'Del 30 de març al 4 d\'abril'],
+                'tipus'   => ['CL'],
             ],
             ],
         'SOL' => [
@@ -1528,6 +1672,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+                'tipus'   => ['CL'],
             ],
         'SUI' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1536,6 +1681,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 9 al 14 de març',
+            'tipus'   => ['PJ'],
         ],
         'TAGAMANENT' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1548,6 +1694,7 @@ function buscador_residus_shortcode() {
                 ['min' => 105, 'max' => 171, 'parell' => false, 'dies' => 'Del 9 al 14 de març'],
                 ['min' => 58,  'max' => 100, 'parell' => true,  'dies' => 'Del 16 al 21 de març'],
                 ['min' => 81,  'max' => 103, 'parell' => false, 'dies' => 'Del 16 al 21 de març'],
+                'tipus'   => ['CL', 'PJ'],
             ],
             ],
         'VERGE DE LA MERCE' => [
@@ -1559,6 +1706,7 @@ function buscador_residus_shortcode() {
             'rangs'   => [
                 ['min' => 1, 'max' => 999, 'parell' => false, 'dies' => 'Del 9 al 14 de març'],
                 ['min' => 1, 'max' => 999, 'parell' => true,  'dies' => 'Del 16 al 21 de març'],
+                'tipus'   => ['CL'],
             ],
         ],
         'VERGE DE MONTSERRAT' => [
@@ -1568,6 +1716,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+                'tipus'   => ['CL'],
             ],
         'VERGE DE NURIA' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1576,6 +1725,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+                'tipus'   => ['CL'],
             ],
         'AJUNTAMENT' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1584,6 +1734,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 9 al 14 de març',
+            'tipus'   => ['AV', 'PZ'],
         ],
         'ALBA' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1592,6 +1743,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+            'tipus'   => ['CL'],
         ],
         'ANTIC DE VIC' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1600,6 +1752,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['CM'],
         ],
         'ANTON NOU' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1608,6 +1761,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+            'tipus'   => ['DS'],
         ],
         'CAN BALDICH' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1616,6 +1770,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 9 al 14 de març',
+            'tipus'   => ['DS'],
         ],
         'CAN CALET' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1624,6 +1779,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['RD'],
         ],
         'CAN CALSAS' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1632,6 +1788,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['DS'],
         ],
         'CAN DUROS' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1640,6 +1797,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['DS'],
         ],
         'CAN GOITA' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1648,6 +1806,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['DS'],
         ],
         'CAN GRAS' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1656,6 +1815,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['DS'],
         ],
         'CAN PAU DRACH' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1664,6 +1824,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['DS'],
         ],
         'CAN PRAT' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1672,6 +1833,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['PZ'],
         ],
         'CAN PUJADAS' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1680,6 +1842,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['DS'],
         ],
         'CASERIU DEL' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1688,6 +1851,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['TR'],
         ],
         'CERAMICAS FONT' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1696,6 +1860,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['DS'],
         ],
         'CORRO DE VALL' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1704,6 +1869,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 9 al 14 de març',
+            'tipus'   => ['DS'],
         ],
         'ESTADANT' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1712,6 +1878,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+            'tipus'   => ['PJ'],
         ],
         'ESTANOC' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1720,6 +1887,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['DS'],
         ],
         'FOLCH I TORRES' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1728,6 +1896,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['CL'],
         ],
         'FRANCESC MACIA' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1736,6 +1905,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['PZ'],
         ],
         'GAUDI' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1744,6 +1914,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['PZ'],
         ],
         'GRANJA GRAU' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1752,6 +1923,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 9 al 14 de març',
+            'tipus'   => ['DS'],
         ],
         'GRANOLLERS CARDEDEU' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1760,6 +1932,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['CR'],
         ],
         'GUILLERIES' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1768,6 +1941,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 9 al 14 de març',
+            'tipus'   => ['PJ'],
         ],
         'LLERONA' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1776,6 +1950,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['AV'],
         ],
         'MAS COLOME' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1784,6 +1959,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['CL'],
         ],
         'OM' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1792,6 +1968,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['CL'],
         ],
         'ONZE DE SETEMBRE' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1800,6 +1977,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 9 al 14 de març',
+            'tipus'   => ['PJ'],
         ],
         'POMPEU FABRA' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1808,6 +1986,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['PJ'],
         ],
         'PONT' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1816,6 +1995,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['CL'],
         ],
         'RIERA' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1824,6 +2004,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['CL'],
         ],
         'ROCA CENTELLA' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1832,6 +2013,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 9 al 14 de març',
+            'tipus'   => ['PJ'],
         ],
         'SAGRERA' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1844,6 +2026,7 @@ function buscador_residus_shortcode() {
                 ['min' => 1,  'max' => 5,   'parell' => false, 'dies' => 'Del 16 al 21 de març'],
                 ['min' => 1,  'max' => 999, 'parell' => true,  'dies' => 'Del 9 al 14 de març'],
                 ['min' => 23, 'max' => 999, 'parell' => false, 'dies' => 'Del 9 al 14 de març'],
+                'tipus'   => ['AV', 'PZ'],
             ],
         ],
         'SALVADOR ESPRIU' => [
@@ -1853,6 +2036,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 30 de març al 4 d\'abril',
+            'tipus'   => ['PJ'],
         ],
         'TIL LERS' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1861,6 +2045,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['PS'],
         ],
         'TORRE SUBIRANA' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1869,6 +2054,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 16 al 21 de març',
+            'tipus'   => ['DS'],
         ],
         'VESPRADA' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1877,6 +2063,7 @@ function buscador_residus_shortcode() {
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+                'tipus'   => ['CL'],
             ],
     ];
 
@@ -1889,11 +2076,16 @@ function buscador_residus_shortcode() {
 
         $carrer_input = isset($_POST['carrer']) ? sanitize_text_field($_POST['carrer']) : '';
         $portal_input = isset($_POST['portal']) ? intval($_POST['portal']) : 0;
+        $tipus_input  = isset($_POST['tipus_via']) ? sanitize_text_field($_POST['tipus_via']) : '';
 
-        if ($carrer_input && $portal_input > 0) {
+        if ($carrer_input && $portal_input > 0 && $tipus_input) {
             $carrer_norm = residus_normalitzar($carrer_input);
 
             foreach ($carrers as $clau => $dades) {
+                // Filtrar per tipus de via
+                if (isset($dades['tipus']) && !in_array($tipus_input, $dades['tipus'])) {
+                    continue;
+                }
                 $clau_norm = residus_normalitzar($clau);
                 $match = (strpos(' ' . $carrer_norm . ' ', ' ' . $clau_norm . ' ') !== false) ||
                          (strpos(' ' . $clau_norm . ' ', ' ' . $carrer_norm . ' ') !== false);
@@ -1958,9 +2150,25 @@ function buscador_residus_shortcode() {
      <form method="post" action="<?php echo esc_url(get_permalink()); ?>#residus-buscador">
          <?php wp_nonce_field('buscador_residus', 'residus_nonce'); ?>
          <div class="residus-camp">
+             <label for="tipus_via">Tipus de via</label>
+             <select id="tipus_via" name="tipus_via" required>
+                 <option value="" disabled <?php echo empty($_POST['tipus_via']) ? 'selected' : ''; ?>>Tipus de via</option>
+                 <option value="AV"  <?php echo (isset($_POST['tipus_via']) && $_POST['tipus_via'] === 'AV')  ? 'selected' : ''; ?>>Avinguda (AV)</option>
+                 <option value="CL"  <?php echo (isset($_POST['tipus_via']) && $_POST['tipus_via'] === 'CL')  ? 'selected' : ''; ?>>Carrer (CL / c.)</option>
+                 <option value="CM"  <?php echo (isset($_POST['tipus_via']) && $_POST['tipus_via'] === 'CM')  ? 'selected' : ''; ?>>Camí (CM / Camí)</option>
+                 <option value="CR"  <?php echo (isset($_POST['tipus_via']) && $_POST['tipus_via'] === 'CR')  ? 'selected' : ''; ?>>Carretera (CR / Carretera)</option>
+                 <option value="DS"  <?php echo (isset($_POST['tipus_via']) && $_POST['tipus_via'] === 'DS')  ? 'selected' : ''; ?>>Disseminat (DS)</option>
+                 <option value="PS"  <?php echo (isset($_POST['tipus_via']) && $_POST['tipus_via'] === 'PS')  ? 'selected' : ''; ?>>Passeig (PS)</option>
+                 <option value="PJ"  <?php echo (isset($_POST['tipus_via']) && $_POST['tipus_via'] === 'PJ')  ? 'selected' : ''; ?>>Passatge (PJ)</option>
+                 <option value="PZ"  <?php echo (isset($_POST['tipus_via']) && $_POST['tipus_via'] === 'PZ')  ? 'selected' : ''; ?>>Plaça (PZ / Plaça)</option>
+                 <option value="RD"  <?php echo (isset($_POST['tipus_via']) && $_POST['tipus_via'] === 'RD')  ? 'selected' : ''; ?>>Ronda (RD)</option>
+                 <option value="TR"  <?php echo (isset($_POST['tipus_via']) && $_POST['tipus_via'] === 'TR')  ? 'selected' : ''; ?>>Travessia (TR)</option>
+             </select>
+         </div>
+         <div class="residus-camp">
              <label for="carrer">Carrer</label>
              <input type="text" id="carrer" name="carrer"
-                    placeholder="Ex: Carrer Aragó"
+                    placeholder="Ex: Aragó"
                     value="<?php echo isset($_POST['carrer']) ? esc_attr($_POST['carrer']) : ''; ?>"
                     required>
          </div>
@@ -2011,8 +2219,8 @@ function buscador_residus_shortcode() {
      .residus-buscador { max-width: 500px; margin: 20px auto; font-family: sans-serif; margin-bottom: 100px;}
      .residus-camp { margin-bottom: 15px; }
      .residus-camp label { display: block; font-weight: bold; margin-bottom: 5px; color: #333; }
-     .residus-camp input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; transition: border-color 0.2s; }
-     .residus-camp input:focus { outline: none; border-color: #d50911; }
+     .residus-camp input, .residus-camp select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; font-size: 16px; transition: border-color 0.2s; box-sizing: border-box; background: #fff; }
+     .residus-camp input:focus, .residus-camp select:focus { outline: none; border-color: #d50911; }
      .residus-buscador button { background: linear-gradient(90deg, #d51116 0%, #f6a307 100%); color: #fff; border: none; padding: 12px 30px; font-size: 16px; border-radius: 4px; cursor: pointer; transition: opacity 0.2s; }
      .residus-buscador button:hover { opacity: 0.9; }
      .residus-resultat { margin-top: 25px; padding: 20px; border-radius: 6px; }
