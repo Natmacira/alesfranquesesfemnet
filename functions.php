@@ -172,6 +172,7 @@ function buscador_residus_shortcode() {
                 'dies'    => '25 de febrer',
                 'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
 
+                'tipus'   => ['DS'],
             ],
             'CAN MANEL' => [
                 'oficina' => 'Antigues Escoles de Marata',
@@ -225,6 +226,7 @@ function buscador_residus_shortcode() {
         'dies'    => 'Del 26 al 28 de febrer',
         'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
 
+        'tipus'   => ['DS'],
     ],
     'CAL MARGE' => [
         'oficina' => 'Antigues Escoles de Corró d\'Amunt',
@@ -446,6 +448,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+        'tipus'   => ['DS'],
         ],
         'CA L\'ARIMANY' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -455,6 +458,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+        'tipus'   => ['DS'],
         ],
         'CABAL' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -524,6 +528,7 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 2 al 7 de març',
             'dies'    => 'Del 2 al 7 de març',
             'oficinas' => 'Antigues Escoles de Corró d\'Amunt, Ajuntament de Corró d\'Avall i Antigues Escoles de Marata',
+        'tipus'   => ['DS'],
         ],
         'CAN CONGOST NOU' => [
             'oficina' => 'Antigues Escoles de Llerona',
@@ -865,8 +870,8 @@ function buscador_residus_shortcode() {
             'rangs'   => [
                 ['portals' => [1, 3], 'dies' => 'Del 16 al 21 de març'],
                 ['portals' => 'resta', 'dies' => 'Del 30 de març al 4 d\'abril'],
-                'tipus'   => ['CL'],
             ],
+            'tipus'   => ['CL'],
         ],
         'ANDALUSIA' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -879,8 +884,8 @@ function buscador_residus_shortcode() {
                 ['min' => 1,  'max' => 13,  'parell' => false, 'dies' => 'Del 16 al 21 de març'],
                 ['min' => 16, 'max' => 24,  'parell' => true,  'dies' => 'Del 30 de març al 4 d\'abril'],
                 ['min' => 15, 'max' => 115, 'parell' => false, 'dies' => 'Del 7 a l\'11 d\'abril'],
-                'tipus'   => ['PS'],
             ],
+            'tipus'   => ['PS'],
         ],
         'ARAGO' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -892,8 +897,8 @@ function buscador_residus_shortcode() {
                 ['min' => 2,  'max' => 10,  'parell' => true, 'dies' => 'Del 23 al 28 de març'],
                 ['min' => 12, 'max' => 50,  'parell' => true, 'dies' => 'Del 16 al 21 de març'],
                 ['min' => 68, 'max' => 138, 'parell' => true, 'dies' => 'Del 7 a l\'11 d\'abril'],
-                'tipus'   => ['CL'],
             ],
+            'tipus'   => ['CL'],
         ],
         'BARCELONA' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -905,8 +910,8 @@ function buscador_residus_shortcode() {
                 ['min' => 2,  'max' => 34,  'parell' => true,  'dies' => 'Del 23 al 28 de març'],
                 ['min' => 36, 'max' => 60,  'parell' => true,  'dies' => 'Del 30 de març al 4 d\'abril'],
                 ['min' => 1,  'max' => 999, 'parell' => false, 'dies' => 'Del 16 al 21 de març'],
-                'tipus'   => ['CL'],
             ],
+            'tipus'   => ['CL'],
         ],
         'BOSC' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -998,8 +1003,8 @@ function buscador_residus_shortcode() {
             'rangs'   => [
                 ['portals' => [1, 2, 3], 'dies' => 'Del 16 al 21 de març'],
                 ['portals' => [6, 7, 9, 11], 'dies' => 'Del 23 al 28 de març'],
-                'tipus'   => ['PZ'],
             ],
+            'tipus'   => ['PZ'],
         ],
         'EXTREMADURA' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -1012,8 +1017,8 @@ function buscador_residus_shortcode() {
                 ['min' => 1,  'max' => 51,  'parell' => false, 'dies' => 'Del 7 a l\'11 d\'abril'],
                 ['min' => 53, 'max' => 73,  'parell' => false, 'dies' => 'Del 30 de març al 4 d\'abril'],
                 ['min' => 70, 'max' => 76,  'parell' => true,  'dies' => 'Del 30 de març al 4 d\'abril'],
-                'tipus'   => ['CL'],
             ],
+            'tipus'   => ['CL'],
         ],
         'GIRONA' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -1027,8 +1032,8 @@ function buscador_residus_shortcode() {
                 ['min' => 51,  'max' => 115, 'parell' => false, 'dies' => 'Del 7 a l\'11 d\'abril'],
                 ['min' => 44,  'max' => 116, 'parell' => true,  'dies' => 'Del 7 a l\'11 d\'abril'],
                 ['min' => 290, 'max' => 308, 'parell' => true,  'dies' => 'Del 23 al 28 de març'],
-                'tipus'   => ['CL'],
             ],
+            'tipus'   => ['CL'],
         ],
         'ILLES MEDES' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -1040,8 +1045,8 @@ function buscador_residus_shortcode() {
                 ['min' => 2,  'max' => 20, 'parell' => true, 'dies' => 'Del 30 de març al 4 d\'abril'],
                 ['min' => 22, 'max' => 28, 'parell' => true, 'dies' => 'Del 23 al 28 de març'],
                 ['min' => 1,  'max' => 999,'parell' => false,'dies' => 'Del 23 al 28 de març'],
-                'tipus'   => ['CL'],
             ],
+            'tipus'   => ['CL'],
         ],
         'LLEIDA' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -1098,8 +1103,8 @@ function buscador_residus_shortcode() {
                 ['min' => 2,  'max' => 40,  'parell' => true,  'dies' => 'Del 7 a l\'11 d\'abril'],
                 ['min' => 1,  'max' => 999, 'parell' => false, 'dies' => 'Del 7 a l\'11 d\'abril'],
                 ['min' => 60, 'max' => 102, 'parell' => true,  'dies' => 'Del 30 de març al 4 d\'abril'],
-                'tipus'   => ['CL'],
             ],
+            'tipus'   => ['CL'],
         ],
         'PAIS BASC' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -1139,8 +1144,8 @@ function buscador_residus_shortcode() {
                 ['min' => 1,  'max' => 27,  'parell' => false, 'dies' => 'Del 23 al 28 de març'],
                 ['min' => 20, 'max' => 30,  'parell' => true,  'dies' => 'Del 30 de març al 4 d\'abril'],
                 ['min' => 29, 'max' => 41,  'parell' => false, 'dies' => 'Del 30 de març al 4 d\'abril'],
-                'tipus'   => ['CL', 'PZ'],
             ],
+            'tipus'   => ['CL', 'PZ'],
         ],
         'RIOJA' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -1162,8 +1167,8 @@ function buscador_residus_shortcode() {
                 ['min' => 1,  'max' => 35,  'parell' => false, 'dies' => 'Del 23 al 28 de març'],
                 ['min' => 38, 'max' => 54,  'parell' => true,  'dies' => 'Del 30 de març al 4 d\'abril'],
                 ['min' => 37, 'max' => 39,  'parell' => false, 'dies' => 'Del 30 de març al 4 d\'abril'],
-                'tipus'   => ['CL'],
             ],
+            'tipus'   => ['CL'],
         ],
         'TARRAGONA' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -1192,8 +1197,8 @@ function buscador_residus_shortcode() {
             'rangs'   => [
                 ['min' => 2,  'max' => 32, 'parell' => null, 'dies' => 'Del 30 de març al 4 d\'abril'],
                 ['min' => 34, 'max' => 42, 'parell' => null, 'dies' => 'Del 23 al 28 de març'],
-                'tipus'   => ['CL'],
             ],
+            'tipus'   => ['CL'],
         ],
         'TRAVESSIA' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -1205,8 +1210,8 @@ function buscador_residus_shortcode() {
                 ['min' => 2,  'max' => 8,   'parell' => true,  'dies' => 'Del 16 al 21 de març'],
                 ['min' => 10, 'max' => 30,  'parell' => true,  'dies' => 'Del 23 al 28 de març'],
                 ['min' => 1,  'max' => 999, 'parell' => false, 'dies' => 'Del 30 de març al 4 d\'abril'],
-                'tipus'   => ['CL'],
             ],
+            'tipus'   => ['CL'],
         ],
         'VALENCIA' => [
             'oficina' => 'Centre Cultural Bellavista',
@@ -1310,8 +1315,8 @@ function buscador_residus_shortcode() {
                 ['min' => 2,  'max' => 12,  'parell' => true, 'dies' => 'Del 23 al 28 de març'],
                 ['min' => 1,  'max' => 999, 'parell' => false,'dies' => 'Del 23 al 28 de març'],
                 ['min' => 18, 'max' => 22,  'parell' => true, 'dies' => 'Del 30 de març al 4 d\'abril'],
-                'tipus'   => ['CL'],
             ],
+            'tipus'   => ['CL'],
         ],
         'CIRCUNVALLACIO' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1486,8 +1491,8 @@ function buscador_residus_shortcode() {
                 ['min' => 33, 'max' => 43,  'parell' => false, 'dies' => 'Del 9 al 14 de març'],
                 ['min' => 2,  'max' => 14,  'parell' => true,  'dies' => 'Del 16 al 21 de març'],
                 ['min' => 1,  'max' => 31,  'parell' => false, 'dies' => 'Del 16 al 21 de març'],
-                'tipus'   => ['CL'],
             ],
+            'tipus'   => ['CL'],
         ],
         'PAU CASALS' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1548,8 +1553,8 @@ function buscador_residus_shortcode() {
                 ['min' => 131, 'max' => 205, 'parell' => false, 'dies' => 'Del 23 al 28 de març'],
                 ['min' => 122, 'max' => 264, 'parell' => true,  'dies' => 'Del 30 de març al 4 d\'abril'],
                 ['min' => 209, 'max' => 273, 'parell' => false, 'dies' => 'Del 30 de març al 4 d\'abril'],
-                'tipus'   => ['CR'],
             ],
+            'tipus'   => ['CR'],
         ],
         'SANT ANTONI' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1570,8 +1575,8 @@ function buscador_residus_shortcode() {
                 ['min' => 42, 'max' => 50,  'parell' => true,  'dies' => 'Del 9 al 14 de març'],
                 ['min' => 2,  'max' => 40,  'parell' => true,  'dies' => 'Del 16 al 21 de març'],
                 ['min' => 3,  'max' => 3,   'parell' => false, 'dies' => 'Del 16 al 21 de març'],
-                'tipus'   => ['CL'],
             ],
+            'tipus'   => ['CL'],
         ],
         'SANT JOAN' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1593,8 +1598,8 @@ function buscador_residus_shortcode() {
                 ['min' => 81,  'max' => 125, 'parell' => false, 'dies' => 'Del 9 al 14 de març'],
                 ['min' => 2,   'max' => 80,  'parell' => true,  'dies' => 'Del 16 al 21 de març'],
                 ['min' => 1,   'max' => 79,  'parell' => false, 'dies' => 'Del 16 al 21 de març'],
-                'tipus'   => ['CL'],
             ],
+            'tipus'   => ['CL'],
         ],
         'SANT JORDI' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1650,8 +1655,8 @@ function buscador_residus_shortcode() {
             'rangs'   => [
                 ['portals' => [2, 4], 'dies' => 'Del 30 de març al 4 d\'abril'],
                 ['portals' => 'resta', 'dies' => 'Del 23 al 28 de març'],
-                'tipus'   => ['AV'],
             ],
+            'tipus'   => ['AV'],
             ],
         'SERRA' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1662,8 +1667,8 @@ function buscador_residus_shortcode() {
             'rangs'   => [
                 ['min' => 19, 'max' => 37,  'parell' => false, 'dies' => 'Del 23 al 28 de març'],
                 ['min' => 1,  'max' => 999, 'parell' => null,  'dies' => 'Del 30 de març al 4 d\'abril'],
-                'tipus'   => ['CL'],
             ],
+            'tipus'   => ['CL'],
             ],
         'SOL' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1694,8 +1699,8 @@ function buscador_residus_shortcode() {
                 ['min' => 105, 'max' => 171, 'parell' => false, 'dies' => 'Del 9 al 14 de març'],
                 ['min' => 58,  'max' => 100, 'parell' => true,  'dies' => 'Del 16 al 21 de març'],
                 ['min' => 81,  'max' => 103, 'parell' => false, 'dies' => 'Del 16 al 21 de març'],
-                'tipus'   => ['CL', 'PJ'],
             ],
+            'tipus'   => ['CL', 'PJ'],
             ],
         'VERGE DE LA MERCE' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1706,8 +1711,8 @@ function buscador_residus_shortcode() {
             'rangs'   => [
                 ['min' => 1, 'max' => 999, 'parell' => false, 'dies' => 'Del 9 al 14 de març'],
                 ['min' => 1, 'max' => 999, 'parell' => true,  'dies' => 'Del 16 al 21 de març'],
-                'tipus'   => ['CL'],
             ],
+            'tipus'   => ['CL'],
         ],
         'VERGE DE MONTSERRAT' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -2026,8 +2031,8 @@ function buscador_residus_shortcode() {
                 ['min' => 1,  'max' => 5,   'parell' => false, 'dies' => 'Del 16 al 21 de març'],
                 ['min' => 1,  'max' => 999, 'parell' => true,  'dies' => 'Del 9 al 14 de març'],
                 ['min' => 23, 'max' => 999, 'parell' => false, 'dies' => 'Del 9 al 14 de març'],
-                'tipus'   => ['AV', 'PZ'],
             ],
+            'tipus'   => ['AV', 'PZ'],
         ],
         'SALVADOR ESPRIU' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -2109,9 +2114,12 @@ function buscador_residus_shortcode() {
                             }
 
                             // Rang per min/max + parell/senar
+                            if (!isset($rang['min']) || !isset($rang['max'])) {
+                                continue;
+                            }
                             $es_parell = ($portal_input % 2 === 0);
                             $dins_rang = ($portal_input >= $rang['min'] && $portal_input <= $rang['max']);
-                            $parell_ok = ($rang['parell'] === null) ||
+                            $parell_ok = (!isset($rang['parell']) || $rang['parell'] === null) ||
                                          ($rang['parell'] === true && $es_parell) ||
                                          ($rang['parell'] === false && !$es_parell);
 
