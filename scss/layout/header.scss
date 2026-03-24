@@ -45,6 +45,7 @@
     margin: 0 auto;
     padding-inline: 0;
     justify-content: space-between;
+    align-items: flex-start;
 
     @media (max-width: 1200px) {
         padding-left: 50px;
@@ -52,6 +53,32 @@
         max-width: 900px !important;
     }
 
+    @media (max-width: 768px) {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        .wp-block-site-logo {
+            order: 1;
+        }
+
+        .search-block {
+            order: 3;
+            width: 100%;
+            margin-top: 12px;
+        }
+
+        // nav group (hamburguesa)
+        >.wp-block-group {
+            order: 2;
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .bottom-header.is-nowrap {
+        flex-wrap: wrap !important;
+    }
 }
 
 @media (max-width: 1200px) {

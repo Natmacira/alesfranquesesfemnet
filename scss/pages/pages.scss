@@ -11,7 +11,8 @@ body.page-pas-a-pas,
 body.page--,
 body.page-paso-a-paso,
 body.page-decouvrez-le-systeme-de-collecte,
-body.page--- {
+body.page---,
+body.search-results {
     h2.recollida-h2 {
         font-size: 55px;
         padding-top: 15px !important;
@@ -53,7 +54,8 @@ body.page--- {
 body.page-coneix-el-sistema-de-recollida,
 body.page-conozca-el-sistema-de-recogida,
 body.page-decouvrez-le-systeme-de-collecte,
-body.page--- {
+body.page---,
+body.search-results {
     h1 {
         top: -184px;
 
@@ -83,7 +85,8 @@ body.page--- {
 body.page-coneix-el-sistema-de-recollida,
 body.page-conozca-el-sistema-de-recogida,
 body.page-decouvrez-le-systeme-de-collecte,
-body.page--- {
+body.page---,
+body.search-results {
     .special-h2-targeta {
         background-image: none;
         color: v.$primary;
@@ -212,7 +215,8 @@ body.page--- {
 
 body.page-pas-a-pas,
 body.page-paso-a-paso,
-body.page-- {
+body.page--,
+body.search-results {
 
     h1 {
         top: -225px;
@@ -501,7 +505,8 @@ body.page-pas-a-pas,
 body.page--,
 body.page-paso-a-paso,
 body.page-cada-residuo-en-su-equipo,
-body.page---- {
+body.page----,
+body.search-results {
     .alseu-equip {
         padding-inline: 0;
     }
@@ -742,7 +747,8 @@ body.page---- {
 
 body.page-cada-residu-al-seu-equip,
 body.page-chaque-dechet-a-son-equipement,
-body.page-cada-residuo-en-su-equipo {
+body.page-cada-residuo-en-su-equipo,
+body.search-results {
     h1.wp-block-heading {
         top: -200px;
 
@@ -804,7 +810,8 @@ body.page-cada-residuo-en-su-equipo {
 body.page-preguntes-frequents,
 body.page-questions-frequentes,
 body.page-preguntas-frecuentes,
-body.page-- {
+body.page--,
+body.search-results {
 
     .special-h2-targeta {
         background-image: none;
@@ -977,14 +984,18 @@ body.page-- {
 
 /* TEMPLATE NOTICIAS  */
 
-body.blog {
+body.blog,
+body.search-results {
     h2 {
+        display: block !important;
+        font-family: "Roboto", sans-serif;
+        font-size: 20px;
+        text-transform: none;
+        text-align: left;
         background-image: none;
-        color: v.$primary;
-        font-size: 75px !important;
-        font-family: v.$font-heading;
-        text-align: center;
+        color: black;
         padding: 0;
+        margin-bottom: 10px !important;
 
         @media (max-width: 768px) {
             font-size: 24px;
@@ -1003,9 +1014,177 @@ body.blog {
     }
 }
 
+/* SEARCH RESULTS */
+
+body.search {
+
+    // Títol "Resultats de la cerca: «...»"
+    h1.wp-block-query-title {
+        position: relative;
+        top: 0;
+        font-family: v.$font-heading;
+        font-size: 55px;
+        text-transform: uppercase;
+        color: v.$primary;
+        text-align: left;
+        width: 100%;
+
+        @media (max-width: 768px) {
+            font-size: 36px;
+        }
+    }
+
+    // Formulari de cerca dins la pàgina de resultats
+    .wp-block-search:not(.search-block) {
+        .wp-block-search__inside-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border: 2px solid transparent;
+            border-radius: 40px;
+            background-image:
+                linear-gradient(white, white),
+                linear-gradient(90deg, #d51116 0%, #f6a307 100%);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+            padding: 4px 4px 4px 20px;
+            overflow: hidden;
+        }
+
+        .wp-block-search__input {
+            flex: 1;
+            border: none;
+            outline: none;
+            background: transparent;
+            font-family: v.$font-main;
+            font-size: 16px;
+            color: v.$dark;
+            padding: 8px 0;
+
+            &::placeholder {
+                color: #aaa;
+            }
+        }
+
+        .wp-block-search__button {
+            background-image: linear-gradient(90deg, #d51116 0%, #f6a307 100%);
+            border: none;
+            border-radius: 40px;
+            color: white;
+            font-family: v.$font-main;
+            font-weight: 700;
+            font-size: 15px;
+            cursor: pointer;
+            padding: 10px 22px;
+            transition: opacity 0.3s ease;
+            flex-shrink: 0;
+
+            &:hover {
+                opacity: 0.85;
+            }
+        }
+    }
+
+    // Llista de resultats / "Més entrades"
+    h2.wp-block-heading {
+        background-image: none;
+        color: v.$primary;
+        font-family: v.$font-main;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 1.4px;
+        padding: 0;
+        margin-bottom: 0 !important;
+        text-align: left;
+    }
+
+    // Cada fila de post (títol + data)
+    .wp-block-post-template .wp-block-group {
+        transition: background 0.2s ease;
+        padding-left: 8px;
+        padding-right: 8px;
+
+        &:hover {
+            background: linear-gradient(90deg, rgba(213, 17, 22, 0.04) 0%, rgba(246, 163, 7, 0.04) 100%);
+        }
+
+        // Títol del post
+        .wp-block-post-title a {
+            color: v.$dark;
+            text-decoration: none;
+            font-family: v.$font-main;
+            font-size: 18px;
+            font-weight: 700;
+
+            &:hover {
+                color: v.$primary;
+            }
+        }
+
+        // Data
+        .wp-block-post-date {
+            color: #888;
+            font-family: v.$font-main;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+    }
+
+    // Títol del post directe (sense wp-block-group)
+    .wp-block-post-template .wp-block-post-title {
+        font-family: v.$font-main;
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 8px;
+        background-image: none;
+        color: v.$dark;
+        text-align: left;
+        padding: 0;
+        text-transform: none;
+
+        a {
+            color: v.$dark;
+            text-decoration: none;
+
+            &:hover {
+                color: v.$primary;
+            }
+        }
+    }
+
+    // Extracte
+    .wp-block-post-excerpt {
+        font-family: v.$font-main;
+        font-size: 15px;
+        color: #555;
+        margin-bottom: 8px;
+    }
+
+    // Data
+    .wp-block-post-template .wp-block-post-date {
+        font-family: v.$font-main;
+        font-size: 13px;
+        color: #aaa;
+    }
+
+    // Separador entre resultats
+    .wp-block-post-template .wp-block-separator {
+        margin-block: 16px;
+        opacity: 0.2;
+    }
+
+    // Missatge "no s'ha trobat res"
+    .wp-block-query-no-results p {
+        font-family: v.$font-main;
+        font-size: 18px;
+        color: #555;
+    }
+}
+
 /* NOT FOUND */
 
-body.error404 {
+body.error404,
+body.search-results {
     .not-found-container {
         display: flex;
         flex-direction: column;
@@ -1035,7 +1214,8 @@ body.error404 {
 body.page-oficines,
 body.page-contacto,
 body.page-contact,
-body.page-- {
+body.page--,
+body.search-results {
 
     .inside-container-descobreix {
         padding-bottom: 0 !important;

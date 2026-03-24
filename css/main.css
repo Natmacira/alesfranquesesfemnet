@@ -80,6 +80,7 @@ p {
   margin: 0 auto;
   padding-inline: 0;
   justify-content: space-between;
+  align-items: flex-start;
 }
 @media (max-width: 1200px) {
   .bottom-header {
@@ -88,7 +89,29 @@ p {
     max-width: 900px !important;
   }
 }
+@media (max-width: 768px) {
+  .bottom-header {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .bottom-header .wp-block-site-logo {
+    order: 1;
+  }
+  .bottom-header .search-block {
+    order: 3;
+    width: 100%;
+    margin-top: 12px;
+  }
+  .bottom-header > .wp-block-group {
+    order: 2;
+  }
+}
 
+@media (max-width: 768px) {
+  .bottom-header.is-nowrap {
+    flex-wrap: wrap !important;
+  }
+}
 @media (max-width: 1200px) {
   .ul.wp-block-navigation__container {
     display: flex;
@@ -822,6 +845,62 @@ h1.wp-block-heading.home-special-banner {
   margin-bottom: 25px !important;
 }
 
+/* SEARCH BLOCK */
+.search-block.wp-block-search {
+  width: 20%;
+}
+@media (max-width: 768px) {
+  .search-block.wp-block-search {
+    width: 100%;
+  }
+}
+.search-block .wp-block-search__inside-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #d51116 0%, #f6a307 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  padding: 4px 4px 4px 20px;
+  overflow: hidden;
+}
+.search-block .wp-block-search__input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #1a1a1a;
+  padding: 8px 0;
+}
+.search-block .wp-block-search__input::placeholder {
+  color: #aaa;
+}
+.search-block .wp-block-search__button {
+  background-image: linear-gradient(90deg, #d51116 0%, #f6a307 100%);
+  border: none;
+  border-radius: 40px;
+  color: white;
+  cursor: pointer;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+  flex-shrink: 0;
+}
+.search-block .wp-block-search__button svg {
+  width: 18px;
+  height: 18px;
+  fill: white;
+}
+.search-block .wp-block-search__button:hover {
+  opacity: 0.85;
+}
+
 /* 5. Pages */
 /* HOME AND MAIN PAGES TEMPLATE STYLES */
 /* HOME SECTION VIDEO */
@@ -1175,7 +1254,8 @@ body.page-pas-a-pas h2.recollida-h2,
 body.page-- h2.recollida-h2,
 body.page-paso-a-paso h2.recollida-h2,
 body.page-decouvrez-le-systeme-de-collecte h2.recollida-h2,
-body.page--- h2.recollida-h2 {
+body.page--- h2.recollida-h2,
+body.search-results h2.recollida-h2 {
   font-size: 55px;
   padding-top: 15px !important;
 }
@@ -1186,7 +1266,8 @@ body.page--- h2.recollida-h2 {
   body.page-- h2.recollida-h2,
   body.page-paso-a-paso h2.recollida-h2,
   body.page-decouvrez-le-systeme-de-collecte h2.recollida-h2,
-  body.page--- h2.recollida-h2 {
+  body.page--- h2.recollida-h2,
+  body.search-results h2.recollida-h2 {
     font-size: 32px;
   }
 }
@@ -1196,7 +1277,8 @@ body.page-pas-a-pas h3.residu-h3.recollida-h3,
 body.page-- h3.residu-h3.recollida-h3,
 body.page-paso-a-paso h3.residu-h3.recollida-h3,
 body.page-decouvrez-le-systeme-de-collecte h3.residu-h3.recollida-h3,
-body.page--- h3.residu-h3.recollida-h3 {
+body.page--- h3.residu-h3.recollida-h3,
+body.search-results h3.residu-h3.recollida-h3 {
   text-align: center;
   font-size: 24px;
   font-family: "Roboto", sans-serif;
@@ -1212,7 +1294,8 @@ body.page--- h3.residu-h3.recollida-h3 {
   body.page-- h3.residu-h3.recollida-h3,
   body.page-paso-a-paso h3.residu-h3.recollida-h3,
   body.page-decouvrez-le-systeme-de-collecte h3.residu-h3.recollida-h3,
-  body.page--- h3.residu-h3.recollida-h3 {
+  body.page--- h3.residu-h3.recollida-h3,
+  body.search-results h3.residu-h3.recollida-h3 {
     padding-left: 5px;
     padding-right: 5px;
     font-size: 24px;
@@ -1225,7 +1308,8 @@ body.page--- h3.residu-h3.recollida-h3 {
   body.page-- .separator-recollida,
   body.page-paso-a-paso .separator-recollida,
   body.page-decouvrez-le-systeme-de-collecte .separator-recollida,
-  body.page--- .separator-recollida {
+  body.page--- .separator-recollida,
+  body.search-results .separator-recollida {
     display: none;
   }
 }
@@ -1235,21 +1319,24 @@ body.page-pas-a-pas .tancament-dels-contenidors,
 body.page-- .tancament-dels-contenidors,
 body.page-paso-a-paso .tancament-dels-contenidors,
 body.page-decouvrez-le-systeme-de-collecte .tancament-dels-contenidors,
-body.page--- .tancament-dels-contenidors {
+body.page--- .tancament-dels-contenidors,
+body.search-results .tancament-dels-contenidors {
   padding-inline: 0;
 }
 
 body.page-coneix-el-sistema-de-recollida h1,
 body.page-conozca-el-sistema-de-recogida h1,
 body.page-decouvrez-le-systeme-de-collecte h1,
-body.page--- h1 {
+body.page--- h1,
+body.search-results h1 {
   top: -184px;
 }
 @media (max-width: 1200px) {
   body.page-coneix-el-sistema-de-recollida h1,
   body.page-conozca-el-sistema-de-recogida h1,
   body.page-decouvrez-le-systeme-de-collecte h1,
-  body.page--- h1 {
+  body.page--- h1,
+  body.search-results h1 {
     top: 0;
   }
 }
@@ -1260,7 +1347,9 @@ body.page-conozca-el-sistema-de-recogida .iframe-ul .wp-block-image img,
 body.page-decouvrez-le-systeme-de-collecte .ul-iframe .wp-block-image img,
 body.page-decouvrez-le-systeme-de-collecte .iframe-ul .wp-block-image img,
 body.page--- .ul-iframe .wp-block-image img,
-body.page--- .iframe-ul .wp-block-image img {
+body.page--- .iframe-ul .wp-block-image img,
+body.search-results .ul-iframe .wp-block-image img,
+body.search-results .iframe-ul .wp-block-image img {
   padding-top: 0 !important;
 }
 
@@ -1274,7 +1363,8 @@ body.page--- .iframe-ul .wp-block-image img {
 body.page-coneix-el-sistema-de-recollida .special-h2-targeta,
 body.page-conozca-el-sistema-de-recogida .special-h2-targeta,
 body.page-decouvrez-le-systeme-de-collecte .special-h2-targeta,
-body.page--- .special-h2-targeta {
+body.page--- .special-h2-targeta,
+body.search-results .special-h2-targeta {
   background-image: none;
   color: #d50911;
   font-size: 55px;
@@ -1285,7 +1375,8 @@ body.page--- .special-h2-targeta {
   body.page-coneix-el-sistema-de-recollida .special-h2-targeta,
   body.page-conozca-el-sistema-de-recogida .special-h2-targeta,
   body.page-decouvrez-le-systeme-de-collecte .special-h2-targeta,
-  body.page--- .special-h2-targeta {
+  body.page--- .special-h2-targeta,
+  body.search-results .special-h2-targeta {
     letter-spacing: 2px;
     font-size: 32px;
   }
@@ -1297,14 +1388,17 @@ body.page-conozca-el-sistema-de-recogida .wp-block-group.ul-iframe .wp-block-gro
 body.page-decouvrez-le-systeme-de-collecte .wp-block-group.ul-iframe .wp-block-group.ul-iframe,
 body.page-decouvrez-le-systeme-de-collecte .wp-block-group.ul-iframe .wp-block-group.iframe-ul,
 body.page--- .wp-block-group.ul-iframe .wp-block-group.ul-iframe,
-body.page--- .wp-block-group.ul-iframe .wp-block-group.iframe-ul {
+body.page--- .wp-block-group.ul-iframe .wp-block-group.iframe-ul,
+body.search-results .wp-block-group.ul-iframe .wp-block-group.ul-iframe,
+body.search-results .wp-block-group.ul-iframe .wp-block-group.iframe-ul {
   display: flex;
   align-items: flex-start;
 }
 body.page-coneix-el-sistema-de-recollida .wp-block-group.ul-iframe .wp-block-group.iframe-ul,
 body.page-conozca-el-sistema-de-recogida .wp-block-group.ul-iframe .wp-block-group.iframe-ul,
 body.page-decouvrez-le-systeme-de-collecte .wp-block-group.ul-iframe .wp-block-group.iframe-ul,
-body.page--- .wp-block-group.ul-iframe .wp-block-group.iframe-ul {
+body.page--- .wp-block-group.ul-iframe .wp-block-group.iframe-ul,
+body.search-results .wp-block-group.ul-iframe .wp-block-group.iframe-ul {
   margin-top: 50px !important;
 }
 
@@ -1407,34 +1501,39 @@ body.page--- .wp-block-group.ul-iframe .wp-block-group.iframe-ul {
 /* PAGE PAS A PAS  */
 body.page-pas-a-pas h1,
 body.page-paso-a-paso h1,
-body.page-- h1 {
+body.page-- h1,
+body.search-results h1 {
   top: -225px;
   line-height: 100px;
 }
 @media (max-width: 1200px) {
   body.page-pas-a-pas h1,
   body.page-paso-a-paso h1,
-  body.page-- h1 {
+  body.page-- h1,
+  body.search-results h1 {
     top: 0 !important;
   }
 }
 @media (max-width: 550px) {
   body.page-pas-a-pas h1,
   body.page-paso-a-paso h1,
-  body.page-- h1 {
+  body.page-- h1,
+  body.search-results h1 {
     line-height: 82px;
   }
 }
 @media (max-width: 500px) {
   body.page-pas-a-pas h1,
   body.page-paso-a-paso h1,
-  body.page-- h1 {
+  body.page-- h1,
+  body.search-results h1 {
     line-height: 60px;
   }
 }
 body.page-pas-a-pas .home-section-descobreix img,
 body.page-paso-a-paso .home-section-descobreix img,
-body.page-- .home-section-descobreix img {
+body.page-- .home-section-descobreix img,
+body.search-results .home-section-descobreix img {
   max-width: 500px;
 }
 body.page-pas-a-pas .iframe-ul .wp-block-group p,
@@ -1448,7 +1547,11 @@ body.page-paso-a-paso .ul-iframe .wp-block-group .wp-block-list,
 body.page-- .iframe-ul .wp-block-group p,
 body.page-- .iframe-ul .wp-block-group .wp-block-list,
 body.page-- .ul-iframe .wp-block-group p,
-body.page-- .ul-iframe .wp-block-group .wp-block-list {
+body.page-- .ul-iframe .wp-block-group .wp-block-list,
+body.search-results .iframe-ul .wp-block-group p,
+body.search-results .iframe-ul .wp-block-group .wp-block-list,
+body.search-results .ul-iframe .wp-block-group p,
+body.search-results .ul-iframe .wp-block-group .wp-block-list {
   font-family: "Roboto", sans-serif;
   font-size: 32px;
   font-weight: bold;
@@ -1458,7 +1561,9 @@ body.page-pas-a-pas .ul-iframe .wp-block-group .wp-block-list,
 body.page-paso-a-paso .iframe-ul .wp-block-group .wp-block-list,
 body.page-paso-a-paso .ul-iframe .wp-block-group .wp-block-list,
 body.page-- .iframe-ul .wp-block-group .wp-block-list,
-body.page-- .ul-iframe .wp-block-group .wp-block-list {
+body.page-- .ul-iframe .wp-block-group .wp-block-list,
+body.search-results .iframe-ul .wp-block-group .wp-block-list,
+body.search-results .ul-iframe .wp-block-group .wp-block-list {
   list-style: none;
   padding-left: 0;
 }
@@ -1467,7 +1572,9 @@ body.page-pas-a-pas .ul-iframe .wp-block-group .wp-block-list li,
 body.page-paso-a-paso .iframe-ul .wp-block-group .wp-block-list li,
 body.page-paso-a-paso .ul-iframe .wp-block-group .wp-block-list li,
 body.page-- .iframe-ul .wp-block-group .wp-block-list li,
-body.page-- .ul-iframe .wp-block-group .wp-block-list li {
+body.page-- .ul-iframe .wp-block-group .wp-block-list li,
+body.search-results .iframe-ul .wp-block-group .wp-block-list li,
+body.search-results .ul-iframe .wp-block-group .wp-block-list li {
   position: relative;
   padding-left: 1.5rem;
 }
@@ -1476,7 +1583,9 @@ body.page-pas-a-pas .ul-iframe .wp-block-group .wp-block-list li::before,
 body.page-paso-a-paso .iframe-ul .wp-block-group .wp-block-list li::before,
 body.page-paso-a-paso .ul-iframe .wp-block-group .wp-block-list li::before,
 body.page-- .iframe-ul .wp-block-group .wp-block-list li::before,
-body.page-- .ul-iframe .wp-block-group .wp-block-list li::before {
+body.page-- .ul-iframe .wp-block-group .wp-block-list li::before,
+body.search-results .iframe-ul .wp-block-group .wp-block-list li::before,
+body.search-results .ul-iframe .wp-block-group .wp-block-list li::before {
   content: "•";
   position: absolute;
   left: 0;
@@ -1488,12 +1597,14 @@ body.page-- .ul-iframe .wp-block-group .wp-block-list li::before {
 }
 body.page-pas-a-pas .wp-block-list.list-bullets li::before,
 body.page-paso-a-paso .wp-block-list.list-bullets li::before,
-body.page-- .wp-block-list.list-bullets li::before {
+body.page-- .wp-block-list.list-bullets li::before,
+body.search-results .wp-block-list.list-bullets li::before {
   top: 30% !important;
 }
 body.page-pas-a-pas .first-pasapas,
 body.page-paso-a-paso .first-pasapas,
-body.page-- .first-pasapas {
+body.page-- .first-pasapas,
+body.search-results .first-pasapas {
   display: flex;
   align-items: center;
   padding-left: 0;
@@ -1502,13 +1613,15 @@ body.page-- .first-pasapas {
 @media (max-width: 1200px) {
   body.page-pas-a-pas .first-pasapas,
   body.page-paso-a-paso .first-pasapas,
-  body.page-- .first-pasapas {
+  body.page-- .first-pasapas,
+  body.search-results .first-pasapas {
     flex-direction: column;
   }
 }
 body.page-pas-a-pas .first-pasapas p,
 body.page-paso-a-paso .first-pasapas p,
-body.page-- .first-pasapas p {
+body.page-- .first-pasapas p,
+body.search-results .first-pasapas p {
   font-size: 40px;
   color: #d50911;
   font-family: "Anton", sans-serif;
@@ -1517,13 +1630,15 @@ body.page-- .first-pasapas p {
 @media (max-width: 768px) {
   body.page-pas-a-pas .first-pasapas p,
   body.page-paso-a-paso .first-pasapas p,
-  body.page-- .first-pasapas p {
+  body.page-- .first-pasapas p,
+  body.search-results .first-pasapas p {
     letter-spacing: 2px;
   }
 }
 body.page-pas-a-pas .first-pasapas p:first-child,
 body.page-paso-a-paso .first-pasapas p:first-child,
-body.page-- .first-pasapas p:first-child {
+body.page-- .first-pasapas p:first-child,
+body.search-results .first-pasapas p:first-child {
   background: #d50911;
   color: white;
   width: 100px;
@@ -1540,7 +1655,8 @@ body.page-- .first-pasapas p:first-child {
 @media (max-width: 1200px) {
   body.page-pas-a-pas .first-pasapas p:first-child,
   body.page-paso-a-paso .first-pasapas p:first-child,
-  body.page-- .first-pasapas p:first-child {
+  body.page-- .first-pasapas p:first-child,
+  body.search-results .first-pasapas p:first-child {
     font-size: 32px;
     width: 50px;
     height: 50px;
@@ -1548,19 +1664,22 @@ body.page-- .first-pasapas p:first-child {
 }
 body.page-pas-a-pas .snd-pasapas,
 body.page-paso-a-paso .snd-pasapas,
-body.page-- .snd-pasapas {
+body.page-- .snd-pasapas,
+body.search-results .snd-pasapas {
   display: flex;
   flex-direction: column;
   margin: auto;
 }
 body.page-pas-a-pas .snd-pasapas .first-pasapas,
 body.page-paso-a-paso .snd-pasapas .first-pasapas,
-body.page-- .snd-pasapas .first-pasapas {
+body.page-- .snd-pasapas .first-pasapas,
+body.search-results .snd-pasapas .first-pasapas {
   padding-right: 0;
 }
 body.page-pas-a-pas figure.wp-block-gallery,
 body.page-paso-a-paso figure.wp-block-gallery,
-body.page-- figure.wp-block-gallery {
+body.page-- figure.wp-block-gallery,
+body.search-results figure.wp-block-gallery {
   justify-content: center;
   max-width: 1000px !important;
   margin: auto;
@@ -1570,7 +1689,8 @@ body.page-- figure.wp-block-gallery {
 @media (max-width: 1200px) {
   body.page-pas-a-pas figure.wp-block-gallery,
   body.page-paso-a-paso figure.wp-block-gallery,
-  body.page-- figure.wp-block-gallery {
+  body.page-- figure.wp-block-gallery,
+  body.search-results figure.wp-block-gallery {
     max-width: 700px;
     margin: auto;
   }
@@ -1578,21 +1698,24 @@ body.page-- figure.wp-block-gallery {
 @media (max-width: 520px) {
   body.page-pas-a-pas figure.wp-block-gallery,
   body.page-paso-a-paso figure.wp-block-gallery,
-  body.page-- figure.wp-block-gallery {
+  body.page-- figure.wp-block-gallery,
+  body.search-results figure.wp-block-gallery {
     flex-direction: column;
     align-items: center;
   }
 }
 body.page-pas-a-pas figure.wp-block-gallery .bin,
 body.page-paso-a-paso figure.wp-block-gallery .bin,
-body.page-- figure.wp-block-gallery .bin {
+body.page-- figure.wp-block-gallery .bin,
+body.search-results figure.wp-block-gallery .bin {
   max-width: 190px !important;
   height: auto;
   background-color: rgb(250, 250, 250);
 }
 body.page-pas-a-pas figure.wp-block-gallery .bin img,
 body.page-paso-a-paso figure.wp-block-gallery .bin img,
-body.page-- figure.wp-block-gallery .bin img {
+body.page-- figure.wp-block-gallery .bin img,
+body.search-results figure.wp-block-gallery .bin img {
   object-fit: contain !important;
   padding-bottom: 40px;
   width: 141px !important;
@@ -1602,7 +1725,8 @@ body.page-- figure.wp-block-gallery .bin img {
 }
 body.page-pas-a-pas figure.wp-block-gallery .bin figcaption,
 body.page-paso-a-paso figure.wp-block-gallery .bin figcaption,
-body.page-- figure.wp-block-gallery .bin figcaption {
+body.page-- figure.wp-block-gallery .bin figcaption,
+body.search-results figure.wp-block-gallery .bin figcaption {
   color: black;
   font-size: 15px !important;
   font-family: "Roboto", sans-serif;
@@ -1610,12 +1734,14 @@ body.page-- figure.wp-block-gallery .bin figcaption {
 }
 body.page-pas-a-pas .iframe-ul,
 body.page-paso-a-paso .iframe-ul,
-body.page-- .iframe-ul {
+body.page-- .iframe-ul,
+body.search-results .iframe-ul {
   position: relative;
 }
 body.page-pas-a-pas .iframe-ul .pasapas-one,
 body.page-paso-a-paso .iframe-ul .pasapas-one,
-body.page-- .iframe-ul .pasapas-one {
+body.page-- .iframe-ul .pasapas-one,
+body.search-results .iframe-ul .pasapas-one {
   position: absolute;
   top: 0;
   left: -130px;
@@ -1623,14 +1749,16 @@ body.page-- .iframe-ul .pasapas-one {
 @media (max-width: 1200px) {
   body.page-pas-a-pas .iframe-ul .pasapas-one,
   body.page-paso-a-paso .iframe-ul .pasapas-one,
-  body.page-- .iframe-ul .pasapas-one {
+  body.page-- .iframe-ul .pasapas-one,
+  body.search-results .iframe-ul .pasapas-one {
     position: relative;
     left: 0;
   }
 }
 body.page-pas-a-pas .iframe-ul .rebras-lainfo,
 body.page-paso-a-paso .iframe-ul .rebras-lainfo,
-body.page-- .iframe-ul .rebras-lainfo {
+body.page-- .iframe-ul .rebras-lainfo,
+body.search-results .iframe-ul .rebras-lainfo {
   max-width: 100% !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
@@ -1641,7 +1769,8 @@ body.page-- .iframe-ul .rebras-lainfo {
 @media (max-width: 1200px) {
   body.page-pas-a-pas .iframe-ul .rebras-lainfo,
   body.page-paso-a-paso .iframe-ul .rebras-lainfo,
-  body.page-- .iframe-ul .rebras-lainfo {
+  body.page-- .iframe-ul .rebras-lainfo,
+  body.search-results .iframe-ul .rebras-lainfo {
     font-size: 32px !important;
     text-align: center;
   }
@@ -1649,7 +1778,8 @@ body.page-- .iframe-ul .rebras-lainfo {
 @media (max-width: 768px) {
   body.page-pas-a-pas .iframe-ul .rebras-lainfo,
   body.page-paso-a-paso .iframe-ul .rebras-lainfo,
-  body.page-- .iframe-ul .rebras-lainfo {
+  body.page-- .iframe-ul .rebras-lainfo,
+  body.search-results .iframe-ul .rebras-lainfo {
     letter-spacing: 2px;
   }
 }
@@ -1731,7 +1861,8 @@ body.page-pas-a-pas .alseu-equip,
 body.page-- .alseu-equip,
 body.page-paso-a-paso .alseu-equip,
 body.page-cada-residuo-en-su-equipo .alseu-equip,
-body.page---- .alseu-equip {
+body.page---- .alseu-equip,
+body.search-results .alseu-equip {
   padding-inline: 0;
 }
 body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained,
@@ -1740,7 +1871,8 @@ body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained,
 body.page-- .residu-gallery.wp-block-group.is-layout-constrained,
 body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained,
 body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained,
-body.page---- .residu-gallery.wp-block-group.is-layout-constrained {
+body.page---- .residu-gallery.wp-block-group.is-layout-constrained,
+body.search-results .residu-gallery.wp-block-group.is-layout-constrained {
   padding-inline: 0;
 }
 body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery,
@@ -1749,7 +1881,8 @@ body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained figure.
 body.page-- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery,
 body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery,
 body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery,
-body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery {
+body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery,
+body.search-results .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery {
   max-width: 1200px;
   justify-content: center;
 }
@@ -1760,7 +1893,8 @@ body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-blo
   body.page-- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery,
   body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery,
   body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery,
-  body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery {
+  body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery,
+  body.search-results .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery {
     max-width: 800px;
   }
 }
@@ -1771,7 +1905,8 @@ body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-blo
   body.page-- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery,
   body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery,
   body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery,
-  body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery {
+  body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery,
+  body.search-results .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery {
     max-width: 650px;
   }
 }
@@ -1782,7 +1917,8 @@ body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-blo
   body.page-- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery,
   body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery,
   body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery,
-  body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery {
+  body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery,
+  body.search-results .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery {
     max-width: 400px;
   }
 }
@@ -1793,7 +1929,8 @@ body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-blo
   body.page-- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery,
   body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery,
   body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery,
-  body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery {
+  body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery,
+  body.search-results .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery {
     max-width: 300px;
   }
 }
@@ -1803,7 +1940,8 @@ body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained figure.
 body.page-- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card,
 body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card,
 body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card,
-body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card {
+body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card,
+body.search-results .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card {
   width: 167px !important;
   height: 219px;
   position: relative;
@@ -1815,7 +1953,8 @@ body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained figure.
 body.page-- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card img,
 body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card img,
 body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card img,
-body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card img {
+body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card img,
+body.search-results .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card img {
   border-radius: 10px;
 }
 body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card figcaption,
@@ -1824,7 +1963,8 @@ body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained figure.
 body.page-- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card figcaption,
 body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card figcaption,
 body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card figcaption,
-body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card figcaption {
+body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card figcaption,
+body.search-results .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card figcaption {
   display: none;
 }
 body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption,
@@ -1833,7 +1973,8 @@ body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained figure.
 body.page-- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption,
 body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption,
 body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption,
-body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption {
+body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption,
+body.search-results .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption {
   display: block;
   position: absolute;
   bottom: 0;
@@ -1853,7 +1994,8 @@ body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained figure.
 body.page-- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption::-webkit-scrollbar,
 body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption::-webkit-scrollbar,
 body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption::-webkit-scrollbar,
-body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption::-webkit-scrollbar {
+body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption::-webkit-scrollbar,
+body.search-results .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption::-webkit-scrollbar {
   display: none;
   /* Chrome, Safari */
 }
@@ -1864,7 +2006,8 @@ body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-blo
   body.page-- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption,
   body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption,
   body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption,
-  body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption {
+  body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption,
+  body.search-results .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover figcaption {
     letter-spacing: 2px;
   }
 }
@@ -1874,7 +2017,8 @@ body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained figure.
 body.page-- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover img,
 body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover img,
 body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover img,
-body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover img {
+body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover img,
+body.search-results .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card:hover img {
   opacity: 0.9;
   filter: brightness(0.5);
 }
@@ -1884,7 +2028,8 @@ body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained figure.
 body.page-- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card::before,
 body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card::before,
 body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card::before,
-body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card::before {
+body.page---- .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card::before,
+body.search-results .residu-gallery.wp-block-group.is-layout-constrained figure.wp-block-gallery .wp-block-image.residu-gallery-card::before {
   display: none;
 }
 body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained h3,
@@ -1893,7 +2038,8 @@ body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained h3,
 body.page-- .residu-gallery.wp-block-group.is-layout-constrained h3,
 body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained h3,
 body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained h3,
-body.page---- .residu-gallery.wp-block-group.is-layout-constrained h3 {
+body.page---- .residu-gallery.wp-block-group.is-layout-constrained h3,
+body.search-results .residu-gallery.wp-block-group.is-layout-constrained h3 {
   font-size: 55px;
   font-family: "Anton", sans-serif;
   text-align: center;
@@ -1907,7 +2053,8 @@ body.page---- .residu-gallery.wp-block-group.is-layout-constrained h3 {
   body.page-- .residu-gallery.wp-block-group.is-layout-constrained h3,
   body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained h3,
   body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained h3,
-  body.page---- .residu-gallery.wp-block-group.is-layout-constrained h3 {
+  body.page---- .residu-gallery.wp-block-group.is-layout-constrained h3,
+  body.search-results .residu-gallery.wp-block-group.is-layout-constrained h3 {
     line-height: 1;
     font-size: 35px;
     padding: 0 20px;
@@ -1920,7 +2067,8 @@ body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained p,
 body.page-- .residu-gallery.wp-block-group.is-layout-constrained p,
 body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained p,
 body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained p,
-body.page---- .residu-gallery.wp-block-group.is-layout-constrained p {
+body.page---- .residu-gallery.wp-block-group.is-layout-constrained p,
+body.search-results .residu-gallery.wp-block-group.is-layout-constrained p {
   font-size: 24px;
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -1935,7 +2083,8 @@ body.page---- .residu-gallery.wp-block-group.is-layout-constrained p {
   body.page-- .residu-gallery.wp-block-group.is-layout-constrained p,
   body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained p,
   body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained p,
-  body.page---- .residu-gallery.wp-block-group.is-layout-constrained p {
+  body.page---- .residu-gallery.wp-block-group.is-layout-constrained p,
+  body.search-results .residu-gallery.wp-block-group.is-layout-constrained p {
     font-size: 22px;
     padding: 0 20px;
     line-height: 25px;
@@ -1947,7 +2096,8 @@ body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained.deixale
 body.page-- .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio,
 body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio,
 body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio,
-body.page---- .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio {
+body.page---- .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio,
+body.search-results .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio {
   margin-top: 30px;
 }
 body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio p,
@@ -1956,7 +2106,8 @@ body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained.deixale
 body.page-- .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio p,
 body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio p,
 body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio p,
-body.page---- .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio p {
+body.page---- .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio p,
+body.search-results .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: bold;
@@ -1969,7 +2120,8 @@ body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained.deixale
 body.page-- .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles,
 body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles,
 body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles,
-body.page---- .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles {
+body.page---- .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles,
+body.search-results .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles {
   color: #d50911;
   margin-bottom: 0;
   padding-bottom: 0;
@@ -1980,7 +2132,8 @@ body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained.deixale
 body.page-- .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles p::before,
 body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles p::before,
 body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles p::before,
-body.page---- .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles p::before {
+body.page---- .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles p::before,
+body.search-results .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles p::before {
   content: "";
   width: 35px;
   height: 35px;
@@ -1999,7 +2152,8 @@ body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained.deixale
 body.page-- .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles p.trucans::before,
 body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles p.trucans::before,
 body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles p.trucans::before,
-body.page---- .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles p.trucans::before {
+body.page---- .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles p.trucans::before,
+body.search-results .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio .deixaleria-localitzacio-titles p.trucans::before {
   background-image: url("../img/phone.png");
 }
 body.page-cada-residu-al-seu-equip .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio div,
@@ -2008,7 +2162,8 @@ body.page-pas-a-pas .residu-gallery.wp-block-group.is-layout-constrained.deixale
 body.page-- .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio div,
 body.page-paso-a-paso .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio div,
 body.page-cada-residuo-en-su-equipo .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio div,
-body.page---- .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio div {
+body.page---- .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio div,
+body.search-results .residu-gallery.wp-block-group.is-layout-constrained.deixaleria .deixaleria-localitzacio div {
   align-items: center;
   justify-content: space-evenly;
   padding-bottom: 0;
@@ -2022,7 +2177,8 @@ body.page-pas-a-pas .section-horaris,
 body.page-- .section-horaris,
 body.page-paso-a-paso .section-horaris,
 body.page-cada-residuo-en-su-equipo .section-horaris,
-body.page---- .section-horaris {
+body.page---- .section-horaris,
+body.search-results .section-horaris {
   margin-top: 50px;
   margin-bottom: 100px;
 }
@@ -2032,7 +2188,8 @@ body.page-pas-a-pas .section-horaris h5,
 body.page-- .section-horaris h5,
 body.page-paso-a-paso .section-horaris h5,
 body.page-cada-residuo-en-su-equipo .section-horaris h5,
-body.page---- .section-horaris h5 {
+body.page---- .section-horaris h5,
+body.search-results .section-horaris h5 {
   color: #d50911;
   font-size: 20px;
   font-weight: bold;
@@ -2043,7 +2200,8 @@ body.page-pas-a-pas .section-horaris h5::before,
 body.page-- .section-horaris h5::before,
 body.page-paso-a-paso .section-horaris h5::before,
 body.page-cada-residuo-en-su-equipo .section-horaris h5::before,
-body.page---- .section-horaris h5::before {
+body.page---- .section-horaris h5::before,
+body.search-results .section-horaris h5::before {
   content: "";
   width: 35px;
   height: 35px;
@@ -2063,7 +2221,8 @@ body.page-pas-a-pas .section-horaris p,
 body.page-- .section-horaris p,
 body.page-paso-a-paso .section-horaris p,
 body.page-cada-residuo-en-su-equipo .section-horaris p,
-body.page---- .section-horaris p {
+body.page---- .section-horaris p,
+body.search-results .section-horaris p {
   font-size: 20px;
   font-weight: bold;
 }
@@ -2073,7 +2232,8 @@ body.page-pas-a-pas .section-tes-dubtes h3,
 body.page-- .section-tes-dubtes h3,
 body.page-paso-a-paso .section-tes-dubtes h3,
 body.page-cada-residuo-en-su-equipo .section-tes-dubtes h3,
-body.page---- .section-tes-dubtes h3 {
+body.page---- .section-tes-dubtes h3,
+body.search-results .section-tes-dubtes h3 {
   font-size: 55px;
   font-family: "Anton", sans-serif;
   text-align: center;
@@ -2087,7 +2247,8 @@ body.page---- .section-tes-dubtes h3 {
   body.page-- .section-tes-dubtes h3,
   body.page-paso-a-paso .section-tes-dubtes h3,
   body.page-cada-residuo-en-su-equipo .section-tes-dubtes h3,
-  body.page---- .section-tes-dubtes h3 {
+  body.page---- .section-tes-dubtes h3,
+  body.search-results .section-tes-dubtes h3 {
     letter-spacing: 2px;
     font-size: 35px;
   }
@@ -2098,7 +2259,8 @@ body.page-pas-a-pas .section-tes-dubtes p,
 body.page-- .section-tes-dubtes p,
 body.page-paso-a-paso .section-tes-dubtes p,
 body.page-cada-residuo-en-su-equipo .section-tes-dubtes p,
-body.page---- .section-tes-dubtes p {
+body.page---- .section-tes-dubtes p,
+body.search-results .section-tes-dubtes p {
   font-size: 32px;
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -2113,7 +2275,8 @@ body.page---- .section-tes-dubtes p {
   body.page-- .section-tes-dubtes p,
   body.page-paso-a-paso .section-tes-dubtes p,
   body.page-cada-residuo-en-su-equipo .section-tes-dubtes p,
-  body.page---- .section-tes-dubtes p {
+  body.page---- .section-tes-dubtes p,
+  body.search-results .section-tes-dubtes p {
     font-size: 24px;
   }
 }
@@ -2123,74 +2286,87 @@ body.page-pas-a-pas .section-tes-dubtes .wp-block-buttons,
 body.page-- .section-tes-dubtes .wp-block-buttons,
 body.page-paso-a-paso .section-tes-dubtes .wp-block-buttons,
 body.page-cada-residuo-en-su-equipo .section-tes-dubtes .wp-block-buttons,
-body.page---- .section-tes-dubtes .wp-block-buttons {
+body.page---- .section-tes-dubtes .wp-block-buttons,
+body.search-results .section-tes-dubtes .wp-block-buttons {
   margin-bottom: 100px;
 }
 
 body.page-cada-residu-al-seu-equip h1.wp-block-heading,
 body.page-chaque-dechet-a-son-equipement h1.wp-block-heading,
-body.page-cada-residuo-en-su-equipo h1.wp-block-heading {
+body.page-cada-residuo-en-su-equipo h1.wp-block-heading,
+body.search-results h1.wp-block-heading {
   top: -200px;
 }
 @media (max-width: 1200px) {
   body.page-cada-residu-al-seu-equip h1.wp-block-heading,
   body.page-chaque-dechet-a-son-equipement h1.wp-block-heading,
-  body.page-cada-residuo-en-su-equipo h1.wp-block-heading {
+  body.page-cada-residuo-en-su-equipo h1.wp-block-heading,
+  body.search-results h1.wp-block-heading {
     top: 0;
   }
 }
 body.page-cada-residu-al-seu-equip .deixaleria-localitzacio.mobile,
 body.page-chaque-dechet-a-son-equipement .deixaleria-localitzacio.mobile,
-body.page-cada-residuo-en-su-equipo .deixaleria-localitzacio.mobile {
+body.page-cada-residuo-en-su-equipo .deixaleria-localitzacio.mobile,
+body.search-results .deixaleria-localitzacio.mobile {
   display: none;
 }
 @media (max-width: 1200px) {
   body.page-cada-residu-al-seu-equip .deixaleria-localitzacio.desktop,
   body.page-chaque-dechet-a-son-equipement .deixaleria-localitzacio.desktop,
-  body.page-cada-residuo-en-su-equipo .deixaleria-localitzacio.desktop {
+  body.page-cada-residuo-en-su-equipo .deixaleria-localitzacio.desktop,
+  body.search-results .deixaleria-localitzacio.desktop {
     display: none;
   }
   body.page-cada-residu-al-seu-equip .deixaleria-localitzacio.mobile,
   body.page-chaque-dechet-a-son-equipement .deixaleria-localitzacio.mobile,
-  body.page-cada-residuo-en-su-equipo .deixaleria-localitzacio.mobile {
+  body.page-cada-residuo-en-su-equipo .deixaleria-localitzacio.mobile,
+  body.search-results .deixaleria-localitzacio.mobile {
     display: block;
   }
   body.page-cada-residu-al-seu-equip .deixaleria-localitzacio-titles,
   body.page-chaque-dechet-a-son-equipement .deixaleria-localitzacio-titles,
-  body.page-cada-residuo-en-su-equipo .deixaleria-localitzacio-titles {
+  body.page-cada-residuo-en-su-equipo .deixaleria-localitzacio-titles,
+  body.search-results .deixaleria-localitzacio-titles {
     display: flex;
     flex-direction: column;
   }
   body.page-cada-residu-al-seu-equip .deixaleria-localitzacio-titles .deixalleria-item-one,
   body.page-chaque-dechet-a-son-equipement .deixaleria-localitzacio-titles .deixalleria-item-one,
-  body.page-cada-residuo-en-su-equipo .deixaleria-localitzacio-titles .deixalleria-item-one {
+  body.page-cada-residuo-en-su-equipo .deixaleria-localitzacio-titles .deixalleria-item-one,
+  body.search-results .deixaleria-localitzacio-titles .deixalleria-item-one {
     order: 1;
   }
   body.page-cada-residu-al-seu-equip .deixaleria-localitzacio-titles .deixalleria-item-three,
   body.page-chaque-dechet-a-son-equipement .deixaleria-localitzacio-titles .deixalleria-item-three,
-  body.page-cada-residuo-en-su-equipo .deixaleria-localitzacio-titles .deixalleria-item-three {
+  body.page-cada-residuo-en-su-equipo .deixaleria-localitzacio-titles .deixalleria-item-three,
+  body.search-results .deixaleria-localitzacio-titles .deixalleria-item-three {
     order: 2;
     color: black;
   }
   body.page-cada-residu-al-seu-equip .deixaleria-localitzacio-titles .deixalleria-item-three::before,
   body.page-chaque-dechet-a-son-equipement .deixaleria-localitzacio-titles .deixalleria-item-three::before,
-  body.page-cada-residuo-en-su-equipo .deixaleria-localitzacio-titles .deixalleria-item-three::before {
+  body.page-cada-residuo-en-su-equipo .deixaleria-localitzacio-titles .deixalleria-item-three::before,
+  body.search-results .deixaleria-localitzacio-titles .deixalleria-item-three::before {
     display: none !important;
   }
   body.page-cada-residu-al-seu-equip .deixaleria-localitzacio-titles .deixalleria-item-two,
   body.page-chaque-dechet-a-son-equipement .deixaleria-localitzacio-titles .deixalleria-item-two,
-  body.page-cada-residuo-en-su-equipo .deixaleria-localitzacio-titles .deixalleria-item-two {
+  body.page-cada-residuo-en-su-equipo .deixaleria-localitzacio-titles .deixalleria-item-two,
+  body.search-results .deixaleria-localitzacio-titles .deixalleria-item-two {
     order: 3;
   }
   body.page-cada-residu-al-seu-equip .deixaleria-localitzacio-titles .deixalleria-item-four,
   body.page-chaque-dechet-a-son-equipement .deixaleria-localitzacio-titles .deixalleria-item-four,
-  body.page-cada-residuo-en-su-equipo .deixaleria-localitzacio-titles .deixalleria-item-four {
+  body.page-cada-residuo-en-su-equipo .deixaleria-localitzacio-titles .deixalleria-item-four,
+  body.search-results .deixaleria-localitzacio-titles .deixalleria-item-four {
     order: 4;
     color: black;
   }
   body.page-cada-residu-al-seu-equip .deixaleria-localitzacio-titles .deixalleria-item-four::before,
   body.page-chaque-dechet-a-son-equipement .deixaleria-localitzacio-titles .deixalleria-item-four::before,
-  body.page-cada-residuo-en-su-equipo .deixaleria-localitzacio-titles .deixalleria-item-four::before {
+  body.page-cada-residuo-en-su-equipo .deixaleria-localitzacio-titles .deixalleria-item-four::before,
+  body.search-results .deixaleria-localitzacio-titles .deixalleria-item-four::before {
     display: none !important;
   }
 }
@@ -2199,7 +2375,8 @@ body.page-cada-residuo-en-su-equipo .deixaleria-localitzacio.mobile {
 body.page-preguntes-frequents .special-h2-targeta,
 body.page-questions-frequentes .special-h2-targeta,
 body.page-preguntas-frecuentes .special-h2-targeta,
-body.page-- .special-h2-targeta {
+body.page-- .special-h2-targeta,
+body.search-results .special-h2-targeta {
   background-image: none;
   color: #d50911;
   font-size: 55px;
@@ -2210,7 +2387,8 @@ body.page-- .special-h2-targeta {
   body.page-preguntes-frequents .special-h2-targeta,
   body.page-questions-frequentes .special-h2-targeta,
   body.page-preguntas-frecuentes .special-h2-targeta,
-  body.page-- .special-h2-targeta {
+  body.page-- .special-h2-targeta,
+  body.search-results .special-h2-targeta {
     letter-spacing: 2px;
     font-size: 32px;
   }
@@ -2218,7 +2396,8 @@ body.page-- .special-h2-targeta {
 body.page-preguntes-frequents h1.wp-block-heading,
 body.page-questions-frequentes h1.wp-block-heading,
 body.page-preguntas-frecuentes h1.wp-block-heading,
-body.page-- h1.wp-block-heading {
+body.page-- h1.wp-block-heading,
+body.search-results h1.wp-block-heading {
   line-height: 95px;
   top: -200px;
 }
@@ -2226,7 +2405,8 @@ body.page-- h1.wp-block-heading {
   body.page-preguntes-frequents h1.wp-block-heading,
   body.page-questions-frequentes h1.wp-block-heading,
   body.page-preguntas-frecuentes h1.wp-block-heading,
-  body.page-- h1.wp-block-heading {
+  body.page-- h1.wp-block-heading,
+  body.search-results h1.wp-block-heading {
     top: 0;
   }
 }
@@ -2234,7 +2414,8 @@ body.page-- h1.wp-block-heading {
   body.page-preguntes-frequents h1.wp-block-heading,
   body.page-questions-frequentes h1.wp-block-heading,
   body.page-preguntas-frecuentes h1.wp-block-heading,
-  body.page-- h1.wp-block-heading {
+  body.page-- h1.wp-block-heading,
+  body.search-results h1.wp-block-heading {
     line-height: 75px;
   }
 }
@@ -2242,14 +2423,16 @@ body.page-- h1.wp-block-heading {
   body.page-preguntes-frequents h1.wp-block-heading,
   body.page-questions-frequentes h1.wp-block-heading,
   body.page-preguntas-frecuentes h1.wp-block-heading,
-  body.page-- h1.wp-block-heading {
+  body.page-- h1.wp-block-heading,
+  body.search-results h1.wp-block-heading {
     line-height: 55px;
   }
 }
 body.page-preguntes-frequents .detail-container,
 body.page-questions-frequentes .detail-container,
 body.page-preguntas-frecuentes .detail-container,
-body.page-- .detail-container {
+body.page-- .detail-container,
+body.search-results .detail-container {
   max-width: 1200px;
   margin: auto;
   margin-bottom: 100px;
@@ -2258,7 +2441,8 @@ body.page-- .detail-container {
   body.page-preguntes-frequents .detail-container,
   body.page-questions-frequentes .detail-container,
   body.page-preguntas-frecuentes .detail-container,
-  body.page-- .detail-container {
+  body.page-- .detail-container,
+  body.search-results .detail-container {
     max-width: 1000px;
   }
 }
@@ -2266,7 +2450,8 @@ body.page-- .detail-container {
   body.page-preguntes-frequents .detail-container,
   body.page-questions-frequentes .detail-container,
   body.page-preguntas-frecuentes .detail-container,
-  body.page-- .detail-container {
+  body.page-- .detail-container,
+  body.search-results .detail-container {
     max-width: 700px;
   }
 }
@@ -2274,7 +2459,8 @@ body.page-- .detail-container {
   body.page-preguntes-frequents .detail-container,
   body.page-questions-frequentes .detail-container,
   body.page-preguntas-frecuentes .detail-container,
-  body.page-- .detail-container {
+  body.page-- .detail-container,
+  body.search-results .detail-container {
     max-width: 600px;
   }
 }
@@ -2282,7 +2468,8 @@ body.page-- .detail-container {
   body.page-preguntes-frequents .detail-container,
   body.page-questions-frequentes .detail-container,
   body.page-preguntas-frecuentes .detail-container,
-  body.page-- .detail-container {
+  body.page-- .detail-container,
+  body.search-results .detail-container {
     max-width: 500px;
   }
 }
@@ -2290,7 +2477,8 @@ body.page-- .detail-container {
   body.page-preguntes-frequents .detail-container,
   body.page-questions-frequentes .detail-container,
   body.page-preguntas-frecuentes .detail-container,
-  body.page-- .detail-container {
+  body.page-- .detail-container,
+  body.search-results .detail-container {
     max-width: 355px;
   }
 }
@@ -2298,7 +2486,8 @@ body.page-- .detail-container {
   body.page-preguntes-frequents .detail-container,
   body.page-questions-frequentes .detail-container,
   body.page-preguntas-frecuentes .detail-container,
-  body.page-- .detail-container {
+  body.page-- .detail-container,
+  body.search-results .detail-container {
     max-width: 325px;
   }
 }
@@ -2306,7 +2495,8 @@ body.page-- .detail-container {
   body.page-preguntes-frequents .detail-container,
   body.page-questions-frequentes .detail-container,
   body.page-preguntas-frecuentes .detail-container,
-  body.page-- .detail-container {
+  body.page-- .detail-container,
+  body.search-results .detail-container {
     max-width: 250px;
   }
 }
@@ -2314,14 +2504,16 @@ body.page-- .detail-container {
   body.page-preguntes-frequents .detail-container,
   body.page-questions-frequentes .detail-container,
   body.page-preguntas-frecuentes .detail-container,
-  body.page-- .detail-container {
+  body.page-- .detail-container,
+  body.search-results .detail-container {
     max-width: 200px;
   }
 }
 body.page-preguntes-frequents .detail-container summary,
 body.page-questions-frequentes .detail-container summary,
 body.page-preguntas-frecuentes .detail-container summary,
-body.page-- .detail-container summary {
+body.page-- .detail-container summary,
+body.search-results .detail-container summary {
   color: black;
   font-size: 35px;
   font-family: "Roboto", sans-serif;
@@ -2331,7 +2523,8 @@ body.page-- .detail-container summary {
   body.page-preguntes-frequents .detail-container summary,
   body.page-questions-frequentes .detail-container summary,
   body.page-preguntas-frecuentes .detail-container summary,
-  body.page-- .detail-container summary {
+  body.page-- .detail-container summary,
+  body.search-results .detail-container summary {
     font-size: 28px;
   }
 }
@@ -2339,21 +2532,24 @@ body.page-- .detail-container summary {
   body.page-preguntes-frequents .detail-container summary,
   body.page-questions-frequentes .detail-container summary,
   body.page-preguntas-frecuentes .detail-container summary,
-  body.page-- .detail-container summary {
+  body.page-- .detail-container summary,
+  body.search-results .detail-container summary {
     font-size: 24px;
   }
 }
 body.page-preguntes-frequents .detail-container details,
 body.page-questions-frequentes .detail-container details,
 body.page-preguntas-frecuentes .detail-container details,
-body.page-- .detail-container details {
+body.page-- .detail-container details,
+body.search-results .detail-container details {
   position: relative;
   padding-left: 20px;
 }
 body.page-preguntes-frequents .detail-container details::before,
 body.page-questions-frequentes .detail-container details::before,
 body.page-preguntas-frecuentes .detail-container details::before,
-body.page-- .detail-container details::before {
+body.page-- .detail-container details::before,
+body.search-results .detail-container details::before {
   content: "?";
   position: absolute;
   left: -40px;
@@ -2370,26 +2566,30 @@ body.page-- .detail-container details::before {
 body.page-preguntes-frequents .detail-container details[open] summary strong,
 body.page-questions-frequentes .detail-container details[open] summary strong,
 body.page-preguntas-frecuentes .detail-container details[open] summary strong,
-body.page-- .detail-container details[open] summary strong {
+body.page-- .detail-container details[open] summary strong,
+body.search-results .detail-container details[open] summary strong {
   color: #d50911;
 }
 body.page-preguntes-frequents .detail-container details[open]::before,
 body.page-questions-frequentes .detail-container details[open]::before,
 body.page-preguntas-frecuentes .detail-container details[open]::before,
-body.page-- .detail-container details[open]::before {
+body.page-- .detail-container details[open]::before,
+body.search-results .detail-container details[open]::before {
   top: 36px;
 }
 body.page-preguntes-frequents .detail-container summary,
 body.page-questions-frequentes .detail-container summary,
 body.page-preguntas-frecuentes .detail-container summary,
-body.page-- .detail-container summary {
+body.page-- .detail-container summary,
+body.search-results .detail-container summary {
   position: relative;
   width: fit-content;
 }
 body.page-preguntes-frequents .detail-container summary::after,
 body.page-questions-frequentes .detail-container summary::after,
 body.page-preguntas-frecuentes .detail-container summary::after,
-body.page-- .detail-container summary::after {
+body.page-- .detail-container summary::after,
+body.search-results .detail-container summary::after {
   content: "";
   position: absolute;
   right: -35px;
@@ -2405,14 +2605,16 @@ body.page-- .detail-container summary::after {
 body.page-preguntes-frequents .detail-container p,
 body.page-questions-frequentes .detail-container p,
 body.page-preguntas-frecuentes .detail-container p,
-body.page-- .detail-container p {
+body.page-- .detail-container p,
+body.search-results .detail-container p {
   font-size: 24px;
 }
 @media (max-width: 768px) {
   body.page-preguntes-frequents .detail-container p,
   body.page-questions-frequentes .detail-container p,
   body.page-preguntas-frecuentes .detail-container p,
-  body.page-- .detail-container p {
+  body.page-- .detail-container p,
+  body.search-results .detail-container p {
     font-size: 24px;
     line-height: normal;
   }
@@ -2421,87 +2623,235 @@ body.page-- .detail-container p {
   body.page-preguntes-frequents .detail-container p,
   body.page-questions-frequentes .detail-container p,
   body.page-preguntas-frecuentes .detail-container p,
-  body.page-- .detail-container p {
+  body.page-- .detail-container p,
+  body.search-results .detail-container p {
     font-size: 22px;
   }
 }
 body.page-preguntes-frequents,
 body.page-questions-frequentes,
 body.page-preguntas-frecuentes,
-body.page-- {
+body.page--,
+body.search-results {
   /* Oculta el marcador en Chrome, Safari y Edge */
 }
 body.page-preguntes-frequents summary::-webkit-details-marker,
 body.page-questions-frequentes summary::-webkit-details-marker,
 body.page-preguntas-frecuentes summary::-webkit-details-marker,
-body.page-- summary::-webkit-details-marker {
+body.page-- summary::-webkit-details-marker,
+body.search-results summary::-webkit-details-marker {
   display: none;
 }
 body.page-preguntes-frequents,
 body.page-questions-frequentes,
 body.page-preguntas-frecuentes,
-body.page-- {
+body.page--,
+body.search-results {
   /* Para compatibilidad con Firefox */
 }
 body.page-preguntes-frequents summary,
 body.page-questions-frequentes summary,
 body.page-preguntas-frecuentes summary,
-body.page-- summary {
+body.page-- summary,
+body.search-results summary {
   list-style: none;
 }
 body.page-preguntes-frequents,
 body.page-questions-frequentes,
 body.page-preguntas-frecuentes,
-body.page-- {
+body.page--,
+body.search-results {
   /* Opcional: Ocultar el marcador en navegadores que soportan list-style en summary */
 }
 body.page-preguntes-frequents summary::-moz-list-bullet,
 body.page-questions-frequentes summary::-moz-list-bullet,
 body.page-preguntas-frecuentes summary::-moz-list-bullet,
-body.page-- summary::-moz-list-bullet {
+body.page-- summary::-moz-list-bullet,
+body.search-results summary::-moz-list-bullet {
   list-style: none;
   display: none;
 }
 
 /* TEMPLATE NOTICIAS  */
-body.blog h2 {
+body.blog h2,
+body.search-results h2 {
+  display: block !important;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  text-transform: none;
+  text-align: left;
   background-image: none;
-  color: #d50911;
-  font-size: 75px !important;
-  font-family: "Anton", sans-serif;
-  text-align: center;
+  color: black;
   padding: 0;
+  margin-bottom: 10px !important;
 }
 @media (max-width: 768px) {
-  body.blog h2 {
+  body.blog h2,
+  body.search-results h2 {
     font-size: 24px;
     letter-spacing: 1px;
   }
 }
 @media (max-width: 1200px) {
-  body.blog ul {
+  body.blog ul,
+  body.search-results ul {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-width: 768px) {
-  body.blog ul {
+  body.blog ul,
+  body.search-results ul {
     grid-template-columns: 1fr;
   }
 }
 
+/* SEARCH RESULTS */
+body.search h1.wp-block-query-title {
+  position: relative;
+  top: 0;
+  font-family: "Anton", sans-serif;
+  font-size: 55px;
+  text-transform: uppercase;
+  color: #d50911;
+  text-align: left;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  body.search h1.wp-block-query-title {
+    font-size: 36px;
+  }
+}
+body.search .wp-block-search:not(.search-block) .wp-block-search__inside-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  background-image: linear-gradient(white, white), linear-gradient(90deg, #d51116 0%, #f6a307 100%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  padding: 4px 4px 4px 20px;
+  overflow: hidden;
+}
+body.search .wp-block-search:not(.search-block) .wp-block-search__input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #1a1a1a;
+  padding: 8px 0;
+}
+body.search .wp-block-search:not(.search-block) .wp-block-search__input::placeholder {
+  color: #aaa;
+}
+body.search .wp-block-search:not(.search-block) .wp-block-search__button {
+  background-image: linear-gradient(90deg, #d51116 0%, #f6a307 100%);
+  border: none;
+  border-radius: 40px;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  padding: 10px 22px;
+  transition: opacity 0.3s ease;
+  flex-shrink: 0;
+}
+body.search .wp-block-search:not(.search-block) .wp-block-search__button:hover {
+  opacity: 0.85;
+}
+body.search h2.wp-block-heading {
+  background-image: none;
+  color: #d50911;
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  padding: 0;
+  margin-bottom: 0 !important;
+  text-align: left;
+}
+body.search .wp-block-post-template .wp-block-group {
+  transition: background 0.2s ease;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+body.search .wp-block-post-template .wp-block-group:hover {
+  background: linear-gradient(90deg, rgba(213, 17, 22, 0.04) 0%, rgba(246, 163, 7, 0.04) 100%);
+}
+body.search .wp-block-post-template .wp-block-group .wp-block-post-title a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+body.search .wp-block-post-template .wp-block-group .wp-block-post-title a:hover {
+  color: #d50911;
+}
+body.search .wp-block-post-template .wp-block-group .wp-block-post-date {
+  color: #888;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  white-space: nowrap;
+}
+body.search .wp-block-post-template .wp-block-post-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  background-image: none;
+  color: #1a1a1a;
+  text-align: left;
+  padding: 0;
+  text-transform: none;
+}
+body.search .wp-block-post-template .wp-block-post-title a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+body.search .wp-block-post-template .wp-block-post-title a:hover {
+  color: #d50911;
+}
+body.search .wp-block-post-excerpt {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 8px;
+}
+body.search .wp-block-post-template .wp-block-post-date {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  color: #aaa;
+}
+body.search .wp-block-post-template .wp-block-separator {
+  margin-block: 16px;
+  opacity: 0.2;
+}
+body.search .wp-block-query-no-results p {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: #555;
+}
+
 /* NOT FOUND */
-body.error404 .not-found-container {
+body.error404 .not-found-container,
+body.search-results .not-found-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body.error404 .not-found-container h1.wp-block-heading {
+body.error404 .not-found-container h1.wp-block-heading,
+body.search-results .not-found-container h1.wp-block-heading {
   position: relative;
   top: 0;
   text-align: center;
   color: #d50911;
 }
-body.error404 .not-found-container p {
+body.error404 .not-found-container p,
+body.search-results .not-found-container p {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   text-align: left;
@@ -2514,19 +2864,22 @@ body.error404 .not-found-container p {
 body.page-oficines .inside-container-descobreix,
 body.page-contacto .inside-container-descobreix,
 body.page-contact .inside-container-descobreix,
-body.page-- .inside-container-descobreix {
+body.page-- .inside-container-descobreix,
+body.search-results .inside-container-descobreix {
   padding-bottom: 0 !important;
 }
 body.page-oficines h2.wp-block-heading,
 body.page-contacto h2.wp-block-heading,
 body.page-contact h2.wp-block-heading,
-body.page-- h2.wp-block-heading {
+body.page-- h2.wp-block-heading,
+body.search-results h2.wp-block-heading {
   margin-top: 0 !important;
 }
 body.page-oficines .special-h2-targeta,
 body.page-contacto .special-h2-targeta,
 body.page-contact .special-h2-targeta,
-body.page-- .special-h2-targeta {
+body.page-- .special-h2-targeta,
+body.search-results .special-h2-targeta {
   background-image: none;
   color: #d50911;
   font-size: 55px;
@@ -2537,7 +2890,8 @@ body.page-- .special-h2-targeta {
   body.page-oficines .special-h2-targeta,
   body.page-contacto .special-h2-targeta,
   body.page-contact .special-h2-targeta,
-  body.page-- .special-h2-targeta {
+  body.page-- .special-h2-targeta,
+  body.search-results .special-h2-targeta {
     letter-spacing: 2px;
     font-size: 32px;
   }
@@ -2545,7 +2899,8 @@ body.page-- .special-h2-targeta {
 body.page-oficines .section-horaris,
 body.page-contacto .section-horaris,
 body.page-contact .section-horaris,
-body.page-- .section-horaris {
+body.page-- .section-horaris,
+body.search-results .section-horaris {
   margin-top: 50px;
   margin-bottom: 100px;
   display: flex;
@@ -2556,19 +2911,22 @@ body.page-- .section-horaris {
 body.page-oficines .section-horaris img,
 body.page-contacto .section-horaris img,
 body.page-contact .section-horaris img,
-body.page-- .section-horaris img {
+body.page-- .section-horaris img,
+body.search-results .section-horaris img {
   width: 300px;
 }
 body.page-oficines .section-horaris img.emoji,
 body.page-contacto .section-horaris img.emoji,
 body.page-contact .section-horaris img.emoji,
-body.page-- .section-horaris img.emoji {
+body.page-- .section-horaris img.emoji,
+body.search-results .section-horaris img.emoji {
   width: auto;
 }
 body.page-oficines .section-horaris h5,
 body.page-contacto .section-horaris h5,
 body.page-contact .section-horaris h5,
-body.page-- .section-horaris h5 {
+body.page-- .section-horaris h5,
+body.search-results .section-horaris h5 {
   color: #d50911;
   font-size: 20px;
   font-weight: bold;
@@ -2576,7 +2934,8 @@ body.page-- .section-horaris h5 {
 body.page-oficines .section-horaris h5::before,
 body.page-contacto .section-horaris h5::before,
 body.page-contact .section-horaris h5::before,
-body.page-- .section-horaris h5::before {
+body.page-- .section-horaris h5::before,
+body.search-results .section-horaris h5::before {
   content: "";
   width: 35px;
   height: 35px;
@@ -2593,23 +2952,41 @@ body.page-- .section-horaris h5::before {
 body.page-oficines .section-horaris p,
 body.page-contacto .section-horaris p,
 body.page-contact .section-horaris p,
-body.page-- .section-horaris p {
+body.page-- .section-horaris p,
+body.search-results .section-horaris p {
   font-size: 20px;
   font-weight: bold;
   max-width: 280px;
 }
 
 /* Specific styles adjustmentes for single post page */
-body.single.single-post .wp-block-post-title {
+body.single.single-post main .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)),
+body.search-results main .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)),
+body.search main .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+  max-width: 1200px !important;
+}
+
+body.single.single-post .wp-block-post img {
+  max-width: 800px;
+  height: auto !important;
+  margin: 0 auto;
+  display: block;
+}
+
+body.single.single-post main .wp-block-post-title,
+body.search-results main .wp-block-post-title {
   display: block !important;
 }
-body.single.single-post .wp-block-group p {
+body.single.single-post main .wp-block-group p,
+body.search-results main .wp-block-group p {
   font-size: 20px;
 }
-body.single.single-post .wp-block-group h1 {
+body.single.single-post main .wp-block-group h1,
+body.search-results main .wp-block-group h1 {
   color: #d50911;
 }
-body.single.single-post .wp-block-group h2 {
+body.single.single-post main .wp-block-group h2,
+body.search-results main .wp-block-group h2 {
   color: black;
   font-size: 22px;
   background-image: none;

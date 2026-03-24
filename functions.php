@@ -137,6 +137,34 @@ function agregar_boton_wsp() { ?>
 add_action('wp_footer', 'agregar_boton_wsp');
 
 
+/* og_image */ 
+
+function custom_og_image() {
+
+    if (is_singular()) {
+        global $post;
+
+        if (has_post_thumbnail($post->ID)) {
+            $image = get_the_post_thumbnail_url($post->ID, 'full');
+        } else {
+            $image = 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/fem-net-logo.png';
+        }
+
+    } elseif (is_home() || is_archive()) {
+        // Blog / listado de posts
+        $image = 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/fem-net-logo.png';
+    }
+
+    if (!empty($image)) {
+        echo '<meta property="og:image" content="' . esc_url($image) . '" />';
+        echo '<meta property="og:image:width" content="1200" />';
+        echo '<meta property="og:image:height" content="630" />';
+    }
+}
+
+add_action('wp_head', 'custom_og_image', 5);
+
+
 
 
 /**
@@ -428,6 +456,17 @@ function buscador_residus_shortcode() {
         'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
         'tipus'   => ['DS'],
     ],
+
+        'MAJOR' => [
+            'oficina' => 'Antigues Escoles de Corró d\'Amunt',
+            'adreca'  => 'Carretera de Cànoves, s/n',
+            'maps'    => 'https://www.google.com/maps/place/Consell+del+Poble+de+Corró+d%27Amunt+%28Antigues+Escoles%29/@41.6693896,2.3229827,1214m/data=!3m1!1e3!4m10!1m2!2m1!1sANTIGUES+ESCOLES+CORRO+D%27AMUNT+CARRETERA+DE+CANOVES!3m6!1s0x12a4cfc1320928c9:0xf93c62ee561e1a9d!8m2!3d41.6693074!4d2.3286173!15sCjNBTlRJR1VFUyBFU0NPTEVTIENPUlJPIEQnQU1VTlQgQ0FSUkVURVJBIERFIENBTk9WRVOSARdlZHVjYXRpb25hbF9pbnN0aXR1dGlvbuABAA!16s%2Fg%2F11h271njv_?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D',
+            'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/2.-Antigues_Escoles_Corro_d_Amunt.jpg',
+            'periode' => 'Del 26 al 28 de febrer',
+            'dies'    => 'Del 26 al 28 de febrer',
+            'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+            'tipus'   => ['AV'],
+        ],
 
         // ── LLERONA ──────────────────────────────────────────────────────────
         'ANGEL GUIMERA' => [
@@ -1232,6 +1271,19 @@ function buscador_residus_shortcode() {
             'tipus'   => ['CL'],
         ],
 
+        'CATALUNYA' => [
+            'oficina' => 'Centre Cultural Bellavista',
+            'adreca'  => 'Carrer Navarra, s/n',
+            'maps'    => 'https://www.google.com/maps/place/Centre+Cultural+Bellavista/@41.6203793,2.2997893,3a,75y,90t/data=!3m8!1e2!3m6!1sCIHM0ogKEICAgIC_3oqQcg!2e10!3e12!6shttps:%2F%2Flh3.googleusercontent.com%2Fgps-cs-s%2FAHVAwepHo75kLNfNIQ5G0AkxnxEn4KkGcNHiHyRnCe5tob-1ok2UGQTSIEfqJ2XeQcqAvajJcuvIQKDO_0_BN46L9tX_WhgVD8zeed6jSEWb0uUQHOedW6e962bd6COhaQZ6e_INmv07%3Dw152-h86-k-no!7i3264!8i1840!4m7!3m6!1s0x12a4c62b50000001:0x8892b8fc9d89261f!8m2!3d41.6203436!4d2.2996716!10e5!16s%2Fg%2F12qg_29ms?entry=ttu&g_ep=EgoyMDI2MDIwNC4wIKXMDSoASAFQAw%3D%3D',
+            'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/01/1-3.png',
+            'periode' => 'Del 16 de març al 18 d\'abril',
+            'rangs'   => [
+                ['portals' => [1, 2, 3, 10], 'dies' => 'Del 23 al 28 de març'],
+                ['portals' => [5, 6, 7, 9],  'dies' => 'Del 30 de març al 4 d\'abril'],
+            ],
+            'tipus'   => ['PZ'],
+        ],
+
         // ── CORRÓ D'AVALL ────────────────────────────────────────────────────
         'AGUDES' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -1327,13 +1379,22 @@ function buscador_residus_shortcode() {
             'dies'    => 'Del 16 al 21 de març',
             'tipus'   => ['CL'],
         ],
-        'COLOM' => [
+        'MAJOR AVALL' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
             'adreca'  => 'Carretera de Ribes, 2',
             'maps'    => 'google.com/maps/place/Ajuntament+de+Les+Franqueses+del+Vallès/@41.6363281,2.2923644,607m/data=!3m3!1e3!4b1!5s0x12a4c622256c2927:0x777a3a13c660e0d8!4m6!3m5!1s0x12a4c5eb6d9388b3:0x7ae6dbc9fd77d985!8m2!3d41.6363242!4d2.2972353!16s%2Fg%2F11bw8dxskh?entry=tts&g_ep=EgoyMDI2MDEyOC4wIPu8ASoASAFQAw%3D%3D&skid=d7b7e3d5-65d3-4c1c-acac-a682dbc45b9e',
             'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 23 al 28 de març',
+            'tipus'   => ['CL'],
+        ],
+        'COLOME' => [
+            'oficina' => 'Ajuntament de Corró d\'Avall',
+            'adreca'  => 'Carretera de Ribes, 2',
+            'maps'    => 'google.com/maps/place/Ajuntament+de+Les+Franqueses+del+Vallès/@41.6363281,2.2923644,607m/data=!3m3!1e3!4b1!5s0x12a4c622256c2927:0x777a3a13c660e0d8!4m6!3m5!1s0x12a4c5eb6d9388b3:0x7ae6dbc9fd77d985!8m2!3d41.6363242!4d2.2972353!16s%2Fg%2F11bw8dxskh?entry=tts&g_ep=EgoyMDI2MDEyOC4wIPu8ASoASAFQAw%3D%3D&skid=d7b7e3d5-65d3-4c1c-acac-a682dbc45b9e',
+            'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
+            'periode' => 'Del 9 de març al 4 d\'abril',
+            'dies'    => 'Del 30 de març al 4 d\'abril',
             'tipus'   => ['CL'],
         ],
         'CONGOST' => [
@@ -1538,6 +1599,18 @@ function buscador_residus_shortcode() {
             'periode' => 'Del 9 de març al 4 d\'abril',
             'dies'    => 'Del 9 al 14 de març',
             'tipus'   => ['CL'],
+        ],
+        'CANOVES' => [
+            'oficina' => 'Ajuntament de Corró d\'Avall',
+            'adreca'  => 'Carretera de Ribes, 2',
+            'maps'    => 'google.com/maps/place/Ajuntament+de+Les+Franqueses+del+Vallès/@41.6363281,2.2923644,607m/data=!3m3!1e3!4b1!5s0x12a4c622256c2927:0x777a3a13c660e0d8!4m6!3m5!1s0x12a4c5eb6d9388b3:0x7ae6dbc9fd77d985!8m2!3d41.6363242!4d2.2972353!16s%2Fg%2F11bw8dxskh?entry=tts&g_ep=EgoyMDI2MDEyOC4wIPu8ASoASAFQAw%3D%3D&skid=d7b7e3d5-65d3-4c1c-acac-a682dbc45b9e',
+            'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/4.-Ajuntament-Corro-d_Avall.jpg',
+            'periode' => 'Del 9 de març al 4 d\'abril',
+            'rangs'   => [
+                ['min' => 2,   'max' => 999, 'parell' => true,  'dies' => 'Del 23 al 28 de març'],
+                ['min' => 1,   'max' => 999, 'parell' => false, 'dies' => 'Del 16 al 21 de març'],
+            ],
+            'tipus'   => ['CR'],
         ],
         'RIBES' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
@@ -2020,6 +2093,16 @@ function buscador_residus_shortcode() {
             'dies'    => 'Del 9 al 14 de març',
             'tipus'   => ['PJ'],
         ],
+        'SAGRERA LA' => [
+            'oficina' => 'Antigues Escoles de Corró d\'Amunt',
+            'adreca'  => 'Carretera de Cànoves, s/n',
+            'maps'    => 'https://www.google.com/maps/place/Consell+del+Poble+de+Corró+d%27Amunt+%28Antigues+Escoles%29/@41.6693896,2.3229827,1214m/data=!3m1!1e3!4m10!1m2!2m1!1sANTIGUES+ESCOLES+CORRO+D%27AMUNT+CARRETERA+DE+CANOVES!3m6!1s0x12a4cfc1320928c9:0xf93c62ee561e1a9d!8m2!3d41.6693074!4d2.3286173!15sCjNBTlRJR1VFUyBFU0NPTEVTIENPUlJPIEQnQU1VTlQgQ0FSUkVURVJBIERFIENBTk9WRVOSARdlZHVjYXRpb25hbF9pbnN0aXR1dGlvbuABAA!16s%2Fg%2F11h271njv_?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D',
+            'img'     => 'https://alesfranquesesfemnet.cat/wp-content/uploads/2026/02/2.-Antigues_Escoles_Corro_d_Amunt.jpg',
+            'periode' => 'Del 26 al 28 de febrer',
+            'dies'    => 'Del 26 al 28 de febrer',
+            'oficinas' => 'Antigues Escoles de Marata, Ajuntament de Corró d\'Avall i Antigues Escoles de Llerona',
+            'tipus'   => ['PZ'],
+        ],
         'SAGRERA' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
             'adreca'  => 'Carretera de Ribes, 2',
@@ -2043,7 +2126,7 @@ function buscador_residus_shortcode() {
             'dies'    => 'Del 30 de març al 4 d\'abril',
             'tipus'   => ['PJ'],
         ],
-        'TIL LERS' => [
+        'TIL·LERS' => [
             'oficina' => 'Ajuntament de Corró d\'Avall',
             'adreca'  => 'Carretera de Ribes, 2',
             'maps'    => 'google.com/maps/place/Ajuntament+de+Les+Franqueses+del+Vallès/@41.6363281,2.2923644,607m/data=!3m3!1e3!4b1!5s0x12a4c622256c2927:0x777a3a13c660e0d8!4m6!3m5!1s0x12a4c5eb6d9388b3:0x7ae6dbc9fd77d985!8m2!3d41.6363242!4d2.2972353!16s%2Fg%2F11bw8dxskh?entry=tts&g_ep=EgoyMDI2MDEyOC4wIPu8ASoASAFQAw%3D%3D&skid=d7b7e3d5-65d3-4c1c-acac-a682dbc45b9e',
@@ -2248,7 +2331,7 @@ function residus_normalitzar($text) {
     $text = strtoupper(trim($text));
     
     // Eliminar apòstrofs i guions, col·lapsar espais
-    $text = str_replace(["'", "\u{2019}", "\u{2018}", "-"], ' ', $text);
+    $text = str_replace(["'", "\u{2019}", "\u{2018}", "-", ",", "."], ' ', $text);
     $text = preg_replace('/\s+/', ' ', trim($text));
     
     $prefixos = ['CARRER ', 'CARRETERA ', 'AVINGUDA ', 'PASSATGE ', 'PASSEIG ',
@@ -2267,5 +2350,7 @@ function residus_normalitzar($text) {
     $to   = ['A','A','A','A','A','A','A','A','A','A','E','E','E','E','E','E','E','E',
              'I','I','I','I','I','I','I','I','O','O','O','O','O','O','O','O','O','O',
              'U','U','U','U','U','U','U','U','C','C','N','N','L','LL','LL'];
-    return str_replace($from, $to, $text);
+    $text = str_replace($from, $to, $text);
+    $text = str_replace('L L', 'LL', $text); // "til lers" escrit amb espai en lloc de punt volat
+    return $text;
 }

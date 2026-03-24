@@ -1,14 +1,31 @@
 /* Specific styles adjustmentes for single post page */
-body.single.single-post .wp-block-post-title {
+body.single.single-post main .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)),
+body.search-results main .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)),
+body.search main .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+  max-width: 1200px !important;
+}
+
+body.single.single-post .wp-block-post img {
+  max-width: 800px;
+  height: auto !important;
+  margin: 0 auto;
+  display: block;
+}
+
+body.single.single-post main .wp-block-post-title,
+body.search-results main .wp-block-post-title {
   display: block !important;
 }
-body.single.single-post .wp-block-group p {
+body.single.single-post main .wp-block-group p,
+body.search-results main .wp-block-group p {
   font-size: 20px;
 }
-body.single.single-post .wp-block-group h1 {
+body.single.single-post main .wp-block-group h1,
+body.search-results main .wp-block-group h1 {
   color: #d50911;
 }
-body.single.single-post .wp-block-group h2 {
+body.single.single-post main .wp-block-group h2,
+body.search-results main .wp-block-group h2 {
   color: black;
   font-size: 22px;
   background-image: none;

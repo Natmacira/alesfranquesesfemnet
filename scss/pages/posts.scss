@@ -3,7 +3,25 @@
 
 /* Specific styles adjustmentes for single post page */
 
-body.single.single-post {
+body.single.single-post main,
+body.search-results main,
+body.search main {
+    .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+        max-width: 1200px !important;
+    }
+}
+
+body.single.single-post .wp-block-post {
+    img {
+        max-width: 800px;
+        height: auto !important;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+body.single.single-post main,
+body.search-results main {
     .wp-block-post-title {
         display: block !important;
     }
