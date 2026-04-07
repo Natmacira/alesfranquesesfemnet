@@ -1,4 +1,6 @@
 <?php
+require_once get_stylesheet_directory() . '/inc/shortcode-calc.php';
+
 /**
  * Enqueue parent + child styles
  */
