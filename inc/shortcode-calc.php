@@ -15,11 +15,33 @@ add_shortcode('calc_taxa', function () {
 
     ob_start();
     ?>
+
+    <!-- Mòdul 1: Introducció -->
+    <section class="calc-intro">
+        <h2 class="calc-intro__title">Calcula la taxa de residus del teu domicili</h2>
+        <p class="calc-intro__subtitle">La taxa de residus del 2027 té en compte com utilitzes el servei. Aquesta calculadora t'ajuda a estimar la teva taxa segons els teus hàbits de separació i ús dels contenidors. Prova-la!</p>
+    </section>
+
+    <!-- Mòdul 2: Explicació -->
+    <section class="calc-info">
+        <p class="calc-info__subtitle">Separa correctament els residus i llença'ls als contenidors corresponents. No fer-ho bé, surt més car.</p>
+        <div class="calc-destacat">
+            <p>La taxa de l'any 2027 té dos components:</p>
+            <ul>
+                <li><strong>Part bàsica:</strong> depèn del tipus d'habitatge</li>
+                <li><strong>Part variable:</strong> depèn dels hàbits de separació de residus</li>
+            </ul>
+            <p>Si separes bé, la part variable pot arribar a ser de <strong>0 euros!</strong><br>
+            A més, si utilitzes la deixalleria pots obtenir una bonificació sobre la part bàsica.</p>
+        </div>
+    </section>
+
+    <!-- Mòdul 3: Calculadora -->
     <div class="calc">
 
         <div class="calc-question">
             <div class="section-title">1. Tipus d'habitatge</div>
-            <p class="question-desc">Aquesta informació defineix la part bàsica de la quota.</p>
+            <p class="question-desc">Quina és la tipologia del teu habitatge?</p>
             <div class="pill-group" id="tipus">
                 <button class="pill active" data-val="rural">Habitatge rural</button>
                 <button class="pill" data-val="no_rural_petit">No rural fins 100 m²</button>
@@ -47,7 +69,7 @@ add_shortcode('calc_taxa', function () {
 
         <div class="calc-question">
             <div class="section-title">3. Ús de bolquers o animals de companyia</div>
-            <p class="question-desc">Has declarat que a la teva llar s'utilitzen bolquers o hi ha animals de companyia?</p>
+            <p class="question-desc">A la teva llar s'utilitzen bolquers o hi ha animals de companyia?</p>
             <div class="pill-group" id="bolquers-animals">
                 <button class="pill active" data-val="no">No</button>
                 <button class="pill" data-val="si">Sí</button>
@@ -101,6 +123,19 @@ add_shortcode('calc_taxa', function () {
         </div>
 
     </div>
+
+    <!-- Mòdul 4: Ordenança fiscal -->
+    <section class="calc-ordenanca">
+        <h2 class="calc-ordenanca__title">Coneix l'ordenança fiscal de les Franqueses</h2>
+        <p class="calc-ordenanca__subtitle">En el següent enllaç podràs veure l'Ordenança Fiscal 12: Taxa prestació servei de gestió de residus municipals 2027.</p>
+        <a class="main-btns body-btns"
+           href="https://seu-e.cat/documents/2663179/20422888/OF+12+Taxa+prestaci%C3%B3+servei+de+gesti%C3%B3+de+residus+municipals.pdf/5d6fa03e-d22f-4ecd-bdb8-5cd3a0820ecb"
+           target="_blank"
+           rel="noopener noreferrer">
+            Veure ordenança fiscal
+        </a>
+    </section>
+
     <?php
     return ob_get_clean();
 });

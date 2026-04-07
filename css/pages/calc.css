@@ -1,6 +1,74 @@
 /* Calculadora Taxa Residus */
+.calc-intro {
+  margin: 0 auto 2rem;
+}
+.calc-intro__title {
+  font-family: "Anton", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #d50911;
+  background: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.calc-intro__subtitle {
+  font-size: 17px;
+  color: #1a1a1a;
+  line-height: 1.7;
+}
+
+.calc-info {
+  margin: 0 auto 2rem;
+}
+.calc-info__subtitle {
+  font-size: 17px;
+  color: #1a1a1a;
+  margin-bottom: 1.25rem;
+  line-height: 1.7;
+}
+
+.calc-destacat {
+  background: #f5f5f3;
+  border-left: 4px solid #d50911;
+  border-radius: 0 10px 10px 0;
+  padding: 1.25rem 1.5rem;
+  font-size: 15px;
+  line-height: 1.7;
+}
+.calc-destacat ul {
+  margin: 0.5rem 0 0.75rem 1.25rem;
+  padding: 0;
+}
+.calc-destacat li {
+  margin-bottom: 0.25rem;
+}
+.calc-destacat p {
+  margin: 0;
+}
+.calc-destacat p + p {
+  margin-top: 0.75rem;
+}
+
+.calc-ordenanca {
+  margin: 2rem auto 0;
+}
+.calc-ordenanca__title {
+  font-family: "Anton", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: #d50911;
+  background: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+.calc-ordenanca__subtitle {
+  font-size: 15px;
+  color: #1a1a1a;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
 .calc {
-  max-width: 720px;
   margin: 0 auto;
   background: #ffffff;
   border-radius: 12px;
@@ -134,6 +202,10 @@
 }
 .calc .note:empty {
   display: none;
+}
+
+.page-calculadora h2 {
+  background-color: transparent;
 }
 
 /*# sourceMappingURL=calc.css.map */

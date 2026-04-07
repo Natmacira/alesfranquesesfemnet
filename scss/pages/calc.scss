@@ -2,8 +2,85 @@
 
 /* Calculadora Taxa Residus */
 
+.calc-intro {
+    margin: 0 auto 2rem;
+
+    &__title {
+        font-family: v.$font-heading;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        color: v.$primary;
+        background: none;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    &__subtitle {
+        font-size: 17px;
+        color: v.$dark;
+        line-height: 1.7;
+    }
+}
+
+.calc-info {
+    margin: 0 auto 2rem;
+
+    &__subtitle {
+        font-size: 17px;
+        color: v.$dark;
+        margin-bottom: 1.25rem;
+        line-height: 1.7;
+    }
+}
+
+.calc-destacat {
+    background: #f5f5f3;
+    border-left: 4px solid v.$primary;
+    border-radius: 0 10px 10px 0;
+    padding: 1.25rem 1.5rem;
+    font-size: 15px;
+    line-height: 1.7;
+
+    ul {
+        margin: 0.5rem 0 0.75rem 1.25rem;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 0.25rem;
+    }
+
+    p {
+        margin: 0;
+
+        &+p {
+            margin-top: 0.75rem;
+        }
+    }
+}
+
+.calc-ordenanca {
+    margin: 2rem auto 0;
+
+    &__title {
+        font-family: v.$font-heading;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: v.$primary;
+        background: none;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    &__subtitle {
+        font-size: 15px;
+        color: v.$dark;
+        line-height: 1.7;
+        margin-bottom: 1.5rem;
+    }
+}
+
 .calc {
-    max-width: 720px;
     margin: 0 auto;
     background: v.$light;
     border-radius: 12px;
@@ -160,5 +237,11 @@
         &:empty {
             display: none;
         }
+    }
+}
+
+.page-calculadora {
+    h2 {
+        background-color: transparent;
     }
 }
