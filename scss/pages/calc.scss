@@ -228,6 +228,12 @@
         margin-bottom: 0.5rem;
     }
 
+    .fixa-desc {
+        font-size: 12px;
+        font-weight: 400;
+        color: #3b6d11;
+    }
+
     .note {
         font-size: 13px;
         color: #5f5e5a;
@@ -240,8 +246,12 @@
     }
 }
 
-.page-calculadora {
+body.page-calculadora {
     h2 {
-        background-color: transparent;
+        margin-top: 0;
+    }
+
+    .wp-block-image.item-3-descobreix {
+        max-width: 500px !important;
     }
 }

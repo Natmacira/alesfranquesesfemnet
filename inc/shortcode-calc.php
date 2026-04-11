@@ -16,15 +16,8 @@ add_shortcode('calc_taxa', function () {
     ob_start();
     ?>
 
-    <!-- Mòdul 1: Introducció -->
-    <section class="calc-intro">
-        <h2 class="calc-intro__title">Calcula la taxa de residus del teu domicili</h2>
-        <p class="calc-intro__subtitle">La taxa de residus del 2027 té en compte com utilitzes el servei. Aquesta calculadora t'ajuda a estimar la teva taxa segons els teus hàbits de separació i ús dels contenidors. Prova-la!</p>
-    </section>
-
     <!-- Mòdul 2: Explicació -->
     <section class="calc-info">
-        <p class="calc-info__subtitle">Separa correctament els residus i llença'ls als contenidors corresponents. No fer-ho bé, surt més car.</p>
         <div class="calc-destacat">
             <p>La taxa de l'any 2027 té dos components:</p>
             <ul>
@@ -43,7 +36,7 @@ add_shortcode('calc_taxa', function () {
             <div class="section-title">1. Tipus d'habitatge</div>
             <p class="question-desc">Quina és la tipologia del teu habitatge?</p>
             <div class="pill-group" id="tipus">
-                <button class="pill active" data-val="rural">Habitatge rural</button>
+                <button class="pill active" data-val="rural">Rural</button>
                 <button class="pill" data-val="no_rural_petit">No rural fins 100 m²</button>
                 <button class="pill" data-val="no_rural_gran">No rural més de 100 m²</button>
                 <button class="pill" data-val="no_rural_aillat">No rural unifamiliar aïllat</button>
@@ -69,7 +62,7 @@ add_shortcode('calc_taxa', function () {
 
         <div class="calc-question">
             <div class="section-title">3. Ús de bolquers o animals de companyia</div>
-            <p class="question-desc">A la teva llar s'utilitzen bolquers o hi ha animals de companyia?</p>
+            <p class="question-desc">Has declarat que a la teva llar s'utilitzen bolquers o hi ha animals de companyia?</p>
             <div class="pill-group" id="bolquers-animals">
                 <button class="pill active" data-val="no">No</button>
                 <button class="pill" data-val="si">Sí</button>

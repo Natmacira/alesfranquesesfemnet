@@ -110,7 +110,14 @@
             }
         }
 
-        const fixa2027  = FIXA_2027[tipus];
+        // ── DEIXALLERIA 2027 (bonificació sobre la part fixa)
+        const fixaBase2027 = FIXA_2027[tipus];
+        let fixaDescompte = 0;
+        if (deixalleria === 'alta')  fixaDescompte = 20;
+        else if (deixalleria === 'mitja') fixaDescompte = 10;
+        else if (deixalleria === 'baixa') fixaDescompte = 5;
+
+        const fixa2027  = fixaBase2027 * (1 - fixaDescompte / 100);
         const total2027 = fixa2027 + restaVal + orgVal;
 
         // ── 2026
@@ -125,7 +132,11 @@
         }
 
         // ── DOM
-        document.getElementById('r-fixa').textContent      = fmt(fixa2027);
+        let fixaHtml = fmt(fixa2027);
+        if (fixaDescompte > 0) {
+            fixaHtml = '<s>' + fmt(fixaBase2027) + '</s> ' + fmt(fixa2027) + ' <span class="fixa-desc">(−' + fixaDescompte + '% deixalleria)</span>';
+        }
+        document.getElementById('r-fixa').innerHTML = fixaHtml;
         document.getElementById('r-resta').textContent     = restaLabel;
         document.getElementById('r-org').textContent       = orgLabel;
         document.getElementById('r-total-2027').textContent = fmt(total2027);

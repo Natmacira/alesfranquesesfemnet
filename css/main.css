@@ -3193,6 +3193,11 @@ body.search-results main .wp-block-group h2 {
   padding-left: 1rem;
   margin-bottom: 0.5rem;
 }
+.calc .fixa-desc {
+  font-size: 12px;
+  font-weight: 400;
+  color: #3b6d11;
+}
 .calc .note {
   font-size: 13px;
   color: #5f5e5a;
@@ -3203,8 +3208,11 @@ body.search-results main .wp-block-group h2 {
   display: none;
 }
 
-.page-calculadora h2 {
-  background-color: transparent;
+body.page-calculadora h2 {
+  margin-top: 0;
+}
+body.page-calculadora .wp-block-image.item-3-descobreix {
+  max-width: 500px !important;
 }
 
 /*# sourceMappingURL=main.css.map */
