@@ -122,7 +122,7 @@ add_shortcode('calc_taxa', function () {
         <h2 class="calc-ordenanca__title">Coneix l'ordenança fiscal de les Franqueses</h2>
         <p class="calc-ordenanca__subtitle">En el següent enllaç podràs veure l'Ordenança Fiscal 12: Taxa prestació servei de gestió de residus municipals 2027.</p>
         <a class="main-btns body-btns"
-           href="https://seu-e.cat/documents/2663179/20422888/OF+12+Taxa+prestaci%C3%B3+servei+de+gesti%C3%B3+de+residus+municipals.pdf/5d6fa03e-d22f-4ecd-bdb8-5cd3a0820ecb"
+           href="https://seu-e.cat/documents/2663179/20828850/OF+12.+Taxa+prestaci%C3%B3+servei+de+gesti%C3%B3+de+residus+municipals+2027.pdf/fe7a0ba4-aa2e-4341-a7c6-47686d9ab7e8"
            target="_blank"
            rel="noopener noreferrer">
             Veure ordenança fiscal

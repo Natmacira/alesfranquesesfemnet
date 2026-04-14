@@ -3050,6 +3050,7 @@ body.search-results main .wp-block-group h2 {
 
 .calc-ordenanca {
   margin: 2rem auto 0;
+  text-align: center;
 }
 .calc-ordenanca__title {
   font-family: "Anton", sans-serif;
