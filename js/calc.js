@@ -66,14 +66,31 @@
         return (n < 0 ? '−' : '') + abs + ' €';
     }
 
+    function resetResult() {
+        document.getElementById('r-fixa').textContent       = '—';
+        document.getElementById('r-resta').textContent      = '—';
+        document.getElementById('r-org').textContent        = '—';
+        document.getElementById('r-total-2027').textContent = '—';
+        document.getElementById('r-total-2026').textContent = '—';
+        document.getElementById('r-note').innerHTML         = '';
+    }
+
     // ── CALC ───────────────────────────────────────────────────────────────────
 
     function calc() {
-        const tipus       = getActive('tipus')           || 'rural';
-        const restaKey    = getActive('resta')           || 'gairebe_mai';
-        const bolquers    = getActive('bolquers-animals') === 'si';
-        const orgKey      = getActive('organica')        || 'gairebe_mai';
-        const deixalleria = getActive('deixalleria')     || 'cap';
+        const tipus       = getActive('tipus');
+        const restaKey    = getActive('resta');
+        const bolquersVal = getActive('bolquers-animals');
+        const orgKey      = getActive('organica');
+        const deixalleria = getActive('deixalleria');
+
+        // Si falta alguna resposta, no calcular
+        if (!tipus || !restaKey || !bolquersVal || !orgKey || !deixalleria) {
+            resetResult();
+            return;
+        }
+
+        const bolquers = bolquersVal === 'si';
 
         const notes = [];
 
@@ -158,7 +175,6 @@
 
     function init() {
         ['tipus', 'resta', 'bolquers-animals', 'organica', 'deixalleria'].forEach(bindPillGroup);
-        calc();
     }
 
     if (document.readyState === 'loading') {
