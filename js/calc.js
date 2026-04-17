@@ -48,7 +48,7 @@
     // Escombraries + Selectiva (Epígrafs 1, 2, 3 de l'Ordenança Fiscal 2026)
 
     const TAXA_2026 = {
-        //                        base    ≥8 visites (−10%)  ≥12 visites (−20%)
+        //                        base    6–11 visites (−10%)  ≥12 visites (−20%)
         rural:           { base: 99.11,  t1:  89.20, t2:  79.26 },
         no_rural_petit:  { base: 228.18, t1: 205.36, t2: 182.54 },
         no_rural_gran:   { base: 267.79, t1: 241.03, t2: 214.24 },

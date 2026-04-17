@@ -49,7 +49,7 @@ add_shortcode('calc_taxa', function () {
             <div class="section-title">2. Ús del contenidor de resta (anual)</div>
             <p class="question-desc">Quantes vegades diposites residus que no es poden reciclar al contenidor gris?</p>
             <div class="pill-group" id="resta">
-                <button class="pill" data-val="gairebe_mai">Gairebé mai<span class="pill-sub">0–2 vegades</span></button>
+                <button class="pill" data-val="gairebe_mai">No participo</button>
                 <button class="pill" data-val="poc">Poc<span class="pill-sub">3–26 vegades</span></button>
                 <button class="pill" data-val="de_tant_en_tant">De tant en tant<span class="pill-sub">27–52 vegades</span></button>
                 <button class="pill" data-val="sovint">Sovint<span class="pill-sub">53–78 vegades</span></button>
@@ -75,7 +75,7 @@ add_shortcode('calc_taxa', function () {
             <div class="section-title">4. Ús del contenidor d'orgànica (anual)</div>
             <p class="question-desc">Quantes vegades diposites restes de menjar i orgàniques al contenidor marró?</p>
             <div class="pill-group" id="organica">
-                <button class="pill" data-val="gairebe_mai">Gairebé mai<span class="pill-sub">0–2 vegades</span></button>
+                <button class="pill" data-val="gairebe_mai">No participo</button>
                 <button class="pill" data-val="poc">Poc<span class="pill-sub">3–26 vegades</span></button>
                 <button class="pill" data-val="de_tant_en_tant">De tant en tant<span class="pill-sub">27–52 vegades</span></button>
                 <button class="pill" data-val="sovint">Sovint<span class="pill-sub">53–78 vegades</span></button>
@@ -96,6 +96,13 @@ add_shortcode('calc_taxa', function () {
             </div>
         </div>
 
+        <div class="result-2026">
+            <div class="result-row result-secondary">
+                <span class="label">Taxa estimada 2026 *</span>
+                <span id="r-total-2026">—</span>
+            </div>
+            <div class="note">* Càlcul realitzat tenint en compte la franja de bonificacions de la deixalleria que s'ha especificat.</div>
+        </div>
         <div class="result-card">
             <div class="result-row result-main">
                 <span class="label">Taxa estimada 2027</span>
@@ -106,12 +113,6 @@ add_shortcode('calc_taxa', function () {
                 <div class="result-row"><span class="label">Part variable RESTA</span><span id="r-resta">—</span></div>
                 <div class="result-row discount"><span class="label">Bonificació ORGÀNICA</span><span id="r-org">—</span></div>
             </div>
-            <hr>
-            <div class="result-row result-secondary">
-                <span class="label">Taxa estimada 2026 *</span>
-                <span id="r-total-2026">—</span>
-            </div>
-            <div class="note">* Càlcul realitzat tenint en compte la franja de bonificacions de la deixalleria que s'ha especificat.</div>
             <div class="note" id="r-note"></div>
         </div>
 
