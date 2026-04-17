@@ -1,5 +1,18 @@
 (function () {
 
+    // ── i18n (injected via wp_localize_script, fallback to Catalan) ────────────
+    const i18n = window.calcI18n || {
+        tram2_bolquers:   '(tram 2 per bolquers/animals)',
+        quota_baixa:      '(quota ≤2 obertures)',
+        tram:             'tram',
+        sense_bonif:      'sense bonificació',
+        compostatge:      'compostatge o ús màxim',
+        deixalleria:      'deixalleria',
+        note_bolquers:    "Tarifa especial RESTA (tram 2) aplicada per bolquers o animals de companyia.",
+        note_resta_baixa: "Molt poques obertures al RESTA: s'aplica quota especial.",
+        note_org_baixa:   "Molt poques obertures a l'ORGÀNICA: s'aplica quota especial (càrrec).",
+    };
+
     // ── 2027 DATA ──────────────────────────────────────────────────────────────
 
     const FIXA_2027 = {
@@ -98,32 +111,32 @@
         let restaVal, restaLabel;
         if (bolquers) {
             restaVal   = RESTA_2027[tipus][2];
-            restaLabel = fmt(restaVal) + ' (tram 2 per bolquers/animals)';
-            notes.push('Tarifa especial RESTA (tram 2) aplicada per bolquers o animals de companyia.');
+            restaLabel = fmt(restaVal) + ' ' + i18n.tram2_bolquers;
+            notes.push(i18n.note_bolquers);
         } else if (restaKey === 'gairebe_mai') {
             restaVal   = QUOTA_RESTA_BAIXA[tipus];
-            restaLabel = fmt(restaVal) + ' (quota ≤2 obertures)';
-            notes.push('Molt poques obertures al RESTA: s\'aplica quota especial.');
+            restaLabel = fmt(restaVal) + ' ' + i18n.quota_baixa;
+            notes.push(i18n.note_resta_baixa);
         } else {
             const tram = RESTA_TRAM[restaKey];
             restaVal   = RESTA_2027[tipus][tram];
-            restaLabel = fmt(restaVal) + ' (tram ' + tram + ')';
+            restaLabel = fmt(restaVal) + ' (' + i18n.tram + ' ' + tram + ')';
         }
 
         // ── ORGÀNICA 2027
         let orgVal, orgLabel;
         if (orgKey === 'gairebe_mai') {
             orgVal   = QUOTA_ORG_BAIXA[tipus];
-            orgLabel = '+' + fmt(orgVal) + ' (quota ≤2 obertures)';
-            notes.push('Molt poques obertures a l\'ORGÀNICA: s\'aplica quota especial (càrrec).');
+            orgLabel = '+' + fmt(orgVal) + ' ' + i18n.quota_baixa;
+            notes.push(i18n.note_org_baixa);
         } else {
             const tram = ORG_TRAM[orgKey];
             orgVal     = ORG_2027[tipus][tram];
             orgLabel   = tram === 1
-                ? '0,00 € (tram 1, sense bonificació)'
-                : fmt(orgVal) + ' (tram ' + tram + ')';
+                ? '0,00 € (' + i18n.tram + ' 1, ' + i18n.sense_bonif + ')'
+                : fmt(orgVal) + ' (' + i18n.tram + ' ' + tram + ')';
             if (orgKey === 'molt_sovint') {
-                orgLabel += ' (compostatge o ús màxim)';
+                orgLabel += ' (' + i18n.compostatge + ')';
             }
         }
 
@@ -151,17 +164,17 @@
         // ── DOM
         let fixaHtml = fmt(fixa2027);
         if (fixaDescompte > 0) {
-            fixaHtml = '<s>' + fmt(fixaBase2027) + '</s> ' + fmt(fixa2027) + ' <span class="fixa-desc">(−' + fixaDescompte + '% deixalleria)</span>';
+            fixaHtml = '<s>' + fmt(fixaBase2027) + '</s> ' + fmt(fixa2027) + ' <span class="fixa-desc">(−' + fixaDescompte + '% ' + i18n.deixalleria + ')</span>';
         }
         document.getElementById('r-fixa').innerHTML = fixaHtml;
-        document.getElementById('r-resta').textContent     = restaLabel;
-        document.getElementById('r-org').textContent       = orgLabel;
+        document.getElementById('r-resta').textContent      = restaLabel;
+        document.getElementById('r-org').textContent        = orgLabel;
         document.getElementById('r-total-2027').textContent = fmt(total2027);
         document.getElementById('r-total-2026').textContent = fmt(total2026);
-        document.getElementById('r-note').innerHTML        = notes.map(n => '* ' + n).join('<br>');
+        document.getElementById('r-note').innerHTML         = notes.map(n => '* ' + n).join('<br>');
     }
 
-    // ── EVENT LISTENERS ────────────────────────────────────────────────────────
+    // ── EVENT LISTENERS ─────────���──────────────────────────────────────────────
 
     function bindPillGroup(groupId) {
         document.querySelectorAll('#' + groupId + ' .pill').forEach(p => {
